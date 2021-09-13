@@ -1,0 +1,17 @@
+version: "3"
+services:
+  python-test:
+    container_name: python-test
+    build:
+      context: .
+      dockerfile: dockerfile
+    volumes:
+      - .:/tests
+    ports:
+      - "5001:5001"
+    networks:
+      - python
+networks:
+  python:
+    external:
+      name: python

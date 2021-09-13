@@ -1,0 +1,38 @@
+version: "3"
+services:
+  python:
+    depends_on:
+      - dynamodb
+    build:
+      context: .
+      dockerfile: dockerfile
+    image: python:3.8-slim-buster
+    container_name: python
+    tty: true
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "5000:5000"
+    networks:
+      - python
+    environment:
+      FLASK_APP: src.app
+      PYTHONPATH: /usr/src/app/src
+      SECRET_KEY: s3cr3t
+      AWS_ACCESS_KEY_ID: "root"
+      AWS_SECRET_ACCESS_KEY: "root"
+  dynamodb:
+    image: "amazon/dynamodb-local:latest"
+    container_name: dynamodb
+    ports:
+      - "8000:8000"
+    tty: true
+    networks:
+      - python
+    volumes:
+      - ./dynamodb_data:/home/dynamodblocal/data
+    command: -jar DynamoDBLocal.jar -sharedDb -dbPath /home/dynamodblocal/data/
+networks:
+  python:
+    name: python

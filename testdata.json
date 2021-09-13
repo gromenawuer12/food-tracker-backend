@@ -1,0 +1,69 @@
+{
+  "food-tracker": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "user" },
+          "SK": { "S": "Pepito" },
+          "username": { "S": "Pepito" },
+          "password": { "S": "" },
+          "role": { "S": "user" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "user" },
+          "SK": { "S": "John" },
+          "username": { "S": "John" },
+          "password": { "S": "" },
+          "role": { "S": "admin" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "user" },
+          "SK": { "S": "test" },
+          "username": { "S": "test" },
+          "password": {
+            "S": "sha256$3xOARts1mLQGVSBk$02ffdf6493fbeb6259ec11cdd411907da0282224cde41306dffe1bb912ef1214"
+          },
+          "role": { "S": "test" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "unit" },
+          "SK": { "S": "kg" },
+          "shortname": { "S": "kg" },
+          "name": { "S": "kilogram" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "unit" },
+          "SK": { "S": "g" },
+          "shortname": { "S": "g" },
+          "name": { "S": "gram" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "unit" },
+          "SK": { "S": "mg" },
+          "shortname": { "S": "mg" },
+          "name": { "S": "milligram" }
+        }
+      }
+    }
+  ]
+}
