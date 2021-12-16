@@ -1,12 +1,11 @@
-import boto3, sys
 from units.domain.unit_database import UnitDatabase
 from units.domain.unit_exception import UnitException
 from botocore.exceptions import ClientError
 from boto3.dynamodb.conditions import Key
 
 class UnitDynamoDB(UnitDatabase):
-    def __init__(self):
-        self.client = boto3.resource('dynamodb', region_name='eu-west-3', endpoint_url='http://dynamodb:8000', aws_access_key_id='root', aws_secret_access_key='root')
+    def __init__(self,client):
+        self.client = client
         self.table = self.client.Table('food-tracker')
 
     def create(self, unit):
