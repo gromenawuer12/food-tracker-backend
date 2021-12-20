@@ -8,7 +8,7 @@ from ...domain.recipe import Recipe
 from resources.token.token_required_decorator import token_required
 
 
-@inject.autoparams()
+@inject.autopar2ams()
 def create_recipes_blueprint(get_recipe: GetRecipe, add_recipe: AddRecipe, delete_recipe: DeleteRecipe) -> Blueprint:
     recipes_blueprint = Blueprint('recipes', __name__)
 
