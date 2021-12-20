@@ -5,8 +5,8 @@ from users.domain.user_exception import UserException
 from botocore.exceptions import ClientError
 
 class UserDynamoDB(UserDatabase):
-    def __init__(self):
-        self.client = boto3.resource('dynamodb', region_name='eu-west-3', endpoint_url='http://dynamodb:8000', aws_access_key_id='root', aws_secret_access_key='root')
+    def __init__(self,client):
+        self.client = client
         self.table = self.client.Table('food-tracker')
 
     def create(self, user):
