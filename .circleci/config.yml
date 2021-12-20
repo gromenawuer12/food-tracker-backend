@@ -23,7 +23,7 @@ jobs:
           profile-name: default
       - run: ls -la
       - run: aws configure list
-      - run: aws s3 sync ./package.zip s3://buenos-dias
+      - run: aws s3 sync tests/ s3://buenos-dias
       - run: aws lambda update-function-code --function-name flask-lambda --zip-file package.zip
 workflows:
   master:
