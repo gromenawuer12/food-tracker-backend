@@ -20,7 +20,8 @@ jobs:
           at: .
       - aws-cli/setup:
           profile-name: default
-      - run: aws lambda --output json update-function-code --function-name flask-lambda --zip-file fileb://package.zip --query '{Name:FunctionName,Version:Version}' --output table
+      - run: aws s3 sync package.zip s3://s3-tmp-lambda --delete
+      - run: aws lambda update-function-code --function-name flask-lambda --s3-bucket s3-tmp-lambda --s3-key package.zip
 workflows:
   master:
     jobs:
