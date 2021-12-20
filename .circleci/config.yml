@@ -18,12 +18,9 @@ jobs:
     steps:
       - attach_workspace:
           at: .
-      - store_artifacts:
-          path: /home/circleci/.npm/_logs/
       - aws-cli/setup:
           profile-name: default
-      - run: aws configure get region
-      - run: aws lambda --output json update-function-code --function-name flask-lambda --zip-file fileb://package.zip
+      - run: aws lambda --output json update-function-code --function-name flask-lambda --zip-file fileb://package.zip --query '{Name:FunctionName,Version:Version}' --output table
 workflows:
   master:
     jobs:
