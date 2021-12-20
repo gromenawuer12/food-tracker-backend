@@ -18,7 +18,7 @@ def create_recipes_blueprint(get_recipe: GetRecipe, add_recipe: AddRecipe, delet
     def get(auth_username,name) -> Response:
         return json.dumps(get_recipe.execute(name))
 
-    @recip8es_blueprint.route('/',methods=['POST'])
+    @recip9es_blueprint.route('/',methods=['POST'])
     @token_required
     def post(auth_username) -> Response:
         return add_recipe.execute(Recipe(json.loads(json.dumps(request.get_json()),object_hook=lambda d: SimpleNamespace(**d).__dict__)))
