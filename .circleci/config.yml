@@ -18,6 +18,8 @@ jobs:
     steps:
       - attach_workspace:
           at: .
+      - store_artifacts:
+          path: /home/circleci/.npm/_logs/
       - aws-cli/setup:
           profile-name: default
       - run: aws configure get region
