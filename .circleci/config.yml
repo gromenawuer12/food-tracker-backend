@@ -21,7 +21,7 @@ jobs:
       - aws-cli/setup:
           profile-name: default
       - run: mkdir build && mv package.zip build/
-      - run: aws s3 sync build s3://s3-tmp-lambda --delete
+      - run: aws s3 sync build/ s3://s3-tmp-lambda
       - run: aws lambda update-function-code --function-name flask-lambda --s3-bucket s3-tmp-lambda --s3-key build/package.zip
 workflows:
   master:
