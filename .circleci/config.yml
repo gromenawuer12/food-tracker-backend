@@ -21,6 +21,7 @@ jobs:
           at: .
       - aws-cli/setup:
           profile-name: default
+      - run: ls -la
       - run: aws lambda update-function-code --function-name flask-lambda --zip-file fileb://package.zip
 workflows:
   master:
