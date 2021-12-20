@@ -7,6 +7,7 @@ jobs:
   build:
     executor: python/default
     steps:
+      - checkout
       - run: ls -la 
       - run: rm -f "package.zip"&&pip3 install -r "requirements.txt" --target "./package"&&cd "package"&&zip -r "../package.zip" * -x '*__pycache__*'&&cd "../src"&&zip -r "../package.zip" * -x '*__pycache__*'&&cd ".."&&rm -rf "package"
       - persist_to_workspace:
