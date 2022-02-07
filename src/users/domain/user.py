@@ -20,7 +20,6 @@ class User():
 
     @username.deleter
     def username(self):
-        print("delete username",file=sys.stderr)
         del(self._username)
 
     @property
@@ -33,6 +32,5 @@ class User():
     
     @password.deleter
     def password(self):
-        print("delete password",file=sys.stderr)
         del(self._password)
             
