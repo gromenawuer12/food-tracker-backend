@@ -1,0 +1,33 @@
+version: 2.1
+
+orbs:
+  python: circleci/python@1.2
+  aws-cli: circleci/aws-cli@2.0.6
+jobs:
+  build:
+    executor: python/default
+    steps:
+      - checkout
+      - run: rm -f "package.zip"&&pip3 install -r "requirements.txt" --target "./package"&&cd "package"&&zip -r "../package.zip" * -x '*__pycache__*'&&cd "../src"&&zip -r "../package.zip" * -x '*__pycache__*'&&cd ".."&&rm -rf "package"
+      - persist_to_workspace:
+            root: .
+            paths:
+              - .
+  deploy:
+    executor: aws-cli/default
+    steps:
+      - attach_workspace:
+          at: .
+      - aws-cli/setup:
+          profile-name: default
+      - run: aws lambda update-function-code --function-name flask-lambda --zip-file fileb://package.zip
+workflows:
+  master:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          context:
+            - aws
+
