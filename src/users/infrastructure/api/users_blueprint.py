@@ -1,5 +1,5 @@
 from werkzeug.security import check_password_hash
-import inject, json, jwt, datetime, os, sys
+import inject, json, jwt, datetime, os, sys, requests
 from types import SimpleNamespace
 from flask import Blueprint, Response, request
 from users.application.login_user import LoginUser
@@ -7,14 +7,16 @@ from .login_exception import LoginException
 from ...application.add_user import AddUser
 from ...application.get_user import GetUser
 from ...application.update_user import UpdateUser
+from menus.application.block_menu import BlockMenu
 from ...domain.user import User
 from resources.token.token_optional_decorator import token_optional
 from resources.token.token_required_decorator import token_required
 from ...application.remove_underscore import remove_underscore
+from datetime import date
 
 
 @inject.autoparams()
-def create_users_blueprint(get_user: GetUser, add_user: AddUser,login_user: LoginUser, update_user: UpdateUser) -> Blueprint:
+def create_users_blueprint(get_user: GetUser, add_user: AddUser,login_user: LoginUser, update_user: UpdateUser, block_menu: BlockMenu) -> Blueprint:
     users_blueprint = Blueprint('users', __name__)
 
     @users_blueprint.route('/<username>',methods=['GET'])
@@ -35,7 +37,15 @@ def create_users_blueprint(get_user: GetUser, add_user: AddUser,login_user: Logi
         user = login_user.execute(auth.get('username'))
         if user is None or not check_password_hash(user['password'],auth.password):
             raise LoginException("Invalid username or password")
-        return {"token":jwt.encode({'username': user['username'], 'exp' : datetime.datetime.utcnow() + datetime.timedelta(minutes=30),}, os.getenv('SECRET_KEY'),algorithm="HS256")}
+        # modify to work local and remote
+        token = jwt.encode({'username': user['username'], 'exp' : datetime.datetime.utcnow() + datetime.timedelta(minutes=30),}, os.getenv('SECRET_KEY'),algorithm="HS256")
+        menusBlocked = json.loads(requests.get('http://localhost:5000/menus/block',headers={'Authorization': 'access_token '+token}).content.decode("utf-8"))
+        if menusBlocked:
+            for item in menusBlocked:
+                data = {'user':user['username'],'date':item['date'],'nutritional_value':item['nutritional_value']}
+                requests.post('http://localhost:5000/weekly_menus/',headers={'Authorization':'access_token '+token},json=data)
+                requests.post('http://localhost:5000/monthly_menus/',headers={'Authorization':'access_token '+token},json=data)
+        return {"token":token, "user": user['username']}
 
     @users_blueprint.route('/<username>',methods=['PUT'])
     @token_required
