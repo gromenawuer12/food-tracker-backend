@@ -39,12 +39,12 @@ def create_users_blueprint(get_user: GetUser, add_user: AddUser,login_user: Logi
             raise LoginException("Invalid username or password")
         # modify to work local and remote
         token = jwt.encode({'username': user['username'], 'exp' : datetime.datetime.utcnow() + datetime.timedelta(minutes=30),}, os.getenv('SECRET_KEY'),algorithm="HS256")
-        menusBlocked = json.loads(requests.get('http://localhost:5000/menus/block',headers={'Authorization': 'access_token '+token}).content.decode("utf-8"))
+        menusBlocked = json.loads(requests.get(os.getenv('ENDPOINT_URL')+'menus/block',headers={'Authorization': 'access_token '+token}).content.decode("utf-8"))
         if menusBlocked:
             for item in menusBlocked:
                 data = {'user':user['username'],'date':item['date'],'nutritional_value':item['nutritional_value']}
-                requests.post('http://localhost:5000/weekly_menus/',headers={'Authorization':'access_token '+token},json=data)
-                requests.post('http://localhost:5000/monthly_menus/',headers={'Authorization':'access_token '+token},json=data)
+                requests.post(os.getenv('ENDPOINT_URL')+'weekly_menus/',headers={'Authorization':'access_token '+token},json=data)
+                requests.post(os.getenv('ENDPOINT_URL')+'monthly_menus/',headers={'Authorization':'access_token '+token},json=data)
         return {"token":token, "user": user['username']}
 
     @users_blueprint.route('/<username>',methods=['PUT'])

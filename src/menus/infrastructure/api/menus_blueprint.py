@@ -30,9 +30,9 @@ def create_menus_blueprint(get_menu: GetMenu, add_menu: AddMenu, delete_menu: De
         products = []
         nutritional_value = []
         for recipe in recipes:
-            products+=json.loads(requests.get('http://localhost:5000/recipes/'+recipe,headers={'Authorization': 'access_token '+token}).content.decode("utf-8")).get("products")
+            products+=json.loads(requests.get(os.getenv('ENDPOINT_URL')+'recipes/'+recipe,headers={'Authorization': 'access_token '+token}).content.decode("utf-8")).get("products")
         for product in products:
-            nutritional_value.append(json.loads(requests.get('http://localhost:5000/products/'+product[0],headers={'Authorization': 'access_token '+token}).content.decode("utf-8")).get("nutritional_value"))
+            nutritional_value.append(json.loads(requests.get(os.getenv('ENDPOINT_URL')+'products/'+product[0],headers={'Authorization': 'access_token '+token}).content.decode("utf-8")).get("nutritional_value"))
         response["nutritional_value"] = nutritional_value
         return add_menu.execute(Menu(json.loads(json.dumps(response),object_hook=lambda d: SimpleNamespace(**d).__dict__)))
     

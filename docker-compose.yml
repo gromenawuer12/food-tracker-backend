@@ -22,7 +22,8 @@ services:
       SECRET_KEY: s3cr3t
       ACCESS_KEY_ID: "root"
       SECRET_ACCESS_KEY: "root"
-      ENDPOINT_URL: "http://dynamodb:8000"
+      DB_URL: "http://dynamodb:8000"
+      ENDPOINT_URL: "http://localhost:5000/"
       REGION_NAME: "eu-west-3"
   dynamodb:
     image: "amazon/dynamodb-local:latest"

@@ -17,7 +17,7 @@ from weekly_menus.infrastructure.database.weekly_menu_dynamodb import WeeklyMenu
 from monthly_menus.infrastructure.database.monthly_menu_dynamodb import MonthlyMenuDynamoDB
 from nutritional_value.infrastructure.database.nutritional_value_dynamodb import NutritionalValueDynamoDB
 
-client = boto3.resource('dynamodb', region_name=os.getenv('REGION_NAME'), endpoint_url=os.getenv('ENDPOINT_URL'), aws_access_key_id=os.getenv('ACCESS_KEY_ID'), aws_secret_access_key=os.getenv('SECRET_ACCESS_KEY'))
+client = boto3.resource('dynamodb', region_name=os.getenv('REGION_NAME'), endpoint_url=os.getenv('DB_URL'), aws_access_key_id=os.getenv('ACCESS_KEY_ID'), aws_secret_access_key=os.getenv('SECRET_ACCESS_KEY'))
 
 def configure_inject(app: Flask) -> None:
     def config(binder: inject.Binder) -> None:
