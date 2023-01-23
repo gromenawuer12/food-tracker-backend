@@ -1,7 +1,7 @@
 import boto3, sys
-from users.domain.user_database import UserDatabase
-from werkzeug.security import generate_password_hash
-from users.domain.user_exception import UserException
+from ...domain.user_database import UserDatabase
+# from werkzeug.security import generate_password_hash
+from ...domain.user_exception import UserException
 from botocore.exceptions import ClientError
 
 class UserDynamoDB(UserDatabase):
@@ -34,7 +34,9 @@ class UserDynamoDB(UserDatabase):
             }
         )
         return response['Item']
-    
+    """
+    ':val1': generate_password_hash(password,method='sha256'),
+    """
     def update(self,username,password,role):
         self.table.update_item(
             Key={
@@ -43,7 +45,7 @@ class UserDynamoDB(UserDatabase):
             },
             UpdateExpression="SET password = :val1, #rl = :val2",
             ExpressionAttributeValues={
-                ':val1': generate_password_hash(password,method='sha256'),
+                ':val1': password,
                 ':val2': role
             },
             ExpressionAttributeNames={

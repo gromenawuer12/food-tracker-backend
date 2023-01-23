@@ -2,6 +2,7 @@ import inject
 from ..domain.user import User
 from ..domain.user_database import UserDatabase
 
+
 class AddUser:
     @inject.autoparams()
     def __init__(self, database: UserDatabase):
