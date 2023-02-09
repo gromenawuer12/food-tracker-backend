@@ -4,22 +4,8 @@ import json
 
 
 def lambda_handler(event, context):
-    # event elemento general ???
     try:
-        paths = {
-            r"\/users.*": "users_blueprint",
-            r"\/units.*": "create_units_blueprint",
-            r"\/products.*": "create_products_blueprint",
-            r"\/recipes.*": "create_recipes_recipes",
-            r"\/menus.*": "create_menus_blueprint",
-            r"\/monthly_menus.*": "create_monthly_menus_blueprint",
-            r"\/weekly_menus.*": "create_weekly_menus_blueprint",
-            r"\/nutritional_value.*": "create_nutritional_value_blueprint",
-        }
-        resolved = resolve(paths, event)
-        # print(os.getenv('DB_URL'))
-        # print(resolved)
-        #
+        resolved = resolve(event)
         return {
             'statusCode': 200,
             'headers': {

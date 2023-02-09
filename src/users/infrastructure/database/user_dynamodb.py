@@ -23,7 +23,7 @@ class UserDynamoDB(UserDatabase):
             )
         except ClientError as e:
             if e.response['Error']['Code'] == 'ConditionalCheckFailedException':
-                raise UserException("There is a conflict to create this resource",409)
+                raise UserException("There is a conflict to create this resource", 409)
         return "Added"
 
     def find(self, username):
@@ -33,7 +33,10 @@ class UserDynamoDB(UserDatabase):
                 'SK': username
             }
         )
+        if 'Item' not in response:
+            raise UserException("User not found", 404)
         return response['Item']
+
     """
     ':val1': generate_password_hash(password,method='sha256'),
     """

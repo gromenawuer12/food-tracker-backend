@@ -6,7 +6,6 @@ from functools import wraps
 def remove_underscore(f):
     @wraps(f)
     def decorator(*args, **kwargs):
-
         user = vars(f(*args, **kwargs))
         for key in list(user.keys()):
             if re.search(r"_.*", key):
