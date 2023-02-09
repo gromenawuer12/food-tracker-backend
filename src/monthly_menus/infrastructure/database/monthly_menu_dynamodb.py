@@ -1,5 +1,5 @@
-from monthly_menus.domain.monthly_menu_database import MonthlyMenuDatabase
-from monthly_menus.domain.monthly_menu_exception import MonthlyMenuException
+from ...domain.monthly_menu_database import MonthlyMenuDatabase
+from ...domain.monthly_menu_exception import MonthlyMenuException
 from botocore.exceptions import ClientError
 from boto3.dynamodb.conditions import Key, Attr
 
@@ -21,7 +21,7 @@ class MonthlyMenuDynamoDB(MonthlyMenuDatabase):
             )
         except ClientError as e:
             if e.response['Error']['Code'] == 'ConditionalCheckFailedException':
-                raise MonthlyMenuException("There is a conflict to create this resource",409)
+                raise MonthlyMenuException("There is a conflict to create this resource", 409)
         return "Added"
 
     def findAll(self,user):
@@ -29,6 +29,8 @@ class MonthlyMenuDynamoDB(MonthlyMenuDatabase):
             ProjectionExpression="monthlyNumber, nutritional_value",
             FilterExpression=Key("PK").eq('monthly_menu#'+user)
         )
+        if 'Items' not in response:
+           return []
         return response['Items']
 
     def find(self, user, monthlyNumber):
@@ -39,6 +41,8 @@ class MonthlyMenuDynamoDB(MonthlyMenuDatabase):
             },
             ProjectionExpression="monthlyNumber, nutritional_value",
         )
+        if 'Item' not in response:
+            raise MonthlyMenuException("Menu not found", 404)
         return response['Item']
 
     def updateNutritionalValue(self,user,monthlyNumber,newNutritionalValue):

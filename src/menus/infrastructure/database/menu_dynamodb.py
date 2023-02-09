@@ -1,5 +1,5 @@
-from menus.domain.menu_database import MenuDatabase
-from menus.domain.menu_exception import MenuException
+from ...domain.menu_database import MenuDatabase
+from ...domain.menu_exception import MenuException
 from botocore.exceptions import ClientError
 from boto3.dynamodb.conditions import Key, Attr
 
@@ -23,7 +23,7 @@ class MenuDynamoDB(MenuDatabase):
             )
         except ClientError as e:
             if e.response['Error']['Code'] == 'ConditionalCheckFailedException':
-                raise MenuException("There is a conflict to create this resource",409)
+                raise MenuException("There is a conflict to create this resource", 409)
         return "Added"
 
     def findAll(self):
@@ -32,6 +32,8 @@ class MenuDynamoDB(MenuDatabase):
             ExpressionAttributeNames={"#dt": "date"},
             FilterExpression=Key("PK").begins_with('menu')
         )
+        if 'Items' not in response:
+            return []
         return response['Items']
 
     def find(self, user, date):
@@ -43,6 +45,8 @@ class MenuDynamoDB(MenuDatabase):
             ProjectionExpression="#dt, recipes, nutritional_value",
             ExpressionAttributeNames={"#dt": "date"},
         )
+        if 'Item' not in response:
+            raise MenuException("Menu not found", 404)
         return response['Item']
 
     def findByDate(self, date):
@@ -51,6 +55,8 @@ class MenuDynamoDB(MenuDatabase):
             ExpressionAttributeNames={"#dt": "date"},
             FilterExpression=Key("PK").begins_with('menu') & Key("SK").eq(date)
         )
+        if 'Item' not in response:
+            raise MenuException("Menu not found", 404)
         return response['Items']
 
     def findByUser(self, user):
@@ -59,6 +65,8 @@ class MenuDynamoDB(MenuDatabase):
             ExpressionAttributeNames={"#dt": "date"},
              KeyConditionExpression=Key("PK").eq('menu#'+user)
         )
+        if 'Item' not in response:
+            raise MenuException("Menu not found", 404)
         return response['Items']
         
     def delete(self, user, date):
@@ -70,7 +78,7 @@ class MenuDynamoDB(MenuDatabase):
                 }
             )
         except ClientError:
-            raise MenuException("Something went wrong",409) 
+            raise MenuException("Something went wrong", 409)
         
         return "Deleted"
     

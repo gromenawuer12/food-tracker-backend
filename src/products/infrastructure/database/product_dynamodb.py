@@ -1,5 +1,5 @@
-from products.domain.product_database import ProductDatabase
-from products.domain.product_exception import ProductException
+from ...domain.product_database import ProductDatabase
+from ...domain.product_exception import ProductException
 from botocore.exceptions import ClientError
 from boto3.dynamodb.conditions import Key
 
@@ -23,7 +23,7 @@ class ProductDynamoDB(ProductDatabase):
             )
         except ClientError as e:
             if e.response['Error']['Code'] == 'ConditionalCheckFailedException':
-                raise ProductException("There is a conflict to create this resource",409)
+                raise ProductException("There is a conflict to create this resource", 409)
         return "Added"
 
     def findAll(self):
@@ -32,6 +32,8 @@ class ProductDynamoDB(ProductDatabase):
              ExpressionAttributeNames={"#nm": "name"},
              KeyConditionExpression=Key("PK").eq('product')
         )
+        if 'Items' not in response:
+            raise []
         return response['Items']
 
     def find(self, name):
@@ -43,6 +45,8 @@ class ProductDynamoDB(ProductDatabase):
             ProjectionExpression="#nm, nutritional_value, description, quantity, supermarket, units",
             ExpressionAttributeNames={"#nm": "name"},
         )
+        if 'Item' not in response:
+            raise ProductException("Product value not found", 404)
         return response['Item']
 
     def delete(self, name):

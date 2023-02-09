@@ -1,5 +1,5 @@
-from nutritional_value.domain.nutritional_value_database import NutritionalValueDatabase
-from nutritional_value.domain.nutritional_value_exception import NutritionalValueException
+from ...domain.nutritional_value_database import NutritionalValueDatabase
+from ...domain.nutritional_value_exception import NutritionalValueException
 from botocore.exceptions import ClientError
 from boto3.dynamodb.conditions import Key
 
@@ -22,7 +22,7 @@ class NutritionalValueDynamoDB(NutritionalValueDatabase):
             )
         except ClientError as e:
             if e.response['Error']['Code'] == 'ConditionalCheckFailedException':
-                raise NutritionalValueException("There is a conflict to create this resource",409)
+                raise NutritionalValueException("There is a conflict to create this resource", 409)
         return "Added"
 
     def findAll(self):
@@ -31,6 +31,8 @@ class NutritionalValueDynamoDB(NutritionalValueDatabase):
              ExpressionAttributeNames={"#nm": "name","#un":"unit"},
              KeyConditionExpression=Key("PK").eq('nutritional value')
         )
+        if 'Items' not in response:
+            return []
         return response['Items']
 
     def find(self, shortname):
@@ -42,6 +44,8 @@ class NutritionalValueDynamoDB(NutritionalValueDatabase):
             ProjectionExpression="shortname, #nm, #un",
             ExpressionAttributeNames={"#nm": "name","#un":"unit"},
         )
+        if 'Item' not in response:
+            raise NutritionalValueException("Nutritional value not found", 404)
         return response['Item']
 
     def delete(self, shortname):
@@ -53,6 +57,6 @@ class NutritionalValueDynamoDB(NutritionalValueDatabase):
                 }
             )
         except ClientError:
-            raise NutritionalValueException("Something went wrong",409) 
+            raise NutritionalValueException("Something went wrong", 409)
         
         return "Deleted"

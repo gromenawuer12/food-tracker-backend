@@ -1,5 +1,5 @@
-from weekly_menus.domain.weekly_menu_database import WeeklyMenuDatabase
-from weekly_menus.domain.weekly_menu_exception import WeeklyMenuException
+from ...domain.weekly_menu_database import WeeklyMenuDatabase
+from ...domain.weekly_menu_exception import WeeklyMenuException
 from botocore.exceptions import ClientError
 from boto3.dynamodb.conditions import Key, Attr
 
@@ -29,6 +29,8 @@ class WeeklyMenuDynamoDB(WeeklyMenuDatabase):
             ProjectionExpression="weeklyNumber, nutritional_value",
             FilterExpression=Key("PK").eq('weekly_menu#'+user)
         )
+        if 'Items' not in response:
+            return []
         return response['Items']
 
     def find(self, user, weeklyNumber):
@@ -39,6 +41,8 @@ class WeeklyMenuDynamoDB(WeeklyMenuDatabase):
             },
             ProjectionExpression="weeklyNumber, nutritional_value",
         )
+        if 'Item' not in response:
+            raise WeeklyMenuException("Menu not found", 404)
         return response['Item']
 
     def updateNutritionalValue(self,user,weeklyNumber,newNutritionalValue):

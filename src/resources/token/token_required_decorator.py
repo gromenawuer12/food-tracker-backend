@@ -1,23 +1,21 @@
 import jwt, os, sys
 from functools import wraps
-from flask import request
 from .token_invalid_exception import TokenInvalidException
 
 
-def token_required(f):  
-  @wraps(f)  
-  def decorator(*args, **kwargs):
+def token_required(f):
+    @wraps(f)
+    def decorator(*args, **kwargs):
 
-      if not 'Authorization' in request.headers: 
-        raise TokenInvalidException() 
-      auth_username = None
-      token = request.headers['Authorization'].split()[1]
-      try:
-        payload = jwt.decode(token, os.getenv('SECRET_KEY'),algorithms=["HS256"]) 
-        auth_username = payload['username']
-      except:  
-        raise TokenInvalidException()
+        if not 'Authorization' in kwargs['headers']:
+            raise TokenInvalidException()
+        token = kwargs['headers']['Authorization'].split()[1]
+        try:
+            payload = jwt.decode(token, os.getenv('SECRET_KEY'), algorithms=["HS256"])
+            kwargs['auth_username'] = payload['username']
+        except:
+            raise TokenInvalidException()
 
+        return f(*args, **kwargs)
 
-      return f(auth_username, *args,  **kwargs)  
-  return decorator
+    return decorator
