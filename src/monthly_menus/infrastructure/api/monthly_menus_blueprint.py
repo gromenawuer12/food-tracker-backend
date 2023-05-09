@@ -9,7 +9,7 @@ from ....resources.token.token_required_decorator import token_required
 def resolve(event):
     monthlyMenusBlueprint = MonthlyMenusBlueprint()
     return eval({
-                    "GET": "monthlyMenusBlueprint.get(queryStringParameters=event['queryStringParameters'], headers=event['headers'])",
+                    "GET": "monthlyMenusBlueprint.get(pathParameters=event['pathParameters'], headers=event['headers'])",
                     "POST": "monthlyMenusBlueprint.post(headers=event['headers'], body=event['body'])"
                 }[event['httpMethod']])
 
@@ -20,8 +20,8 @@ class MonthlyMenusBlueprint:
         self.add_monthly_menu = add_monthly_menu
 
     @token_required
-    def get(self, auth_username, queryStringParameters, headers) -> Response:
-        monthlyNumber = queryStringParameters.get('monthlyNumber', None)
+    def get(self, auth_username, pathParameters, headers) -> Response:
+        monthlyNumber = pathParameters.get('monthlyNumber', None)
         return json.dumps(self.get_monthly_menu.execute(auth_username, monthlyNumber))
 
     @token_required
