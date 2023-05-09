@@ -34,6 +34,10 @@ class MenusBlueprint:
         user = pathParameters.get('user', None)
         fromDate = pathParameters.get('from', None)
         toDate = pathParameters.get('to', None)
+        print(pathParameters)
+        print(user)
+        print(fromDate)
+        print(toDate)
         return json.dumps(self.get_menu.execute(user, fromDate, toDate))
 
     # @menus_blueprint.route('/',methods=['POST'])
