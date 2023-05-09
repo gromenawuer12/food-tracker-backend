@@ -29,7 +29,7 @@ class UnitsBlueprint:
     @token_required
     def get(self, auth_username, pathParameters, headers) -> Response:
         shortname = pathParameters.get('shortname', None)
-        return json.dumps(self.get_unit.execute(shortname))
+        return self.get_unit.execute(shortname)
 
     # @units_blueprint.route('/',methods=['POST'])
     @token_required

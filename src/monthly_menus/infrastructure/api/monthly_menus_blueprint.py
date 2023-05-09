@@ -22,7 +22,7 @@ class MonthlyMenusBlueprint:
     @token_required
     def get(self, auth_username, pathParameters, headers) -> Response:
         monthlyNumber = pathParameters.get('monthlyNumber', None)
-        return json.dumps(self.get_monthly_menu.execute(auth_username, monthlyNumber))
+        return self.get_monthly_menu.execute(auth_username, monthlyNumber)
 
     @token_required
     def post(self, auth_username, headers, body) -> Response:

@@ -29,7 +29,7 @@ class ProductsBlueprint:
     @token_required
     def get(self, auth_username, pathParameters, headers) -> Response:
         name = pathParameters.get("name", None)
-        return json.dumps(self.get_product.execute(name))
+        return self.get_product.execute(name)
 
     # @products_blueprint.route('/',methods=['POST'])
     @token_required

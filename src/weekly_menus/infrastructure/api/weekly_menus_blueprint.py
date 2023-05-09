@@ -27,7 +27,7 @@ class WeeklyMenusBlueprint:
     @token_required
     def get(self, auth_username, pathParameters, headers) -> Response:
         weeklyNumber = pathParameters.get('weeklyNumber', None)
-        return json.dumps(self.get_weekly_menu.execute(auth_username, weeklyNumber))
+        return self.get_weekly_menu.execute(auth_username, weeklyNumber)
 
     # @weekly_menus_blueprint.route('/',methods=['POST'])
     @token_required

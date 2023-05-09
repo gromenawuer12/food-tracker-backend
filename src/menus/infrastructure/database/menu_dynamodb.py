@@ -59,7 +59,6 @@ class MenuDynamoDB(MenuDatabase):
                 ":end_date": toDate
             }
         )
-        print(response)
         if 'Items' not in response:
             return []
         return response['Items']

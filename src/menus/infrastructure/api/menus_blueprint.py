@@ -35,7 +35,7 @@ class MenusBlueprint:
         fromDate = queryStringParameters.get('from', None)
         toDate = queryStringParameters.get('to', None)
 
-        return json.dumps(self.get_menu.execute(user, fromDate, toDate))
+        return self.get_menu.execute(user, fromDate, toDate)
 
     # @menus_blueprint.route('/',methods=['POST'])
     @token_required

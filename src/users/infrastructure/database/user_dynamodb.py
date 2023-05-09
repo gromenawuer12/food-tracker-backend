@@ -39,7 +39,6 @@ class UserDynamoDB(UserDatabase):
         return response['Item']
 
     def findAll(self):
-        print("FIND ALL")
         response = self.table.query(
             KeyConditionExpression='PK = :pk',
             ExpressionAttributeValues={
@@ -47,7 +46,6 @@ class UserDynamoDB(UserDatabase):
             },
             ProjectionExpression="username",
         )
-        print(response)
         if 'Items' not in response:
             return []
         return response['Items']

@@ -29,7 +29,7 @@ class RecipesBlueprint:
     @token_required
     def get(self, auth_username, pathParameters, headers) -> Response:
         name = pathParameters.get("name", None)
-        return json.dumps(self.get_recipe.execute(name))
+        return self.get_recipe.execute(name)
 
     # @recipes_blueprint.route('/',methods=['POST'])
     @token_required
