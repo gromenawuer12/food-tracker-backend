@@ -46,7 +46,8 @@ class UsersBlueprint:
 
     @token_required
     # @remove_underscore
-    def get(self, auth_username, pathParameters, headers) -> Response:
+    def get(self, auth_username, headers) -> Response:
+        print("GET USER")
         return self.get_user.execute()
 
     def post(self, body) -> Response:
