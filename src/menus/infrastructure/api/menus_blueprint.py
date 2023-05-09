@@ -14,7 +14,7 @@ from ....recipes.infrastructure.api.recipes_blueprint import RecipesBlueprint
 def resolve(event):
     menusBlueprint = MenusBlueprint()
     return eval({
-                    "GET": "menusBlueprint.get(headers=event['headers'], pathParameters=event['pathParameters'])",
+                    "GET": "menusBlueprint.get(headers=event['headers'], pathParameters=event)",
                     "POST": "menusBlueprint.post(headers=event['headers'], body=event['body'])",
                     "DELETE": "menusBlueprint.delete(headers=event['headers'], body=event['body'])"
                 }[event['httpMethod']])
@@ -31,6 +31,7 @@ class MenusBlueprint:
     # @menus_blueprint.route('/<user>/<date>',methods=['GET'], defaults={'user':None})
     @token_required
     def get(self, auth_username, pathParameters, headers) -> Response:
+        print(pathParameters)
         user = pathParameters.get('user', None)
         fromDate = pathParameters.get('from', None)
         toDate = pathParameters.get('to', None)
