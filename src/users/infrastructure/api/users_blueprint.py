@@ -44,11 +44,10 @@ class UsersBlueprint:
         self.login_user = login_user
         self.update_user = update_user
 
-    @token_optional
-    @remove_underscore
+    @token_required
+    # @remove_underscore
     def get(self, auth_username, pathParameters, headers) -> Response:
-        username = pathParameters.get('username', None)
-        return self.get_user.execute(username, auth_username)
+        return self.get_user.execute()
 
     def post(self, body) -> Response:
         return self.add_user.execute(User(json.loads(body, object_hook=lambda d: SimpleNamespace(**d).__dict__)))

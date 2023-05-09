@@ -10,11 +10,5 @@ class GetUser:
     def __init__(self, database: UserDatabase):
         self.__database = database
 
-    def execute(self, username, auth_username):
-        user = self.__database.find(username)
-        user = User(user)
-        if auth_username is None:
-            return delete_attrs(user, ["_password", "role"])
-        if username != auth_username:
-            return delete_attrs(user, ["_password"])
-        return user
+    def execute(self):
+        return self.__database.findAll()

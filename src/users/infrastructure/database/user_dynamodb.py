@@ -31,11 +31,35 @@ class UserDynamoDB(UserDatabase):
             Key={
                 'PK': 'user',
                 'SK': username
+            },
+            ProjectionExpression="username"
+        )
+        if 'Item' not in response:
+            raise UserException("User not found", 404)
+        return response['Item']
+
+    def findPrivate(self, username):
+        response = self.table.get_item(
+            Key={
+                'PK': 'user',
+                'SK': username
             }
         )
         if 'Item' not in response:
             raise UserException("User not found", 404)
         return response['Item']
+
+    def findAll(self):
+        response = self.table.query(
+            KeyConditionExpression='PK = :pk',
+            ExpressionAttributeValues={
+                ':pk': 'user'
+            },
+            ProjectionExpression="username",
+        )
+        if 'Items' not in response:
+            return []
+        return response['Items']
 
     """
     ':val1': generate_password_hash(password,method='sha256'),
