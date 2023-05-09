@@ -1,5 +1,5 @@
-from menus.domain.menu_database import MenuDatabase
-from menus.domain.menu_exception import MenuException
+from ...domain.menu_database import MenuDatabase
+from ...domain.menu_exception import MenuException
 from botocore.exceptions import ClientError
 from boto3.dynamodb.conditions import Key, Attr
 
@@ -23,42 +23,55 @@ class MenuDynamoDB(MenuDatabase):
             )
         except ClientError as e:
             if e.response['Error']['Code'] == 'ConditionalCheckFailedException':
-                raise MenuException("There is a conflict to create this resource",409)
+                raise MenuException("There is a conflict to create this resource", 409)
         return "Added"
 
-    def findAll(self):
-        response = self.table.scan(
+    def find(self, user, fromDate, toDate):
+        response = self.table.query(
+            KeyConditionExpression='#pk = :pk_value AND #sk BETWEEN :start_date AND :end_date',
+            ExpressionAttributeNames={
+                '#pk': 'PK',
+                '#sk': 'SK',
+                '#dt': 'date'
+            },
+            ExpressionAttributeValues={
+                ':pk_value': "menu#"+user,
+                ':start_date': fromDate,
+                ':end_date': toDate
+            },
             ProjectionExpression="#dt, recipes, nutritional_value, isLocked, PK",
-            ExpressionAttributeNames={"#dt": "date"},
-            FilterExpression=Key("PK").begins_with('menu')
         )
+        if 'Items' not in response:
+            return []
         return response['Items']
 
-    def find(self, user, date):
-        response = self.table.get_item(
-            Key={
-                'PK': 'menu#'+user,
-                'SK': date
-            },
-            ProjectionExpression="#dt, recipes, nutritional_value",
-            ExpressionAttributeNames={"#dt": "date"},
-        )
-        return response['Item']
+    def findByDate(self, fromDate, toDate):
+        partition_key_prefix = 'menu'
 
-    def findByDate(self, date):
         response = self.table.scan(
-            ProjectionExpression="#dt, recipes, nutritional_value",
-            ExpressionAttributeNames={"#dt": "date"},
-            FilterExpression=Key("PK").begins_with('menu') & Key("SK").eq(date)
+            FilterExpression="begins_with(PK, :pk_prefix) AND #sk BETWEEN :start_date AND :end_date",
+            ExpressionAttributeNames={
+                "#sk": "SK"
+            },
+            ExpressionAttributeValues={
+                ":pk_prefix": partition_key_prefix,
+                ":start_date": fromDate,
+                ":end_date": toDate
+            }
         )
+        print(response)
+        if 'Items' not in response:
+            return []
         return response['Items']
 
     def findByUser(self, user):
         response = self.table.query(
-             ProjectionExpression="#dt, recipes, nutritional_value",
-            ExpressionAttributeNames={"#dt": "date"},
+             ProjectionExpression="#dt, recipes, nutritional_value, isLocked, PK",
+             ExpressionAttributeNames={"#dt": "date"},
              KeyConditionExpression=Key("PK").eq('menu#'+user)
         )
+        if 'Items' not in response:
+            return []
         return response['Items']
         
     def delete(self, user, date):
@@ -70,7 +83,7 @@ class MenuDynamoDB(MenuDatabase):
                 }
             )
         except ClientError:
-            raise MenuException("Something went wrong",409) 
+            raise MenuException("Something went wrong", 409)
         
         return "Deleted"
     
