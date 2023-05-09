@@ -11,7 +11,7 @@ from ....resources.token.token_required_decorator import token_required
 def resolve(event):
     productsBlueprint = ProductsBlueprint()
     return eval({
-                    "GET": "productsBlueprint.get(headers=event['headers'], queryStringParameters=event['queryStringParameters'])",
+                    "GET": "productsBlueprint.get(headers=event['headers'], pathParameters=event['pathParameters'])",
                     "POST": "productsBlueprint.post(headers=event['headers'], body=event['body'])",
                     "DELETE": "productsBlueprint.delete(headers=event['headers'], body=event['body'])"
                 }[event['httpMethod']])
@@ -27,8 +27,8 @@ class ProductsBlueprint:
     # @products_blueprint.route('/',methods=['GET'], defaults={'name': None})
     # @products_blueprint.route('/<name>',methods=['GET'])
     @token_required
-    def get(self, auth_username, queryStringParameters, headers) -> Response:
-        name = queryStringParameters.get("name", None)
+    def get(self, auth_username, pathParameters, headers) -> Response:
+        name = pathParameters.get("name", None)
         return json.dumps(self.get_product.execute(name))
 
     # @products_blueprint.route('/',methods=['POST'])
@@ -44,8 +44,8 @@ class ProductsBlueprint:
         return self.delete_product.execute(name)
 
     @token_required
-    def modify(self, auth_username, queryStringParameters, headers, body) -> Response:
-        name = queryStringParameters.get('name', None)
+    def modify(self, auth_username, pathParameters, headers, body) -> Response:
+        name = pathParameters.get('name', None)
         if name is None:
             raise Exception
         product = self.get_product.execute(name)
