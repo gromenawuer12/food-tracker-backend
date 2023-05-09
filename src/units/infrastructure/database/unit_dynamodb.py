@@ -1,5 +1,5 @@
-from units.domain.unit_database import UnitDatabase
-from units.domain.unit_exception import UnitException
+from ...domain.unit_database import UnitDatabase
+from ...domain.unit_exception import UnitException
 from botocore.exceptions import ClientError
 from boto3.dynamodb.conditions import Key
 
@@ -21,7 +21,7 @@ class UnitDynamoDB(UnitDatabase):
             )
         except ClientError as e:
             if e.response['Error']['Code'] == 'ConditionalCheckFailedException':
-                raise UnitException("There is a conflict to create this resource",409)
+                raise UnitException("There is a conflict to create this resource", 409)
         return "Added"
 
     def findAll(self):
@@ -30,6 +30,8 @@ class UnitDynamoDB(UnitDatabase):
              ExpressionAttributeNames={"#nm": "name"},
              KeyConditionExpression=Key("PK").eq('unit')
         )
+        if 'Items' not in response:
+            return []
         return response['Items']
 
     def find(self, shortname):
@@ -41,6 +43,8 @@ class UnitDynamoDB(UnitDatabase):
             ProjectionExpression="shortname, #nm",
             ExpressionAttributeNames={"#nm": "name"},
         )
+        if 'Item' not in response:
+            raise UnitException("Unit value not found", 404)
         return response['Item']
 
     def delete(self, shortname):

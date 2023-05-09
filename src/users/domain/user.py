@@ -1,6 +1,7 @@
 from .user_exception import UserException
 from werkzeug.security import generate_password_hash
-import re,sys
+import re
+
 
 class User():
     def __init__(self, params):
@@ -14,23 +15,22 @@ class User():
 
     @username.setter
     def username(self, username):
-        if re.search(r"\W",username):
-            raise UserException('Username can only contain alphanumeric values and low slashes',400)
+        if re.search(r"\W", username):
+            raise UserException('Username can only contain alphanumeric values and low slashes', 400)
         self._username = username
 
     @username.deleter
     def username(self):
-        del(self._username)
+        del (self._username)
 
     @property
     def password(self):
         return self._password
-    
+
     @password.setter
-    def password(self,password):
-        self._password = generate_password_hash(password,method='sha256')
-    
+    def password(self, password):
+        self._password = generate_password_hash(password, method='sha256')
+
     @password.deleter
     def password(self):
-        del(self._password)
-            
+        del (self._password)

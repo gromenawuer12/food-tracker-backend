@@ -1,24 +1,30 @@
 from types import SimpleNamespace
 import inject, json
-from flask import Blueprint, Response, request
+from requests import Response
 from ...application.add_monthly_menu import AddMonthlyMenu
 from ...application.get_monthly_menu import GetMonthlyMenu
 from ...domain.monthly_menu import MonthlyMenu
-from resources.token.token_required_decorator import token_required
+from ....resources.token.token_required_decorator import token_required
 
-@inject.autoparams()
-def create_monthly_menus_blueprint(get_monthly_menu: GetMonthlyMenu, add_monthly_menu: AddMonthlyMenu) -> Blueprint:
-    monthly_menus_blueprint = Blueprint('monthly_menus', __name__)
+def resolve(event):
+    monthlyMenusBlueprint = MonthlyMenusBlueprint()
+    return eval({
+                    "GET": "monthlyMenusBlueprint.get(pathParameters=event['pathParameters'], headers=event['headers'])",
+                    "POST": "monthlyMenusBlueprint.post(headers=event['headers'], body=event['body'])"
+                }[event['httpMethod']])
 
-    @monthly_menus_blueprint.route('/',methods=['GET'], defaults={'monthlyNumber': None})
-    @monthly_menus_blueprint.route('/<monthlyNumber>',methods=['GET'])
+class MonthlyMenusBlueprint:
+    @inject.autoparams()
+    def __init__(self, get_monthly_menu: GetMonthlyMenu, add_monthly_menu: AddMonthlyMenu):
+        self.get_monthly_menu = get_monthly_menu
+        self.add_monthly_menu = add_monthly_menu
+
     @token_required
-    def get(auth_username, monthlyNumber) -> Response:
-        return json.dumps(get_monthly_menu.execute(auth_username, monthlyNumber))
+    def get(self, auth_username, pathParameters, headers) -> Response:
+        monthlyNumber = pathParameters.get('monthlyNumber', None)
+        return json.dumps(self.get_monthly_menu.execute(auth_username, monthlyNumber))
 
-    @monthly_menus_blueprint.route('/',methods=['POST'])
     @token_required
-    def post(auth_username) -> Response:
-        return add_monthly_menu.execute(MonthlyMenu(json.loads(json.dumps(request.get_json()),object_hook=lambda d: SimpleNamespace(**d).__dict__)))
-    
-    return monthly_menus_blueprint
+    def post(self, auth_username, headers, body) -> Response:
+        return self.add_monthly_menu.execute(
+            MonthlyMenu(json.loads(body, object_hook=lambda d: SimpleNamespace(**d).__dict__)))

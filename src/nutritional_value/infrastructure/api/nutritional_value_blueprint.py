@@ -1,31 +1,61 @@
 from types import SimpleNamespace
 import inject, json
-from flask import Blueprint, Response, request
+from requests import Response
 from ...application.add_nutritional_value import AddNutritionalValue
 from ...application.get_nutritional_value import GetNutritionalValue
 from ...application.delete_nutritional_value import DeleteNutritionalValue
 from ...domain.nutritional_value import NutritionalValue
-from resources.token.token_required_decorator import token_required
+from ....resources.token.token_required_decorator import token_required
 
 
-@inject.autoparams()
-def create_nutritional_value_blueprint(get_nutritional_value: GetNutritionalValue, add_nutritional_value: AddNutritionalValue, delete_nutritional_value: DeleteNutritionalValue) -> Blueprint:
-    nutritional_value_blueprint = Blueprint('nutritional_value', __name__)
+def resolve(event):
+    nutritonalValuesBlueprint = NutritionalValueBlueprint()
+    return eval({
+                    "GET": "nutritonalValuesBlueprint.get(headers=event['headers'], pathParameters=event['pathParameters'])",
+                    "POST": "nutritonalValuesBlueprint.post(headers=event['headers'], body=event['body'])",
+                    "DELETE": "nutritonalValuesBlueprint.delete(headers=event['headers'], body=event['body'])"
+                }[event['httpMethod']])
 
-    @nutritional_value_blueprint.route('/',methods=['GET'], defaults={'shortname': None})
-    @nutritional_value_blueprint.route('/<shortname>',methods=['GET'])
+
+class NutritionalValueBlueprint:
+    @inject.autoparams()
+    def __init__(self, get_nutritional_value: GetNutritionalValue, add_nutritional_value: AddNutritionalValue,
+                 delete_nutritional_value: DeleteNutritionalValue):
+        self.get_nutritional_value = get_nutritional_value
+        self.add_nutritional_value = add_nutritional_value
+        self.delete_nutritional_value = delete_nutritional_value
+
+    # @nutritional_value_blueprint.route('/',methods=['GET'], defaults={'shortname': None})
+    # @nutritional_value_blueprint.route('/<shortname>',methods=['GET'])
     @token_required
-    def get(auth_username,shortname) -> Response:
-        return json.dumps(get_nutritional_value.execute(shortname))
+    def get(self, auth_username, pathParameters, headers) -> Response:
+        shortname = pathParameters.get("shortname", None)
+        return json.dumps(self.get_nutritional_value.execute(shortname))
 
-    @nutritional_value_blueprint.route('/',methods=['POST'])
+    # @nutritional_value_blueprint.route('/',methods=['POST'])
     @token_required
-    def post(auth_username) -> Response:
-        return add_nutritional_value.execute(NutritionalValue(json.loads(json.dumps(request.get_json()),object_hook=lambda d: SimpleNamespace(**d).__dict__)))
-    
-    @nutritional_value_blueprint.route('/',methods=['DELETE'])
-    @token_required
-    def delete(auth_username) -> Response:
-        return delete_nutritional_value.execute(request.get_json().get("shortname"))
+    def post(self, auth_username, body, headers) -> Response:
+        return self.add_nutritional_value.execute(
+            NutritionalValue(json.loads(body, object_hook=lambda d: SimpleNamespace(**d).__dict__)))
 
-    return nutritional_value_blueprint
+    # @nutritional_value_blueprint.route('/',methods=['DELETE'])
+    @token_required
+    def delete(self, auth_username, body, headers) -> Response:
+        body = json.loads(body)
+        shortname = body.get('shortname', None)
+        return self.delete_nutritional_value.execute(shortname)
+
+    @token_required
+    def modify(self, auth_username, pathParameters, headers, body) -> Response:
+        shortname = pathParameters.get('shortname', None)
+        if shortname is None:
+            raise Exception
+        nutritional_value = self.get_nutritional_value.execute(shortname)
+        body = json.loads(body)
+        new_shortname = body.get("new_shortname", nutritional_value["shortname"])
+        new_name = body.get("new_name", nutritional_value["name"])
+        new_unit = body.get("new_unit", nutritional_value["unit"])
+
+        self.delete_nutritional_value.execute(shortname)
+        self.add_nutritional_value.execute(NutritionalValue(json.loads({"shortname": new_shortname, "name": new_name, "unit": new_unit}, object_hook=lambda d: SimpleNamespace(**d).__dict__)))
+        return {}

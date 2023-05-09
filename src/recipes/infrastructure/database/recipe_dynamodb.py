@@ -1,5 +1,5 @@
-from recipes.domain.recipe_database import RecipeDatabase
-from recipes.domain.recipe_exception import RecipeException
+from ...domain.recipe_database import RecipeDatabase
+from ...domain.recipe_exception import RecipeException
 from botocore.exceptions import ClientError
 from boto3.dynamodb.conditions import Key
 
@@ -21,7 +21,7 @@ class RecipeDynamoDB(RecipeDatabase):
             )
         except ClientError as e:
             if e.response['Error']['Code'] == 'ConditionalCheckFailedException':
-                raise RecipeException("There is a conflict to create this resource",409)
+                raise RecipeException("There is a conflict to create this resource", 409)
         return "Added"
 
     def findAll(self):
@@ -30,6 +30,8 @@ class RecipeDynamoDB(RecipeDatabase):
              ExpressionAttributeNames={"#nm": "name"},
              KeyConditionExpression=Key("PK").eq('recipe')
         )
+        if 'Items' not in response:
+            return []
         return response['Items']
 
     def find(self, name):
@@ -41,6 +43,8 @@ class RecipeDynamoDB(RecipeDatabase):
             ProjectionExpression="#nm, products",
             ExpressionAttributeNames={"#nm": "name"},
         )
+        if 'Item' not in response:
+            raise RecipeException("Recipe value not found", 404)
         return response['Item']
 
     def delete(self, name):

@@ -9,7 +9,7 @@ class GetWeeklyMenu:
     def execute(self, user, weeklyNumber):
         if weeklyNumber is None:
             today = datetime.date.today()
-            auxTuple = datetime.date(today.year,today.month,today.day).isocalendar()
+            auxTuple = datetime.date(today.year, today.month, today.day).isocalendar()
             todayWeeklyNumber = str(auxTuple[0])+"-"+str(auxTuple[1])
             response = self.__database.find(user, todayWeeklyNumber)
         else:
