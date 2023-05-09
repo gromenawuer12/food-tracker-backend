@@ -14,7 +14,7 @@ from ....recipes.infrastructure.api.recipes_blueprint import RecipesBlueprint
 def resolve(event):
     menusBlueprint = MenusBlueprint()
     return eval({
-                    "GET": "menusBlueprint.get(headers=event['headers'], pathParameters=event)",
+                    "GET": "menusBlueprint.get(headers=event['headers'], queryStringParameters=event['queryStringParameters'])",
                     "POST": "menusBlueprint.post(headers=event['headers'], body=event['body'])",
                     "DELETE": "menusBlueprint.delete(headers=event['headers'], body=event['body'])"
                 }[event['httpMethod']])
@@ -30,15 +30,11 @@ class MenusBlueprint:
     # @menus_blueprint.route('/<user>',methods=['GET'], defaults={'date':None})
     # @menus_blueprint.route('/<user>/<date>',methods=['GET'], defaults={'user':None})
     @token_required
-    def get(self, auth_username, pathParameters, headers) -> Response:
-        print(pathParameters)
-        user = pathParameters.get('user', None)
-        fromDate = pathParameters.get('from', None)
-        toDate = pathParameters.get('to', None)
-        print(pathParameters)
-        print(user)
-        print(fromDate)
-        print(toDate)
+    def get(self, auth_username, queryStringParameters, headers) -> Response:
+        user = queryStringParameters.get('user', None)
+        fromDate = queryStringParameters.get('from', None)
+        toDate = queryStringParameters.get('to', None)
+
         return json.dumps(self.get_menu.execute(user, fromDate, toDate))
 
     # @menus_blueprint.route('/',methods=['POST'])
@@ -51,9 +47,9 @@ class MenusBlueprint:
         recipesBlueprint = RecipesBlueprint()
         productsBlueprint = ProductsBlueprint()
         for recipe in recipes:
-            products += json.loads(recipesBlueprint.get(pathParameters={"name": recipe}, headers=headers)).get("products")
+            products += json.loads(recipesBlueprint.get(queryStringParameters={"name": recipe}, headers=headers)).get("products")
         for product in products:
-            nutritional_value += json.loads(productsBlueprint.get(pathParameters={"name": product[0]}, headers=headers)).get("nutritional_value")
+            nutritional_value += json.loads(productsBlueprint.get(queryStringParameters={"name": product[0]}, headers=headers)).get("nutritional_value")
         response["nutritional_value"] = nutritional_value
         return self.add_menu.execute(Menu(json.loads(json.dumps(response), object_hook=lambda d: SimpleNamespace(**d).__dict__)))
     

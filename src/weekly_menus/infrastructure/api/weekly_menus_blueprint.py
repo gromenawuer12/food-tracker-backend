@@ -12,7 +12,7 @@ from ....resources.token.token_required_decorator import token_required
 def resolve(event):
     weeklyMenusBlueprint = WeeklyMenusBlueprint()
     return eval({
-                    "GET": "weeklyMenusBlueprint.get(pathParameters=event['pathParameters'], headers=event['headers'])",
+                    "GET": "weeklyMenusBlueprint.get(queryStringParameters=event['queryStringParameters'], headers=event['headers'])",
                     "POST": "weeklyMenusBlueprint.post(headers=event['headers'], body=event['body'])"
                 }[event['httpMethod']])
 
@@ -25,8 +25,8 @@ class WeeklyMenusBlueprint:
     # @weekly_menus_blueprint.route('/',methods=['GET'], defaults={'weeklyNumber': None})
     # @weekly_menus_blueprint.route('/<weeklyNumber>',methods=['GET'])
     @token_required
-    def get(self, auth_username, pathParameters, headers) -> Response:
-        weeklyNumber = pathParameters.get('weeklyNumber', None)
+    def get(self, auth_username, queryStringParameters, headers) -> Response:
+        weeklyNumber = queryStringParameters.get('weeklyNumber', None)
         return json.dumps(self.get_weekly_menu.execute(auth_username, weeklyNumber))
 
     # @weekly_menus_blueprint.route('/',methods=['POST'])

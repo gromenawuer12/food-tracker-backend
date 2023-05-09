@@ -31,9 +31,9 @@ def resolve(event):
     if re.search('/users/login', event['path']):
         return usersBlueprint.login(event['headers'])
     return eval({
-                    "GET": "usersBlueprint.get(pathParameters=event['pathParameters'], headers=event['headers'])",
+                    "GET": "usersBlueprint.get(queryStringParameters=event['queryStringParameters'], headers=event['headers'])",
                     "POST": "usersBlueprint.post(event['body'])",
-                    "PUT": "usersBlueprint.modify(headers=event['headers'],pathParameters=event['pathParameters'], body=event['body'])"
+                    "PUT": "usersBlueprint.modify(headers=event['headers'],queryStringParameters=event['queryStringParameters'], body=event['body'])"
                 }[event['httpMethod']])
 
 class UsersBlueprint:
@@ -46,8 +46,8 @@ class UsersBlueprint:
 
     @token_optional
     @remove_underscore
-    def get(self, auth_username, pathParameters, headers) -> Response:
-        username = pathParameters.get('username', None)
+    def get(self, auth_username, queryStringParameters, headers) -> Response:
+        username = queryStringParameters.get('username', None)
         return self.get_user.execute(username, auth_username)
 
     def post(self, body) -> Response:
@@ -79,8 +79,8 @@ class UsersBlueprint:
         return {"token": token, "user": user['username']}
 
     @token_required
-    def modify(self, auth_username, pathParameters, headers, body) -> Response:
-        username = pathParameters.get('username', None)
+    def modify(self, auth_username, queryStringParameters, headers, body) -> Response:
+        username = queryStringParameters.get('username', None)
         if auth_username != username:
             raise Exception
         user = self.login_user.execute(username)

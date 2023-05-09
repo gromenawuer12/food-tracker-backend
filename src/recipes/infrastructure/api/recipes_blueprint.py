@@ -11,7 +11,7 @@ from ....resources.token.token_required_decorator import token_required
 def resolve(event):
     recipesBlueprint = RecipesBlueprint()
     return eval({
-                    "GET": "recipesBlueprint.get(headers=event['headers'], pathParameters=event['pathParameters'])",
+                    "GET": "recipesBlueprint.get(headers=event['headers'], queryStringParameters=event['queryStringParameters'])",
                     "POST": "recipesBlueprint.post(headers=event['headers'], body=event['body'])",
                     "DELETE": "recipesBlueprint.delete(headers=event['headers'], body=event['body'])"
                 }[event['httpMethod']])
@@ -27,8 +27,8 @@ class RecipesBlueprint:
     # @recipes_blueprint.route('/',methods=['GET'], defaults={'name': None})
     # @recipes_blueprint.route('/<name>',methods=['GET'])
     @token_required
-    def get(self, auth_username, pathParameters, headers) -> Response:
-        name = pathParameters.get("name", None)
+    def get(self, auth_username, queryStringParameters, headers) -> Response:
+        name = queryStringParameters.get("name", None)
         return json.dumps(self.get_recipe.execute(name))
 
     # @recipes_blueprint.route('/',methods=['POST'])
@@ -44,8 +44,8 @@ class RecipesBlueprint:
         return self.delete_recipe.execute(name)
 
     @token_required
-    def modify(self, auth_username, pathParameters, headers, body) -> Response:
-        name = pathParameters.get('name', None)
+    def modify(self, auth_username, queryStringParameters, headers, body) -> Response:
+        name = queryStringParameters.get('name', None)
         if name is None:
             raise Exception
         recipe = self.get_recipe.execute(name)

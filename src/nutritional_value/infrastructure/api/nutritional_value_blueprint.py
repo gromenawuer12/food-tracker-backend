@@ -11,7 +11,7 @@ from ....resources.token.token_required_decorator import token_required
 def resolve(event):
     nutritonalValuesBlueprint = NutritionalValueBlueprint()
     return eval({
-                    "GET": "nutritonalValuesBlueprint.get(headers=event['headers'], pathParameters=event['pathParameters'])",
+                    "GET": "nutritonalValuesBlueprint.get(headers=event['headers'], queryStringParameters=event['queryStringParameters'])",
                     "POST": "nutritonalValuesBlueprint.post(headers=event['headers'], body=event['body'])",
                     "DELETE": "nutritonalValuesBlueprint.delete(headers=event['headers'], body=event['body'])"
                 }[event['httpMethod']])
@@ -28,8 +28,8 @@ class NutritionalValueBlueprint:
     # @nutritional_value_blueprint.route('/',methods=['GET'], defaults={'shortname': None})
     # @nutritional_value_blueprint.route('/<shortname>',methods=['GET'])
     @token_required
-    def get(self, auth_username, pathParameters, headers) -> Response:
-        shortname = pathParameters.get("shortname", None)
+    def get(self, auth_username, queryStringParameters, headers) -> Response:
+        shortname = queryStringParameters.get("shortname", None)
         return json.dumps(self.get_nutritional_value.execute(shortname))
 
     # @nutritional_value_blueprint.route('/',methods=['POST'])
@@ -46,8 +46,8 @@ class NutritionalValueBlueprint:
         return self.delete_nutritional_value.execute(shortname)
 
     @token_required
-    def modify(self, auth_username, pathParameters, headers, body) -> Response:
-        shortname = pathParameters.get('shortname', None)
+    def modify(self, auth_username, queryStringParameters, headers, body) -> Response:
+        shortname = queryStringParameters.get('shortname', None)
         if shortname is None:
             raise Exception
         nutritional_value = self.get_nutritional_value.execute(shortname)

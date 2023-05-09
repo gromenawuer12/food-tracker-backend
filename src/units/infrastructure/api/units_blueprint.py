@@ -11,7 +11,7 @@ from ....resources.token.token_required_decorator import token_required
 def resolve(event):
     unitsBlueprint = UnitsBlueprint()
     return eval({
-                    "GET": "unitsBlueprint.get(headers=event['headers'], pathParameters=event['pathParameters'])",
+                    "GET": "unitsBlueprint.get(headers=event['headers'], queryStringParameters=event['queryStringParameters'])",
                     "POST": "unitsBlueprint.post(headers=event['headers'], body=event['body'])",
                     "DELETE": "unitsBlueprint.delete(headers=event['headers'], body=event['body'])"
                 }[event['httpMethod']])
@@ -27,8 +27,8 @@ class UnitsBlueprint:
     # @units_blueprint.route('/',methods=['GET'], defaults={'shortname': None})
     # @units_blueprint.route('/<shortname>',methods=['GET'])
     @token_required
-    def get(self, auth_username, pathParameters, headers) -> Response:
-        shortname = pathParameters.get('shortname', None)
+    def get(self, auth_username, queryStringParameters, headers) -> Response:
+        shortname = queryStringParameters.get('shortname', None)
         return json.dumps(self.get_unit.execute(shortname))
 
     # @units_blueprint.route('/',methods=['POST'])
@@ -44,8 +44,8 @@ class UnitsBlueprint:
         return self.delete_unit.execute(shortname)
 
     @token_required
-    def modify(self, auth_username, pathParameters, headers, body) -> Response:
-        shortname = pathParameters.get('shortname', None)
+    def modify(self, auth_username, queryStringParameters, headers, body) -> Response:
+        shortname = queryStringParameters.get('shortname', None)
         if shortname is None:
             raise Exception
         unit = self.get_unit.execute(shortname)
