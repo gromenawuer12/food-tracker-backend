@@ -31,7 +31,7 @@ def resolve(event):
     if re.search('/users/login', event['path']):
         return usersBlueprint.login(event['headers'])
     return eval({
-                    "GET": "usersBlueprint.get(pathParameters=event['pathParameters'], headers=event['headers'])",
+                    "GET": "usersBlueprint.get(headers=event['headers'])",
                     "POST": "usersBlueprint.post(event['body'])",
                     "PUT": "usersBlueprint.modify(headers=event['headers'],pathParameters=event['pathParameters'], body=event['body'])"
                 }[event['httpMethod']])

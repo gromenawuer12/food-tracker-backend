@@ -32,18 +32,7 @@ class UserDynamoDB(UserDatabase):
                 'PK': 'user',
                 'SK': username
             },
-            ProjectionExpression="username"
-        )
-        if 'Item' not in response:
-            raise UserException("User not found", 404)
-        return response['Item']
-
-    def findPrivate(self, username):
-        response = self.table.get_item(
-            Key={
-                'PK': 'user',
-                'SK': username
-            }
+            ProjectionExpression="username, password"
         )
         if 'Item' not in response:
             raise UserException("User not found", 404)
