@@ -47,9 +47,9 @@ class MenusBlueprint:
         recipesBlueprint = RecipesBlueprint()
         productsBlueprint = ProductsBlueprint()
         for recipe in recipes:
-            products += json.loads(recipesBlueprint.get(pathParameters={"name": recipe}, headers=headers)).get("products")
+            products += recipesBlueprint.get(pathParameters={"name": recipe}, headers=headers).get("products")
         for product in products:
-            nutritional_value += json.loads(productsBlueprint.get(pathParameters={"name": product[0]}, headers=headers)).get("nutritional_value")
+            nutritional_value += productsBlueprint.get(pathParameters={"name": product[0]}, headers=headers).get("nutritional_value")
         response["nutritional_value"] = nutritional_value
         return self.add_menu.execute(Menu(json.loads(json.dumps(response), object_hook=lambda d: SimpleNamespace(**d).__dict__)))
     
