@@ -30,8 +30,8 @@ class MenuDynamoDB(MenuDatabase):
         print(user)
         if ',' in user:
             user_list = user.split(',')
-            user_list_parsed = ' OR PK = menu#'.join(user_list)
-            user_list_parsed = '(PK = menu#' + user_list_parsed
+            user_list_parsed = ' OR PK = '.join(user_list)
+            user_list_parsed = '(PK = ' + user_list_parsed
         else:
             user_list_parsed = '(PK = ' + user + ''
         print(user_list_parsed)
