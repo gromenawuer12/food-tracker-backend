@@ -28,7 +28,7 @@ class MenuDynamoDB(MenuDatabase):
 
     def find(self, user, fromDate, toDate):
         print(user)
-        if user.indexOf(',') > -1:
+        if ',' in user:
             user_list = user.split(',')
             user_list_parsed = ' OR PK = menu#'.join(user_list)
             user_list_parsed = 'PK = menu#' + user_list_parsed
