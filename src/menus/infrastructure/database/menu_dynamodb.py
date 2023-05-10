@@ -37,12 +37,11 @@ class MenuDynamoDB(MenuDatabase):
                     '#pk': 'PK',
                     '#sk': 'SK',
                     '#dt': 'date',
-                    ':user': user
                 },
                 ExpressionAttributeValues={
-                    ':pk_value': "menu#"+user,
                     ':start_date': fromDate,
-                    ':end_date': toDate
+                    ':end_date': toDate,
+                    ':user': 'menu#'+user
                 },
                 ProjectionExpression="#dt, recipes, nutritional_value, isLocked, PK",
             )
