@@ -27,29 +27,27 @@ class MenuDynamoDB(MenuDatabase):
         return "Added"
 
     def find(self, user, fromDate, toDate):
-        print(user)
-        if ',' in user:
-            user_list = user.split(',')
-            user_list_parsed = ' OR PK = '.join(user_list)
-            user_list_parsed = '(PK = ' + user_list_parsed
-        else:
-            user_list_parsed = '(PK = ' + user + ''
-        print(user_list_parsed)
-        response = self.table.query(
-            KeyConditionExpression=user_list_parsed + ') AND #sk BETWEEN :start_date AND :end_date',
-            ExpressionAttributeNames={
-                '#sk': 'SK',
-                '#dt': 'date'
-            },
-            ExpressionAttributeValues={
-                ':start_date': fromDate,
-                ':end_date': toDate
-            },
-            ProjectionExpression="#dt, recipes, nutritional_value, isLocked, PK",
-        )
-        if 'Items' not in response:
-            return []
-        return response['Items']
+        user_list = user.split(',')
+
+        results = []
+        for user in user_list:
+            response = self.table.query(
+                KeyConditionExpression='#pk = :user AND #sk BETWEEN :start_date AND :end_date',
+                ExpressionAttributeNames={
+                    '#pk': 'PK',
+                    '#sk': 'SK',
+                    '#dt': 'date',
+                    ':user': user
+                },
+                ExpressionAttributeValues={
+                    ':pk_value': "menu#"+user,
+                    ':start_date': fromDate,
+                    ':end_date': toDate
+                },
+                ProjectionExpression="#dt, recipes, nutritional_value, isLocked, PK",
+            )
+            results.extend(response['Items'])
+        return results
 
     def findByDate(self, fromDate, toDate):
         partition_key_prefix = 'menu'
