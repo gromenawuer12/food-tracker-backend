@@ -27,10 +27,12 @@ class MenuDynamoDB(MenuDatabase):
         return "Added"
 
     def find(self, user, fromDate, toDate):
-        user_list = user.split(',')
-        user_list_parsed = ' OR PK = menu#'.join(user_list)
-        user_list_parsed = 'PK = menu#' + user_list_parsed
-
+        if user.indexOf(',') > -1:
+            user_list = user.split(',')
+            user_list_parsed = ' OR PK = menu#'.join(user_list)
+            user_list_parsed = 'PK = menu#' + user_list_parsed
+        else:
+            user_list_parsed = 'PK = ' + user
         response = self.table.query(
             KeyConditionExpression=user_list_parsed + ' AND #sk BETWEEN :start_date AND :end_date',
             ExpressionAttributeNames={
