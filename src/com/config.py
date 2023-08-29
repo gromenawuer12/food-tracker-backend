@@ -36,4 +36,5 @@ def configure_inject(request_id) -> None:
         binder.bind(MenuDatabase, MenuDynamoDB(client))
         binder.bind(RecipeDatabase, RecipeDynamoDB(client))
 
-    inject.configure(config)
+    if not inject.is_configured():
+        inject.configure(config)
