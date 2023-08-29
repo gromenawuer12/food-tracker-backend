@@ -3,15 +3,15 @@ import sys
 
 import inject
 
-from com.utils.log import Log
+from .com.utils.log import Log
 
 try:
-    from com.route_method_resolve import resolve
+    from .com.route_method_resolve import resolve
 except Exception as err:
     print('ERROR -> Route resolver: {0}'.format(err))
     raise
 try:
-    from com.config import configure_inject
+    from .com.config import configure_inject
 except Exception as err:
     print('ERROR -> Configure inject: {0}'.format(err))
     raise
