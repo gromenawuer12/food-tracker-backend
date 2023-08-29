@@ -1,5 +1,0 @@
-inject
-PyJWT
-boto3
-requests
-werkzeug
