@@ -1,0 +1,29 @@
+{
+  "food-tracker": [
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Remolacha"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"43"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"1"},{"S":"6"}]}]},"description":{"S":""},"name":{"S":"Remolacha"},"supermarket":{"L":[{"S":"Fruteria"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Soja Texturizada"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"340"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"52"}]}]},"description":{"S":""},"name":{"S":"Soja Texturizada"},"supermarket":{"L":[{"S":"Carrefour"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Tahini"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"595"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"17"}]}]},"description":{"S":"Pasta de sesamo"},"name":{"S":"Tahini"},"supermarket":{"L":[{"S":"Carrefour"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Tomate"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"18"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"0"},{"S":"9"}]}]},"description":{"S":""},"name":{"S":"Tomate"},"supermarket":{"L":[{"S":"Frurteria"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Tomate Frito"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"102"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"2"}]}]},"description":{"S":""},"name":{"S":"Tomate Frito"},"supermarket":{"L":[{"S":"Fruteria"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Tortita Burrito"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"316"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"8"}]}]},"description":{"S":""},"name":{"S":"Tortita Burrito"},"supermarket":{"L":[{"S":"Carrefour"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Veggi Burger Gerble"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"245"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"27"}]}]},"description":{"S":""},"name":{"S":"Veggi Burger Gerble"},"supermarket":{"L":[{"S":"Carrefour"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Zumo de limón"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"22"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"0"},{"S":"4"}]}]},"description":{"S":""},"name":{"S":"Zumo de limón"},"supermarket":{"L":[{"S":"Fruteria"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"huevos"},"nutritional_value":{"L":[{"L":[{"S":"calories"},{"S":"g"},{"S":"100"}]}]},"description":{"S":"huevos"},"name":{"S":"huevos"},"supermarket":{"L":[{"S":"Mercadona"},{"S":"Eroski"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"patatas"},"nutritional_value":{"L":[{"L":[{"S":"calories"},{"S":"g"},{"S":"100"}]}]},"description":{"S":"patatas"},"name":{"S":"patatas"},"supermarket":{"L":[{"S":"Carrefour"},{"S":"Mercadona"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"nutritional value"},"SK":{"S":"Kcal"},"unit":{"S":"Kcal"},"shortname":{"S":"Kcal"},"name":{"S":"Kilocalorías"}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"nutritional value"},"SK":{"S":"cal"},"unit":{"S":"g"},"shortname":{"S":"cal"},"name":{"S":"calories"}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"nutritional value"},"SK":{"S":"pro"},"unit":{"S":"g"},"shortname":{"S":"pro"},"name":{"S":"protein"}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"monthly_menu#test"},"SK":{"S":"2023-02"},"monthlyNumber":{"S":"2023-02"},"nutritional_value":{"M":{"calories":{"S":"200"}}}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"weekly_menu#test"},"SK":{"S":"2023-6"},"nutritional_value":{"M":{"calories":{"S":"200"}}},"weeklyNumber":{"S":"2023-6"}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"menu#test"},"SK":{"S":"2023-02-08"},"recipes":{"L":[{"S":"tortilla de patatas"}]},"date":{"S":"2023-02-08"},"nutritional_value":{"M":{"calories":{"S":"200"}}},"isLocked":{"BOOL":true}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"menu#Roma"},"SK":{"S":"2023-04-04"},"recipes":{"L":[]},"date":{"S":"2023-04-04"},"isLocked":{"BOOL":false},"nutritional_value":{"M":{}}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"unit"},"SK":{"S":"Kcal"},"shortname":{"S":"Kcal"},"name":{"S":"Kilocalorías"}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"unit"},"SK":{"S":"g"},"shortname":{"S":"g"},"name":{"S":"gram"}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"unit"},"SK":{"S":"kg"},"shortname":{"S":"kg"},"name":{"S":"kilogram"}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"weekly_menu#roma"},"SK":{"S":"2023-19"},"nutritional_value":{"M":{}},"weeklyNumber":{"S":"2023-19"}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"weekly_menu#roma"},"SK":{"S":"2023-20"},"nutritional_value":{"M":{"Kilocalorías":{"S":"512"},"protein":{"S":"5"}}},"weeklyNumber":{"S":"2023-20"}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"menu#roma"},"SK":{"S":"2023-05-14"},"recipes":{"L":[]},"date":{"S":"2023-05-14"},"nutritional_value":{"M":{}},"isLocked":{"BOOL":true}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"menu#roma"},"SK":{"S":"2023-05-18"},"recipes":{"L":[{"S":"Galletas + fruta"}]},"date":{"S":"2023-05-18"},"nutritional_value":{"M":{"Kilocalorías":{"S":"512"},"protein":{"S":"5"}}},"isLocked":{"BOOL":true}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"menu#roma"},"SK":{"S":"2023-05-19"},"recipes":{"L":[{"S":"Galletas + fruta"}]},"date":{"S":"2023-05-19"},"nutritional_value":{"M":{"Kilocalorías":{"S":"512"},"protein":{"S":"5"}}},"isLocked":{"BOOL":true}}}}
+  ]
+}

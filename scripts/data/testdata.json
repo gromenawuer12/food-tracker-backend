@@ -1,69 +1,27 @@
 {
   "food-tracker": [
-    {
-      "PutRequest": {
-        "Item": {
-          "PK": { "S": "user" },
-          "SK": { "S": "Pepito" },
-          "username": { "S": "Pepito" },
-          "password": { "S": "" },
-          "role": { "S": "user" }
-        }
-      }
-    },
-    {
-      "PutRequest": {
-        "Item": {
-          "PK": { "S": "user" },
-          "SK": { "S": "John" },
-          "username": { "S": "John" },
-          "password": { "S": "" },
-          "role": { "S": "admin" }
-        }
-      }
-    },
-    {
-      "PutRequest": {
-        "Item": {
-          "PK": { "S": "user" },
-          "SK": { "S": "test" },
-          "username": { "S": "test" },
-          "password": {
-            "S": "sha256$3xOARts1mLQGVSBk$02ffdf6493fbeb6259ec11cdd411907da0282224cde41306dffe1bb912ef1214"
-          },
-          "role": { "S": "test" }
-        }
-      }
-    },
-    {
-      "PutRequest": {
-        "Item": {
-          "PK": { "S": "unit" },
-          "SK": { "S": "kg" },
-          "shortname": { "S": "kg" },
-          "name": { "S": "kilogram" }
-        }
-      }
-    },
-    {
-      "PutRequest": {
-        "Item": {
-          "PK": { "S": "unit" },
-          "SK": { "S": "g" },
-          "shortname": { "S": "g" },
-          "name": { "S": "gram" }
-        }
-      }
-    },
-    {
-      "PutRequest": {
-        "Item": {
-          "PK": { "S": "unit" },
-          "SK": { "S": "mg" },
-          "shortname": { "S": "mg" },
-          "name": { "S": "milligram" }
-        }
-      }
-    }
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Aceite de Oliva"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"884"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"0"}]}]},"description":{"S":""},"name":{"S":"Aceite de Oliva"},"supermarket":{"L":[{"S":"Carrefour"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Aguacate"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"160"}]}]},"description":{"S":""},"name":{"S":"Aguacate"},"supermarket":{"L":[{"S":"Fruteria"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Almendra"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"576"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"21"}]}]},"description":{"S":""},"name":{"S":"Almendra"},"supermarket":{"L":[{"S":"Lidl"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Alubias"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"349"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"19"}]}]},"description":{"S":""},"name":{"S":"Alubias"},"supermarket":{"L":[]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Arroz Basmati"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"355"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"9"}]}]},"description":{"S":""},"name":{"S":"Arroz Basmati"},"supermarket":{"L":[{"S":"Carrefour"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Avena"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"389"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"16"},{"S":"89"}]}]},"description":{"S":""},"name":{"S":"Avena"},"supermarket":{"L":[{"S":"Herbolario"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Barra pan"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"289"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"12"}]}]},"description":{"S":""},"name":{"S":"Barra pan"},"supermarket":{"L":[{"S":"Panaderia"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Champiñones"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"22"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"3"}]}]},"description":{"S":""},"name":{"S":"Champiñones"},"supermarket":{"L":[{"S":"Fruteria"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Chia"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"486"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"17"}]}]},"description":{"S":""},"name":{"S":"Chia"},"supermarket":{"L":[{"S":"Carrefour"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Chocolate con leche"},"nutritional_value":{"L":[{"L":[{"S":"calories"},{"S":"g"},{"S":"485"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"4"},{"S":"2"}]}]},"description":{"S":""},"name":{"S":"Chocolate con leche"},"supermarket":{"L":[{"S":"Viajes"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Fibra de Avena"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"353"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"11"},{"S":"72"}]}]},"description":{"S":""},"name":{"S":"Fibra de Avena"},"supermarket":{"L":[{"S":"Carrefour"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Fresa"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"32"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"0"},{"S":"67"}]}]},"description":{"S":""},"name":{"S":"Fresa"},"supermarket":{"L":[{"S":"Mercado"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Galletas"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"480"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"5"},{"S":"9"}]}]},"description":{"S":""},"name":{"S":"Galletas"},"supermarket":{"L":[{"S":"Francia"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Garbanzos"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"364"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"19"}]}]},"description":{"S":"Garbanzos en seco"},"name":{"S":"Garbanzos"},"supermarket":{"L":[{"S":"Carrefour"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Hambuerguesa Heura"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"180"}]}]},"description":{"S":""},"name":{"S":"Hambuerguesa Heura"},"supermarket":{"L":[{"S":"Carrefour"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Jamón Iberico"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"335"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"33"},{"S":"5"}]}]},"description":{"S":""},"name":{"S":"Jamón Iberico"},"supermarket":{"L":[]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Lechuga"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"15"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"1"},{"S":"4"}]}]},"description":{"S":""},"name":{"S":"Lechuga"},"supermarket":{"L":[{"S":"Fruteria"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Lino"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"534"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"18"}]}]},"description":{"S":""},"name":{"S":"Lino"},"supermarket":{"L":[{"S":"Carrefour"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Manzana"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"52"}]}]},"description":{"S":""},"name":{"S":"Manzana"},"supermarket":{"L":[{"S":"Fruteria"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Mediterranean Pieces"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"171"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"17"},{"S":"7"}]}]},"description":{"S":""},"name":{"S":"Mediterranean Pieces"},"supermarket":{"L":[]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Pan de hamburguesa"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"300"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"9"},{"S":"4"}]}]},"description":{"S":""},"name":{"S":"Pan de hamburguesa"},"supermarket":{"L":[{"S":"Panaderia"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Pan pita"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"348"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"8"},{"S":"7"}]}]},"description":{"S":""},"name":{"S":"Pan pita"},"supermarket":{"L":[{"S":"Carrefour"}]}}}},
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Queso azul"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"341"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"19"},{"S":"7"}]}]},"description":{"S":""},"name":{"S":"Queso azul"},"supermarket":{"L":[{"S":"Francia"}]}}}}
   ]
 }
