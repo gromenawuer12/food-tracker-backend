@@ -10,7 +10,7 @@ jobs:
       - checkout
       - run: rm -f "package.zip"
       - run: pip3 install --platform manylinux2014_x86_64 --implementation cp --python-version 3.9 --only-binary=':all:' --upgrade -r "src/requirements.txt" --target "package"
-      - run: cp -r src package
+      - run: cp -r src/. package
       - run: cd "package" && zip -r "../package.zip" * -x '*__pycache__*'
       - run: rm -rf "package"
       - persist_to_workspace:

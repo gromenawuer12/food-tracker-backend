@@ -1,2 +1,2 @@
 #!/bin/sh
-rm -f "../package.zip" && pip3 install -r "../src/requirements.txt" --target "../package" && cp -r ../src ../package/src && cd "../package" && zip -r "../package.zip" * -x '*__pycache__*' && cd "../src" && zip -r "../package.zip" * -x '*__pycache__*' && cd ".."
+rm -f "../package.zip" && pip3 install -r "../src/requirements.txt" --target "../package" && cp -r ../src/. ../package && cd "../package" && zip -r "../package.zip" * -x '*__pycache__*' && cd "../src" && zip -r "../package.zip" * -x '*__pycache__*' && cd ".."
