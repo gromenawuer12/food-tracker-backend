@@ -37,8 +37,7 @@ class ProductsBlueprint:
 
     @token_required
     def delete(self, event):
-        body = json.loads(event['pathParameters'])
-        name = body.get("name", None)
+        name = json.loads(event['body']).get("name", None)
         return self.delete_product.execute(name)
 
     @token_required
@@ -47,7 +46,7 @@ class ProductsBlueprint:
         if name is None:
             raise Exception
         product = self.get_product.execute(name)
-        body = json.loads(event['pathParameters'])
+        body = json.loads(event['body'])
         new_nutritional_value = body.get("new_nutritional_value", product["nutritional_value"])
         new_name = body.get("new_name", product["name"])
         new_description = body.get("new_description", product["description"])
