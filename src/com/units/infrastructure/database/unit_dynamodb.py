@@ -1,6 +1,5 @@
-import inject
+import json
 
-from ....utils.log import Log
 from ...domain.unit_database import UnitDatabase
 from ...domain.unit_exception import UnitException
 from botocore.exceptions import ClientError
@@ -25,7 +24,7 @@ class UnitDynamoDB(UnitDatabase):
             )
         except ClientError as e:
             if e.response['Error']['Code'] == 'ConditionalCheckFailedException':
-                raise UnitException("There is a conflict to create this resource", 409)
+                raise UnitException("Unit {0} can not be created because exist".format(json.dumps(unit.__dict__)), 409)
 
     def find_all(self):
         response = self.table.query(

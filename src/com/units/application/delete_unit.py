@@ -7,5 +7,5 @@ class DeleteUnit:
     def __init__(self, database: UnitDatabase):
         self.__database = database
 
-    def execute(self, shortname) -> str:
+    def execute(self, shortname):
         self.__database.delete(shortname)

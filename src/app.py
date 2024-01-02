@@ -2,6 +2,7 @@ import json
 import sys
 
 import inject
+import jwt
 
 from com.utils.log import Log
 
@@ -27,27 +28,50 @@ def lambda_handler(event, context):
 def __manage_lambda(event, log: Log):
     log.debug('manage_lambda')
     try:
-        resolved = resolve(event)
+        response = resolve(event)
+        if response is None:
+            return {
+                'statusCode': 204,
+                'headers': {
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*'
+                },
+                'isBase64Encoded': False
+            }
+        else:
+            return {
+                'statusCode': 200,
+                'headers': {
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*'
+                },
+                'body': json.dumps(response),
+                'isBase64Encoded': False
+            }
+    except jwt.exceptions.ExpiredSignatureError :
+        log.error('Token timeout')
         return {
-            'statusCode': 200,
-            'headers': {
-                'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': '*'
-            },
-            'body': json.dumps(resolved),
-            'isBase64Encoded': False
-        }
-    except Exception as err:
-        ex_type, ex_value, ex_traceback = sys.exc_info()
-        log.error('Error lambda_handler: {0} {1} {2}'.format(ex_type, str(err), ex_traceback))
-        return {
-            'statusCode': 500,
+            'statusCode': 419,
             'headers': {
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*'
             },
             'body': json.dumps({
-                'description': str(err)
+                'description': str('Token timeout')
+            }),
+            'isBase64Encoded': False
+        }
+    except Exception as error:
+        ex_type, ex_value, ex_traceback = sys.exc_info()
+        log.error('Error lambda_handler: {0} {1} {2}'.format(ex_type, str(error), ex_traceback))
+        return {
+            'statusCode': error.status_code if hasattr(error, 'status_code') else 500,
+            'headers': {
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
+            },
+            'body': json.dumps({
+                'description': str(error.message) if hasattr(error, 'message') else str(error)
             }),
             'isBase64Encoded': False
         }

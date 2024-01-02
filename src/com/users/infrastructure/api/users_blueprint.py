@@ -7,7 +7,6 @@ import inject
 import jwt
 
 from ...application.get_user import GetUser
-from ....menus.application.block_menu import BlockMenu
 from ....utils.log import Log
 from ...application.login_user import LoginUser
 from ...infrastructure.api.login_exception import LoginException

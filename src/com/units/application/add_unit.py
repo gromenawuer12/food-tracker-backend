@@ -8,5 +8,5 @@ class AddUnit:
     def __init__(self, database: UnitDatabase):
         self.__database = database
 
-    def execute(self, unit: Unit) -> str:
+    def execute(self, unit: Unit):
         self.__database.create(unit)

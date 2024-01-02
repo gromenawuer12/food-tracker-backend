@@ -1,4 +1,5 @@
 import re
+import sys
 
 import inject
 
@@ -15,8 +16,8 @@ from .utils.log import Log
 paths = {
     r"\/users.*": users_resolve,
     r"\/weekly_menus.*": weekly_menu_resolver,
-    r"\/monthly_menus/.*": monthly_menu_resolver,
-    r"\/units/.*": unit_resolver,
+    r"\/monthly_menus.*": monthly_menu_resolver,
+    r"\/units.*": unit_resolver,
     r"\/nutritional_value.*": nutritional_values_resolver,
     r"\/products.*": products_resolver,
     r"\/menus.*": menus_resolver,
@@ -31,9 +32,12 @@ def resolve(event, log: Log):
         if re.search(key, event['path']):
             try:
                 return paths[key](event)
-            except KeyError as err:
+            except KeyError as key_error:
+                ex_type, ex_value, ex_traceback = sys.exc_info()
+                log.error('Error resolving: {0} {1} {2}'.format(ex_type, str(key_error), ex_traceback))
+
                 error = 'Operation {0} not supported for {1}'.format(event['httpMethod'], event['path'])
                 log.error(error)
-                raise Exception(error)
+                raise Exception(error, key_error)
     log.debug('Path not supported: "{0}"'.format(event['path']))
     raise Exception('Path not supported: "{0}"'.format(event['path']))

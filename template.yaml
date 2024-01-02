@@ -38,7 +38,7 @@ Resources:
           SECRET_KEY: S3CR3T
           LOG_LEVEL: TRACE
           REGION_NAME: us-west-1
-          DB_URL: http://192.168.1.131:8000
+          DB_URL: http://192.168.1.65:8000
           ACCESS_KEY_ID: X
           SECRET_ACCESS_KEY: X
 
