@@ -34,7 +34,7 @@ class UsersBlueprint:
         return self.get_user.execute()
 
     def login(self, headers):
-        self.log.debug('UsersBlueprint - login')
+        self.log.debug('UsersBlueprint: login')
         auth = base64.b64decode(headers['Authorization'].split(' ')[1]).decode('utf-8')
         if auth is None:
             raise LoginException("Invalid login")

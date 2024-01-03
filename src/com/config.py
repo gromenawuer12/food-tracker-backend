@@ -26,12 +26,13 @@ def configure_inject(request_id) -> None:
 
     def config(binder: inject.Binder) -> None:
         print(request_id + ' -> configure_inject')
-        binder.bind(Log, Log(request_id))
+        log = Log(request_id)
+        binder.bind(Log, log)
         binder.bind(UserDatabase, UserDynamoDB(client))
         binder.bind(WeeklyMenuDatabase, WeeklyMenuDynamoDB(client))
         binder.bind(MonthlyMenuDatabase, MonthlyMenuDynamoDB(client))
         binder.bind(UnitDatabase, UnitDynamoDB(client))
-        binder.bind(NutritionalValueDatabase, NutritionalValueDynamoDB(client))
+        binder.bind(NutritionalValueDatabase, NutritionalValueDynamoDB(client, log))
         binder.bind(ProductDatabase, ProductDynamoDB(client))
         binder.bind(MenuDatabase, MenuDynamoDB(client))
         binder.bind(RecipeDatabase, RecipeDynamoDB(client))

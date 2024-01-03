@@ -15,10 +15,10 @@ from .utils.log import Log
 
 paths = {
     r"\/users.*": users_resolve,
-    r"\/weekly_menus.*": weekly_menu_resolver,
-    r"\/monthly_menus.*": monthly_menu_resolver,
+    r"\/weekly-menus.*": weekly_menu_resolver,
+    r"\/monthly-menus.*": monthly_menu_resolver,
     r"\/units.*": unit_resolver,
-    r"\/nutritional_value.*": nutritional_values_resolver,
+    r"\/nutritional-value.*": nutritional_values_resolver,
     r"\/products.*": products_resolver,
     r"\/menus.*": menus_resolver,
     r"\/recipes.*": recipes_resolver,

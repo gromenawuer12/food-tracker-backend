@@ -1,4 +1,4 @@
 class NutritionalValueException(Exception):
-    def __init__(self, message, statusCode):
+    def __init__(self, message, status_code):
         self.message = message
-        self.statusCode = statusCode
+        self.status_code = status_code

@@ -40,7 +40,6 @@ class UnitsBlueprint:
         body = json.loads(event['body'])
         self.log.debug(body)
         self.add_unit.execute(Unit(body))
-        return {}
 
     @token_required
     def delete(self, event):
