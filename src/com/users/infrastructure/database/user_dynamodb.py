@@ -39,7 +39,7 @@ class UserDynamoDB(UserDatabase):
         if 'Item' not in response:
             raise UserException("User not found", 404)
 
-        self.log.trace('UserDynamoDB find: {0}', response['Item'])
+        self.log.trace('UserDynamoDB found')
 
         return response['Item']
 
