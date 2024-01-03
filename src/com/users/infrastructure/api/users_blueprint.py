@@ -36,11 +36,14 @@ class UsersBlueprint:
     def login(self, headers):
         self.log.debug('UsersBlueprint: login')
         auth = base64.b64decode(headers['Authorization'].split(' ')[1]).decode('utf-8')
+
         if auth is None:
             raise LoginException("Invalid login")
+
         username = auth.split(':')[0]
         password = auth.split(':')[1]
         user = self.login_user.execute(username, password)
+        self.log.trace('UsersBlueprint login: user logged')
 
         token = jwt.encode({
             'username': user['username'],
@@ -48,5 +51,6 @@ class UsersBlueprint:
             os.getenv('SECRET_KEY'),
             algorithm="HS256"
         )
+        self.log.trace('UsersBlueprint login: Token generated')
 
         return {"token": token, "user": user['username']}

@@ -4,9 +4,10 @@ from botocore.exceptions import ClientError
 
 
 class UserDynamoDB(UserDatabase):
-    def __init__(self, client):
+    def __init__(self, client, log):
         self.client = client
         self.table = self.client.Table('food-tracker')
+        self.log = log
 
     def create(self, user):
         try:
@@ -26,6 +27,7 @@ class UserDynamoDB(UserDatabase):
         return "Added"
 
     def find(self, username):
+        self.log.trace('UserDynamoDB find: {0}', username)
         response = self.table.get_item(
             Key={
                 'PK': 'user',
@@ -33,8 +35,12 @@ class UserDynamoDB(UserDatabase):
             },
             ProjectionExpression="username, password"
         )
+
         if 'Item' not in response:
             raise UserException("User not found", 404)
+
+        self.log.trace('UserDynamoDB find: {0}', response['Item'])
+
         return response['Item']
 
     def findAll(self):

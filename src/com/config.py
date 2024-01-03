@@ -28,7 +28,7 @@ def configure_inject(request_id) -> None:
         print(request_id + ' -> configure_inject')
         log = Log(request_id)
         binder.bind(Log, log)
-        binder.bind(UserDatabase, UserDynamoDB(client))
+        binder.bind(UserDatabase, UserDynamoDB(client, log))
         binder.bind(WeeklyMenuDatabase, WeeklyMenuDynamoDB(client))
         binder.bind(MonthlyMenuDatabase, MonthlyMenuDynamoDB(client))
         binder.bind(UnitDatabase, UnitDynamoDB(client))
