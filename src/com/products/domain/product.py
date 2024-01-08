@@ -3,5 +3,12 @@ class Product():
         self.name = params['name']
         self.nutritional_value = params['nutritional_value']
         self.description = params['description']
-        self.supermarket = params['supermarket']
-        
+        self.supermarket = params['supermarket'] if 'supermarket' in params else None
+
+    def to_json(self):
+        return {
+            "name": self.name,
+            "description": self.description,
+            "supermarket": self.supermarket,
+            "nutritional_value": self.nutritional_value
+        }

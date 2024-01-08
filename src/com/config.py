@@ -33,7 +33,7 @@ def configure_inject(request_id) -> None:
         binder.bind(MonthlyMenuDatabase, MonthlyMenuDynamoDB(client))
         binder.bind(UnitDatabase, UnitDynamoDB(client))
         binder.bind(NutritionalValueDatabase, NutritionalValueDynamoDB(client, log))
-        binder.bind(ProductDatabase, ProductDynamoDB(client))
+        binder.bind(ProductDatabase, ProductDynamoDB(client, log))
         binder.bind(MenuDatabase, MenuDynamoDB(client))
         binder.bind(RecipeDatabase, RecipeDynamoDB(client))
 

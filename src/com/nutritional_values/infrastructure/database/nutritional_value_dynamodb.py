@@ -36,7 +36,7 @@ class NutritionalValueDynamoDB(NutritionalValueDatabase):
         )
         if 'Items' not in response:
             return []
-        return response['Items']
+        return {'items': response['Items']}
 
     def find(self, shortname):
         response = self.table.get_item(

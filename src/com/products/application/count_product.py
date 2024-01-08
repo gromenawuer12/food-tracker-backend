@@ -1,11 +1,11 @@
 import inject
 from ..domain.product_database import ProductDatabase
 
-class DeleteProduct:
+
+class CountProduct:
     @inject.autoparams()
     def __init__(self, database: ProductDatabase):
         self.__database = database
 
-    def execute(self, name) -> str:
-        self.__database.delete(name)
-        return "Deleted"
+    def execute(self):
+        return self.__database.count()
