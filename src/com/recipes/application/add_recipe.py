@@ -1,11 +1,12 @@
-import json
-from types import SimpleNamespace
-
 import inject
 from ..domain.recipe import Recipe
 from ..domain.recipe_database import RecipeDatabase
 from ...products.application.get_product import GetProduct
 from ...utils.log import Log
+
+
+def calculate(other, value, grams):
+    return str(float(other) + (float(value) * float(grams) / 100))
 
 
 class AddRecipe:
@@ -15,23 +16,32 @@ class AddRecipe:
         self.__get_product = get_product
         self.__log = log
 
-    def __calculate(self, other, grams, value):
-        return str(float(other) + (float(value) * float(grams) / 100))
-
     def execute(self, recipe: Recipe):
-        nutritional_values_calculated = {}
+        self.__log.trace("AddRecipe: {0}", recipe.to_json())
+        nutritional_value_calculated = {}
         products = recipe.products
         for product in products:
-            nutritional_values = self.__get_product.execute(product[0])['nutritional_value']
-            for nutritional_value in nutritional_values:
-                if nutritional_value[0] not in nutritional_values_calculated:
-                    nutritional_values_calculated[nutritional_value[0]] = \
-                        {'unit': nutritional_value[1],
-                         'value': self.__calculate(0, product[2], nutritional_value[2]),
-                         'name': nutritional_value[0]}
+            self.__log.trace("->AddRecipe calculating for product: {0}", product)
+            obj_product = self.__get_product.execute(product[0]);
+            self.__log.trace("->AddRecipe product found {0}", obj_product)
+            nutritional_value = obj_product['nutritional_value']
+            self.__log.trace("->AddRecipe nutritional_value: {0}", nutritional_value)
+            for nutritional_value_component in nutritional_value:
+                self.__log.trace("-->AddRecipe nutritional_value_component: {0}", nutritional_value_component)
+                if nutritional_value_component[0] not in nutritional_value_calculated:
+                    self.__log.trace("--->AddRecipe nutritional_value_component not calculated")
+                    nutritional_value_calculated[nutritional_value_component[0]] = \
+                        {
+                            'unit': nutritional_value_component[1],
+                            'value': calculate(0, product[2], nutritional_value_component[2]),
+                            'name': nutritional_value_component[0]
+                        }
                 else:
-                    nutritional_values_calculated[nutritional_value[0]]['value'] = self.__calculate(
-                        nutritional_values_calculated[nutritional_value[0]]['value'], product[2], nutritional_value[2])
+                    self.__log.trace("--->AddRecipe nutritional_value_component was calculated")
+                    nutritional_value_calculated[nutritional_value_component[0]]['value'] = calculate(
+                        nutritional_value_calculated[nutritional_value_component[0]]['value'], product[2],
+                        nutritional_value_component[2])
 
-        recipe.nutritional_values = nutritional_values_calculated
+        self.__log.trace("AddRecipe nutritional_value={0}", nutritional_value_calculated)
+        recipe.nutritional_value = nutritional_value_calculated
         self.__database.create(recipe)

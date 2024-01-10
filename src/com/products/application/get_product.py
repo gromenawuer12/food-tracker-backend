@@ -7,7 +7,7 @@ class GetProduct:
     def __init__(self, database: ProductDatabase):
         self.__database = database
 
-    def execute(self, name, last_evaluated_key, items_per_page):
+    def execute(self, name, last_evaluated_key=None, items_per_page=None):
         if name is None:
             response = self.__database.findAll(last_evaluated_key, items_per_page)
         else:

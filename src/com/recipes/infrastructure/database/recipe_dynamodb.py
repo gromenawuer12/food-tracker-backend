@@ -16,8 +16,9 @@ class RecipeDynamoDB(RecipeDatabase):
                     'PK': 'recipe',
                     'SK': recipe.name,
                     'name': recipe.name,
+                    'description': recipe.description,
                     'products': recipe.products,
-                    'nutritional_values': recipe.nutritional_values
+                    'nutritional_value': recipe.nutritional_value
                 },
                 ConditionExpression='attribute_not_exists(SK)'
             )
@@ -25,15 +26,16 @@ class RecipeDynamoDB(RecipeDatabase):
             if e.response['Error']['Code'] == 'ConditionalCheckFailedException':
                 raise RecipeException("There is a conflict to create this resource", 409)
 
-    def findAll(self):
+    def find_all(self):
         response = self.table.query(
-            ProjectionExpression="#nm, products",
+            ProjectionExpression="#nm, description, products, nutritional_value",
             ExpressionAttributeNames={"#nm": "name"},
             KeyConditionExpression=Key("PK").eq('recipe')
         )
         if 'Items' not in response:
             return []
-        return response['Items']
+
+        return {'items': response['Items']}
 
     def find(self, name):
         response = self.table.get_item(
@@ -41,11 +43,12 @@ class RecipeDynamoDB(RecipeDatabase):
                 'PK': 'recipe',
                 'SK': name
             },
-            ProjectionExpression="#nm, products, nutritional_values",
+            ProjectionExpression="#nm, description, products, nutritional_value",
             ExpressionAttributeNames={"#nm": "name"},
         )
         if 'Item' not in response:
             raise RecipeException("Recipe value not found", 404)
+
         return response['Item']
 
     def delete(self, name):
@@ -58,5 +61,3 @@ class RecipeDynamoDB(RecipeDatabase):
             )
         except ClientError:
             raise RecipeException("Something went wrong", 409)
-
-        return "Deleted"

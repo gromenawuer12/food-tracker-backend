@@ -9,7 +9,7 @@ class GetRecipe:
 
     def execute(self, name):
         if name is None:
-            response = self.__database.findAll()
+            response = self.__database.find_all()
         else:
             response = self.__database.find(name)
         return response

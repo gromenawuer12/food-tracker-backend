@@ -2,7 +2,7 @@ class Product():
     def __init__(self, params):
         self.name = params['name']
         self.nutritional_value = params['nutritional_value']
-        self.description = params['description']
+        self.description = params['description'] if 'description' in params else None
         self.supermarket = params['supermarket'] if 'supermarket' in params else None
 
     def to_json(self):
