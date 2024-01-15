@@ -1,43 +1,52 @@
 import inject
-from ..domain.menu import Menu
 from ..domain.menu_database import MenuDatabase
 from ...recipes.application.add_recipe import AddRecipe
 from ...recipes.application.delete_recipe import DeleteRecipe
 from ...recipes.application.get_recipe import GetRecipe
-from ...recipes.domain.recipe import Recipe
+from ...utils.log import Log
 
 
 class AddMenu:
     @inject.autoparams()
     def __init__(self, database: MenuDatabase, get_recipe: GetRecipe, delete_recipe: DeleteRecipe,
-                 add_recipe: AddRecipe):
+                 add_recipe: AddRecipe, log: Log):
         self.__database = database
         self.__get_recipe = get_recipe
         self.__delete_recipe = delete_recipe
         self.__add_recipe = add_recipe
+        self.__log = log
 
-    def execute(self, user, date, recipeNames):
-        nutritional_values = {}
+    def execute(self, menu):
+        self.__log.trace('AddMenu menu: {0}', menu.to_json())
+        nutritional_value_calculated = {}
 
-        for recipeName in recipeNames:
-            recipe = self.__get_recipe.execute(recipeName)
-            if 'nutritional_values' not in recipe:
-                self.__delete_recipe.execute(recipe['name'])
-                self.__add_recipe.execute(Recipe(recipe))
-                recipe = self.__get_recipe.execute(recipe['name'])
-            for nutritional_value in recipe['nutritional_values']:
-                if nutritional_value in nutritional_values:
-                    nutritional_values[nutritional_value] = str(float(
-                        nutritional_values[nutritional_value]) + float(
-                        recipe['nutritional_values'][nutritional_value]['value']))
+        for recipe_name in menu.recipes:
+            recipe = self.__get_recipe.execute(recipe_name)
+            self.__log.trace('AddMenu recipe: {0}', recipe)
+
+            for nutritional_value_element in recipe['nutritional_value']:
+                self.__log.trace('AddMenu nutritional_value_element: {0}', nutritional_value_element)
+                if nutritional_value_element['name'] in nutritional_value_calculated:
+                    nutritional_value_calculated[nutritional_value_element['name']]['value'] = str(
+                        float(nutritional_value_calculated[nutritional_value_element['name']]['value']) +
+                        float(nutritional_value_element['value'])
+                    )
                 else:
-                    nutritional_values[nutritional_value] = recipe['nutritional_values'][nutritional_value]['value']
+                    self.__log.trace('AddMenu nutritional_value_element.name: {0}', nutritional_value_element['name'])
+                    nutritional_value_calculated[nutritional_value_element['name']] = \
+                        {
+                            'unit': nutritional_value_element['unit'],
+                            'value': nutritional_value_element['value'],
+                            'name': nutritional_value_element['name'],
+                        }
 
-        menu = Menu({
-            'user': user,
-            'date': date,
-            'recipes': recipeNames,
-            'nutritional_value': nutritional_values
-        })
+        self.__log.trace("AddMenu nutritional_value={0}", nutritional_value_calculated)
+
+        nutritional_value_calculated_array = []
+        for nutritional_value_name in nutritional_value_calculated:
+            nutritional_value_calculated_array.append(nutritional_value_calculated[nutritional_value_name])
+
+        self.__log.trace("AddMenu nutritional_value_array={0}", nutritional_value_calculated_array)
+        menu.nutritional_value = nutritional_value_calculated_array
 
         self.__database.create(menu)

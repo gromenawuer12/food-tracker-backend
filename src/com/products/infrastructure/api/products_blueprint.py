@@ -56,7 +56,6 @@ class ProductsBlueprint:
         self.add_product.execute(
             Product(json.loads(event['body'], object_hook=lambda d: SimpleNamespace(**d).__dict__))
         )
-        return {}
 
     @token_required
     def delete(self, event):

@@ -43,7 +43,6 @@ class RecipesBlueprint:
         body = json.loads(event['body'])
         name = body.get("name", None)
         self.delete_recipe.execute(name)
-        return {}
 
     @token_required
     def put(self, event):

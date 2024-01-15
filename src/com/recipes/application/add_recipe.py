@@ -43,5 +43,11 @@ class AddRecipe:
                         nutritional_value_component[2])
 
         self.__log.trace("AddRecipe nutritional_value={0}", nutritional_value_calculated)
-        recipe.nutritional_value = nutritional_value_calculated
+        nutritional_value_calculated_array = []
+        for nutritional_value_name in nutritional_value_calculated:
+            nutritional_value_calculated_array.append(nutritional_value_calculated[nutritional_value_name])
+
+        self.__log.trace("AddRecipe nutritional_value_array={0}", nutritional_value_calculated_array)
+
+        recipe.nutritional_value = nutritional_value_calculated_array
         self.__database.create(recipe)

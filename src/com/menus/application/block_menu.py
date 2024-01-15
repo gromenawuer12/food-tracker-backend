@@ -20,7 +20,7 @@ class BlockMenu:
 
     def execute(self, user, date):
         self.__log.trace('BlockMenu')
-        menus = self.__database.findUnlocked(user, date)
+        menus = self.__database.find_unlocked_by_user(user, date)
 
         if menus:
             for menu in menus:

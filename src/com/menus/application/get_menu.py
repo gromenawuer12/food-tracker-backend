@@ -7,12 +7,9 @@ class GetMenu:
     def __init__(self, database: MenuDatabase):
         self.__database = database
 
-    def execute(self, user, fromDate, toDate):
-        if fromDate is None or toDate is None:
-                response = []
-        else:
-            if user is None:
-                response = self.__database.findByDate(user)
-            else:
-                response = self.__database.find(user, fromDate, toDate)
-        return response
+    def execute(self, params=None):
+        if params is None:
+            params = {}
+
+        if 'isLocked' in params and params['isLocked'] == 'false':
+            return self.__database.find_unlocked()
