@@ -29,6 +29,7 @@ paths = {
 @inject.autoparams('log')
 def resolve(event, log: Log):
     path = urllib.parse.unquote(event['path'])
+    event['path'] = path
     log.trace('Resolving path: "{0}"'.format(path))
     for key in paths:
         if re.search(key, event['path']):
@@ -38,8 +39,8 @@ def resolve(event, log: Log):
                 ex_type, ex_value, ex_traceback = sys.exc_info()
                 log.error('Error resolving: {0} {1} {2}'.format(ex_type, str(key_error), ex_traceback))
 
-                error = 'Operation {0} not supported for {1}'.format(event['httpMethod'], event['path'])
+                error = 'Operation {0} not supported for {1}'.format(event['httpMethod'], path)
                 log.error(error)
                 raise Exception(error, key_error)
-    log.debug('Path not supported: "{0}"'.format(event['path']))
-    raise Exception('Path not supported: "{0}"'.format(event['path']))
+    log.debug('Path not supported: "{0}"'.format(path))
+    raise Exception('Path not supported: "{0}"'.format(path))
