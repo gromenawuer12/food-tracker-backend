@@ -30,6 +30,7 @@ paths = {
 def resolve(event, log: Log):
     path = urllib.parse.unquote(event['path'])
     event['path'] = path
+    event['pathParameters']['proxy'] = urllib.parse.unquote(event['pathParameters']['proxy'])
     log.trace('Resolving path: "{0}"'.format(path))
     for key in paths:
         if re.search(key, event['path']):
