@@ -27,10 +27,10 @@ class AddMenu:
             for nutritional_value_element in recipe['nutritional_value']:
                 self.__log.trace('AddMenu nutritional_value_element: {0}', nutritional_value_element)
                 if nutritional_value_element['name'] in nutritional_value_calculated:
-                    nutritional_value_calculated[nutritional_value_element['name']]['value'] = str(
+                    nutritional_value_calculated[nutritional_value_element['name']]['value'] = str(round(
                         float(nutritional_value_calculated[nutritional_value_element['name']]['value']) +
                         float(nutritional_value_element['value'])
-                    )
+                        , 2))
                 else:
                     self.__log.trace('AddMenu nutritional_value_element.name: {0}', nutritional_value_element['name'])
                     nutritional_value_calculated[nutritional_value_element['name']] = \

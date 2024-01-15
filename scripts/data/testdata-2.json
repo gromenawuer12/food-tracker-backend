@@ -1,5 +1,6 @@
 {
   "food-tracker": [
+    {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Queso curado"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"420"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"32"}]}]},"description":{"S":""},"name":{"S":"Queso curado"},"supermarket":{"L":[{"S":"Mercado"}]}}}},
     {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Remolacha"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"43"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"1"},{"S":"6"}]}]},"description":{"S":""},"name":{"S":"Remolacha"},"supermarket":{"L":[{"S":"Fruteria"}]}}}},
     {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Soja Texturizada"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"340"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"52"}]}]},"description":{"S":""},"name":{"S":"Soja Texturizada"},"supermarket":{"L":[{"S":"Carrefour"}]}}}},
     {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Tahini"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"595"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"17"}]}]},"description":{"S":"Pasta de sesamo"},"name":{"S":"Tahini"},"supermarket":{"L":[{"S":"Carrefour"}]}}}},
