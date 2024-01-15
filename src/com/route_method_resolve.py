@@ -1,5 +1,6 @@
 import re
 import sys
+import urllib
 
 import inject
 
@@ -27,7 +28,8 @@ paths = {
 
 @inject.autoparams('log')
 def resolve(event, log: Log):
-    log.trace('Resolving path: "{0}"'.format(event['path']))
+    path = urllib.parse.unquote(event['path'])
+    log.trace('Resolving path: "{0}"'.format(path))
     for key in paths:
         if re.search(key, event['path']):
             try:
