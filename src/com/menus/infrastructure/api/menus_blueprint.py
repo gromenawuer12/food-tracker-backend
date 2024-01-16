@@ -1,8 +1,10 @@
+import re
+
 import inject
 import json
 
 from ...application.add_menu import AddMenu
-from ...application.block_menu import BlockMenu
+from ...application.lock_menu import LockMenu
 from ...application.delete_menu import DeleteMenu
 from ...application.edit_menu import EditMenu
 from ...application.get_menu import GetMenu
@@ -13,6 +15,8 @@ from ....utils.log import Log
 
 def resolve(event):
     menus_blueprint = MenusBlueprint()
+    if re.search('/menus/lock', event['path']):
+        return menus_blueprint.lock(event=event)
     return {'GET': menus_blueprint.get,
             'POST': menus_blueprint.post,
             'PUT': menus_blueprint.put,
@@ -23,11 +27,11 @@ def resolve(event):
 class MenusBlueprint:
     @inject.autoparams()
     def __init__(self, get_menu: GetMenu, add_menu: AddMenu, edit_menu: EditMenu, delete_menu: DeleteMenu,
-                 block_menu: BlockMenu, log: Log):
+                 lock_menu: LockMenu, log: Log):
         self.get_menu = get_menu
         self.add_menu = add_menu
         self.delete_menu = delete_menu
-        self.block_menu = block_menu
+        self.lock_menu = lock_menu
         self.edit_menu = edit_menu
         self.log = log
 
@@ -65,7 +69,19 @@ class MenusBlueprint:
         attrs = body['id'].split('|')
         username = attrs[0]
         date = attrs[1]
-
         self.log.debug('MenusBlueprint delete: date={0} and username={1}', date, username)
 
         self.delete_menu.execute(username, date)
+
+    @token_required
+    def lock(self, event):
+        self.log.trace('MenusBlueprint lock')
+        body = json.loads(event['body'])
+        self.log.trace('MenusBlueprint lock: {0}', body)
+
+        date = body['date']
+        self.log.debug('MenusBlueprint lock: date={0}', date)
+
+        self.log.trace('Locking menus')
+        self.lock_menu.execute(date)
+        self.log.trace('Menus locked')

@@ -18,8 +18,8 @@ class MenuDynamoDB(MenuDatabase):
                     'username': menu.username,
                     'date': menu.date,
                     'recipes': menu.recipes,
-                    'nutritional_value': menu.nutritional_value,
-                    'isLocked': menu.isLocked
+                    'products': menu.products,
+                    'nutritional_value': menu.nutritional_value
                 },
                 ConditionExpression='attribute_not_exists(SK)'
             )
@@ -34,7 +34,7 @@ class MenuDynamoDB(MenuDatabase):
                 'SK': date
             },
             ExpressionAttributeNames={"#dt": "date"},
-            ProjectionExpression="username, #dt, recipes, nutritional_value, isLocked"
+            ProjectionExpression="username, #dt, recipes, products, nutritional_value"
         )
 
         if 'Item' not in response:
@@ -59,7 +59,7 @@ class MenuDynamoDB(MenuDatabase):
                     ':end_date': to_date,
                     ':user': 'menu#' + user
                 },
-                ProjectionExpression="#dt, recipes, nutritional_value, isLocked, PK",
+                ProjectionExpression="#dt, recipes, nutritional_value, PK",
             )
             results.extend(response['Items'])
         return results
@@ -84,7 +84,7 @@ class MenuDynamoDB(MenuDatabase):
 
     def find_by_user(self, user):
         response = self.table.query(
-            ProjectionExpression="#dt, recipes, nutritional_value, isLocked, PK",
+            ProjectionExpression="#dt, recipes, nutritional_value, PK",
             ExpressionAttributeNames={"#dt": "date"},
             KeyConditionExpression=Key("PK").eq('menu#' + user)
         )
@@ -107,16 +107,23 @@ class MenuDynamoDB(MenuDatabase):
         response = self.table.scan(
             ProjectionExpression="#dt, nutritional_value",
             ExpressionAttributeNames={"#dt": "date"},
-            FilterExpression=Key("PK").eq('menu#' + user) & (Key("SK").lt(date) | Key("SK").eq(date)) & Attr(
-                "isLocked").eq(False)
+            FilterExpression=Key("PK").eq('menu#' + user) & (Key("SK").lt(date) | Key("SK").eq(date))
         )
         return response['Items']
 
-    def find_unlocked(self):
+    def find_lt_date(self, date):
         response = self.table.scan(
-            ProjectionExpression="#dt, nutritional_value, username, recipes",
+            ProjectionExpression="#dt, nutritional_value, username, recipes, products",
             ExpressionAttributeNames={"#dt": "date"},
-            FilterExpression=Key("PK").begins_with('menu#') & Attr("isLocked").eq(False)
+            FilterExpression=Key("PK").begins_with('menu#') & (Key("SK").lt(date) | Key("SK").eq(date))
+        )
+        return response['Items']
+
+    def find_all(self):
+        response = self.table.scan(
+            ProjectionExpression="#dt, nutritional_value, username, recipes, products",
+            ExpressionAttributeNames={"#dt": "date"},
+            FilterExpression=Key("PK").begins_with('menu#')
         )
         return {'items': response['Items']}
 

@@ -7,5 +7,5 @@ class DeleteMenu:
     def __init__(self, database: MenuDatabase):
         self.__database = database
 
-    def execute(self, user, date) -> str:
-        self.__database.delete(user, date)
+    def execute(self, username, date):
+        self.__database.delete(username, date)

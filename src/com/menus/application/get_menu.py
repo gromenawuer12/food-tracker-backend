@@ -11,5 +11,4 @@ class GetMenu:
         if params is None:
             params = {}
 
-        if 'isLocked' in params and params['isLocked'] == 'false':
-            return self.__database.find_unlocked()
+        return self.__database.find_all()

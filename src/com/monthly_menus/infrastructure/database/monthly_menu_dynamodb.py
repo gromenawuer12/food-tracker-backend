@@ -3,8 +3,9 @@ from ...domain.monthly_menu_exception import MonthlyMenuException
 from botocore.exceptions import ClientError
 from boto3.dynamodb.conditions import Key, Attr
 
+
 class MonthlyMenuDynamoDB(MonthlyMenuDatabase):
-    def __init__(self,client):
+    def __init__(self, client):
         self.client = client
         self.table = self.client.Table('food-tracker')
 
@@ -12,7 +13,7 @@ class MonthlyMenuDynamoDB(MonthlyMenuDatabase):
         try:
             self.table.put_item(
                 Item={
-                    'PK': 'monthly_menu#'+monthlyMenu.user,
+                    'PK': 'monthly_menu#' + monthlyMenu.username,
                     'SK': monthlyMenu.monthly_number,
                     'monthlyNumber': monthlyMenu.monthly_number,
                     'nutritional_value': monthlyMenu.nutritional_value
@@ -24,19 +25,19 @@ class MonthlyMenuDynamoDB(MonthlyMenuDatabase):
                 raise MonthlyMenuException("There is a conflict to create this resource", 409)
         return "Added"
 
-    def findAll(self,user):
+    def findAll(self, username):
         response = self.table.scan(
             ProjectionExpression="monthlyNumber, nutritional_value",
-            FilterExpression=Key("PK").eq('monthly_menu#'+user)
+            FilterExpression=Key("PK").eq('monthly_menu#' + username)
         )
         if 'Items' not in response:
-           return []
+            return []
         return response['Items']
 
-    def find(self, user, monthlyNumber):
+    def find(self, username, monthlyNumber):
         response = self.table.get_item(
             Key={
-                'PK': 'monthly_menu#'+user,
+                'PK': 'monthly_menu#' + username,
                 'SK': monthlyNumber
             },
             ProjectionExpression="monthlyNumber, nutritional_value",
@@ -45,10 +46,10 @@ class MonthlyMenuDynamoDB(MonthlyMenuDatabase):
             raise MonthlyMenuException("Menu not found", 404)
         return response['Item']
 
-    def updateNutritionalValue(self,user,monthlyNumber,newNutritionalValue):
+    def updateNutritionalValue(self, username, monthlyNumber, newNutritionalValue):
         self.table.update_item(
             Key={
-                'PK': 'monthly_menu#'+user,
+                'PK': 'monthly_menu#' + username,
                 'SK': monthlyNumber
             },
             UpdateExpression="SET nutritional_value = :val1",

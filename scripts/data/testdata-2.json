@@ -14,17 +14,8 @@
     {"PutRequest":{"Item":{"PK":{"S":"nutritional_value"},"SK":{"S":"Kcal"},"unit":{"S":"Kcal"},"shortname":{"S":"Kcal"},"name":{"S":"Kilocalorías"}}}},
     {"PutRequest":{"Item":{"PK":{"S":"nutritional_value"},"SK":{"S":"cal"},"unit":{"S":"g"},"shortname":{"S":"cal"},"name":{"S":"calories"}}}},
     {"PutRequest":{"Item":{"PK":{"S":"nutritional_value"},"SK":{"S":"pro"},"unit":{"S":"g"},"shortname":{"S":"pro"},"name":{"S":"protein"}}}},
-    {"PutRequest":{"Item":{"PK":{"S":"monthly_menu#test"},"SK":{"S":"2023-02"},"monthlyNumber":{"S":"2023-02"},"nutritional_value":{"M":{"calories":{"S":"200"}}}}}},
-    {"PutRequest":{"Item":{"PK":{"S":"weekly_menu#test"},"SK":{"S":"2023-6"},"nutritional_value":{"M":{"calories":{"S":"200"}}},"weeklyNumber":{"S":"2023-6"}}}},
-    {"PutRequest":{"Item":{"PK":{"S":"menu#test"},"SK":{"S":"2023-02-08"},"recipes":{"L":[{"S":"tortilla de patatas"}]},"date":{"S":"2023-02-08"},"nutritional_value":{"M":{"calories":{"S":"200"}}},"isLocked":{"BOOL":true}}}},
-    {"PutRequest":{"Item":{"PK":{"S":"menu#Roma"},"SK":{"S":"2023-04-04"},"recipes":{"L":[]},"date":{"S":"2023-04-04"},"isLocked":{"BOOL":false},"nutritional_value":{"M":{}}}}},
     {"PutRequest":{"Item":{"PK":{"S":"unit"},"SK":{"S":"Kcal"},"shortname":{"S":"Kcal"},"name":{"S":"Kilocalorías"}}}},
     {"PutRequest":{"Item":{"PK":{"S":"unit"},"SK":{"S":"g"},"shortname":{"S":"g"},"name":{"S":"gram"}}}},
-    {"PutRequest":{"Item":{"PK":{"S":"unit"},"SK":{"S":"kg"},"shortname":{"S":"kg"},"name":{"S":"kilogram"}}}},
-    {"PutRequest":{"Item":{"PK":{"S":"weekly_menu#roma"},"SK":{"S":"2023-19"},"nutritional_value":{"M":{}},"weeklyNumber":{"S":"2023-19"}}}},
-    {"PutRequest":{"Item":{"PK":{"S":"weekly_menu#roma"},"SK":{"S":"2023-20"},"nutritional_value":{"M":{"Kilocalorías":{"S":"512"},"protein":{"S":"5"}}},"weeklyNumber":{"S":"2023-20"}}}},
-    {"PutRequest":{"Item":{"PK":{"S":"menu#roma"},"SK":{"S":"2023-05-14"},"recipes":{"L":[]},"date":{"S":"2023-05-14"},"nutritional_value":{"M":{}},"isLocked":{"BOOL":true}}}},
-    {"PutRequest":{"Item":{"PK":{"S":"menu#roma"},"SK":{"S":"2023-05-18"},"recipes":{"L":[{"S":"Galletas + fruta"}]},"date":{"S":"2023-05-18"},"nutritional_value":{"M":{"Kilocalorías":{"S":"512"},"protein":{"S":"5"}}},"isLocked":{"BOOL":true}}}},
-    {"PutRequest":{"Item":{"PK":{"S":"menu#roma"},"SK":{"S":"2023-05-19"},"recipes":{"L":[{"S":"Galletas + fruta"}]},"date":{"S":"2023-05-19"},"nutritional_value":{"M":{"Kilocalorías":{"S":"512"},"protein":{"S":"5"}}},"isLocked":{"BOOL":true}}}}
+    {"PutRequest":{"Item":{"PK":{"S":"unit"},"SK":{"S":"kg"},"shortname":{"S":"kg"},"name":{"S":"kilogram"}}}}
   ]
 }

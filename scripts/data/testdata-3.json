@@ -11,14 +11,8 @@
     {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Pan con queso"},"products":{"L":[{"L":[{"S":"Barra pan"},{"S":"g"},{"S":"150"}]},{"L":[{"S":"Queso azul"},{"S":"g"},{"S":"150"}]}]},"name":{"S":"Pan con queso"}}}},
     {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Tostada de aguacate y jamos"},"products":{"L":[{"L":[{"S":"Barra pan"},{"S":"g"},{"S":"125"}]},{"L":[{"S":"Tomate"},{"S":"g"},{"S":"75"}]},{"L":[{"S":"Aguacate"},{"S":"g"},{"S":"150"}]},{"L":[{"S":"Aceite de Oliva"},{"S":"g"},{"S":"10"}]},{"L":[{"S":"Jamón Iberico"},{"S":"g"},{"S":"35"}]}]},"name":{"S":"Tostada de aguacate y jamos"}}}},
     {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"tortilla de patatas"},"products":{"L":[{"L":[{"S":"huevos"},{"S":"g"},{"S":"3"}]},{"L":[{"S":"patatas"},{"S":"g"},{"S":"12"}]}]},"name":{"S":"tortilla de patatas"}}}},
-    {"PutRequest":{"Item":{"PK":{"S":"menu#"},"SK":{"S":"2023-04-03"},"recipes":{"L":[{"S":"Hummus con pita"}]},"date":{"S":"2023-04-03"},"isLocked":{"BOOL":false},"nutritional_value":{"M":{"Kilocalorías":{"S":"2256"},"protein":{"S":"45"}}}}}},
-    {"PutRequest":{"Item":{"PK":{"S":"weekly_menu#elias"},"SK":{"S":"2023-19"},"nutritional_value":{"M":{"Kilocalorías":{"S":"4341"},"protein":{"S":"191"}}},"weeklyNumber":{"S":"2023-19"}}}},
-    {"PutRequest":{"Item":{"PK":{"S":"monthly_menu#elias"},"SK":{"S":"2023-05"},"monthlyNumber":{"S":"2023-05"},"nutritional_value":{"M":{"Kilocalorías":{"S":"4341"},"protein":{"S":"191"}}}}}},
     {"PutRequest":{"Item":{"PK":{"S":"user"},"SK":{"S":"elias"},"role":{"S":"user"},"username":{"S":"elias"},"password":{"S":"9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"}}}},
     {"PutRequest":{"Item":{"PK":{"S":"user"},"SK":{"S":"roma"},"password":{"S":"eeef940d6e28a113f858cf0b769d71ba344c14e8ec37923da301f686c8a35e76"},"username":{"S":"roma"},"role":{"S":"user"}}}},
-    {"PutRequest":{"Item":{"PK":{"S":"user"},"SK":{"S":"test"},"password":{"S":"9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"},"username":{"S":"test"},"role":{"S":"test"}}}},
-    {"PutRequest":{"Item":{"PK":{"S":"menu#elias"},"SK":{"S":"2023-05-10"},"recipes":{"L":[{"S":"Chocolate"},{"S":"Gachas de Avena"}]},"date":{"S":"2023-05-10"},"nutritional_value":{"M":{"calories":{"S":"485"},"protein":{"S":"76"},"Kilocalorías":{"S":"2037"}}},"isLocked":{"BOOL":true}}}},
-    {"PutRequest":{"Item":{"PK":{"S":"menu#elias"},"SK":{"S":"2023-05-14"},"recipes":{"L":[{"S":"Tostada de aguacate y jamos"},{"S":"Hamburguesa de soja texturizada"},{"S":"Pan con queso"}]},"date":{"S":"2023-05-14"},"nutritional_value":{"M":{"Kilocalorías":{"S":"4341"},"protein":{"S":"191"}}},"isLocked":{"BOOL":true}}}},
-    {"PutRequest":{"Item":{"PK":{"S":"monthly_menu#roma"},"SK":{"S":"2023-05"},"monthlyNumber":{"S":"2023-05"},"nutritional_value":{"M":{"Kilocalorías":{"S":"512"},"protein":{"S":"5"}}}}}}
+    {"PutRequest":{"Item":{"PK":{"S":"user"},"SK":{"S":"test"},"password":{"S":"9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"},"username":{"S":"test"},"role":{"S":"test"}}}}
   ]
 }

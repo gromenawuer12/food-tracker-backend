@@ -2,7 +2,7 @@
 
 class MonthlyMenu:
     def __init__(self, params):
-        self.user = params['user']
+        self.username = params['username']
         self.monthly_number = params['date']
         self.nutritional_value = params['nutritional_value']
 
