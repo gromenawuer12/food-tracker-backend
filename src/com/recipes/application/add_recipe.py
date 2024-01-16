@@ -6,7 +6,7 @@ from ...utils.log import Log
 
 
 def calculate(other, value, grams):
-    return str(float(other) + (float(value) * float(grams) / 100))
+    return str(round(float(other) + (float(value) * float(grams) / 100), 2))
 
 
 class AddRecipe:
