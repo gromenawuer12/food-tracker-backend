@@ -44,19 +44,22 @@ class AddMenu:
         for product in menu.products:
             nutritional_value = self.__get_product.execute(product['name'])['nutritional_value']
             self.__log.trace('AddMenu product: {0} with {1}', product, nutritional_value)
+            quantity = float(product['value'])
 
             for nutritional_value_element in nutritional_value:
                 self.__log.trace('AddMenu nutritional_value_element: {0}', nutritional_value_element)
+                value = float(nutritional_value_element[2]) * quantity / 100
+
                 if nutritional_value_element[0] in nutritional_value_calculated:
                     nutritional_value_calculated[nutritional_value_element[0]]['value'] = str(round(
                         float(nutritional_value_calculated[nutritional_value_element[0]]['value']) +
-                        float(nutritional_value_element[2]), 2))
+                        value, 2))
                 else:
                     self.__log.trace('AddMenu nutritional_value_element.name: {0}', nutritional_value_element[0])
                     nutritional_value_calculated[nutritional_value_element[0]] = \
                         {
                             'unit': nutritional_value_element[1],
-                            'value': nutritional_value_element[2],
+                            'value': str(value),
                             'name': nutritional_value_element[0],
                         }
 
