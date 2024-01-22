@@ -1,16 +1,29 @@
 import datetime
 
 
-class WeeklyMenu():
-    def __init__(self, params):
-        self.username = params['username']
-        self.weekly_number = params['date']
-        self.menus = [params['menu']]
+def get_week_number(date_time):
+    iso_calendar = date_time.isocalendar()
+    return str(iso_calendar[0]) + "-" + str(iso_calendar[1])
 
-        nutritional_value_dict = {}
-        for nutritional_value_element in params['nutritional_value']:
-            nutritional_value_dict[nutritional_value_element['name']] = nutritional_value_element
-        self.nutritional_value = nutritional_value_dict
+
+class WeeklyMenu():
+    def __init__(self, params, date=None):
+        if params:
+            self.username = params['username']
+            self.weekly_number = params['date']
+            self.menus = {params['date']: params['menu']}
+            self.menu = params['menu']
+
+            nutritional_value_dict = {}
+            for nutritional_value_element in params['nutritional_value']:
+                nutritional_value_dict[nutritional_value_element['name']] = nutritional_value_element
+            self.nutritional_value = nutritional_value_dict
+        else:
+            self.username = None
+            self.weekly_number = date
+            self.menus = {}
+            self.menu = None
+            self.nutritional_value = {}
 
     @property
     def weekly_number(self):
@@ -19,8 +32,7 @@ class WeeklyMenu():
     @weekly_number.setter
     def weekly_number(self, weekly_number):
         aux_date = datetime.datetime.strptime(weekly_number, "%Y-%m-%d")
-        aux_tuple = datetime.date(aux_date.year, aux_date.month, aux_date.day).isocalendar()
-        self._weekly_number = str(aux_tuple[0]) + "-" + str(aux_tuple[1])
+        self._weekly_number = get_week_number(aux_date)
 
     def to_json(self):
         return {

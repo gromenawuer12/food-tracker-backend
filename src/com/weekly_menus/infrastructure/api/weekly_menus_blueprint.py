@@ -29,10 +29,11 @@ class WeeklyMenusBlueprint:
     @token_required
     def get(self, event):
         self.log.trace('WeeklyMenusBlueprint - get')
-        path_parameters = event['pathParameters']
-        auth_username = event['auth_username']
-        weekly_number = path_parameters.get('weekly_number', None)
-        return self.get_weekly_menu.execute(auth_username, weekly_number)
+        query_string_parameters = event['queryStringParameters'];
+        self.log.trace('WeeklyMenusBlueprint {0}', query_string_parameters)
+        username = query_string_parameters.get('username', None)
+        year_week = query_string_parameters.get('year_week', None)
+        return self.get_weekly_menu.execute(username, year_week)
 
     @token_required
     def post(self, event):

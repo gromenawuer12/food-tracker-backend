@@ -1,6 +1,7 @@
 import inject
+
+from ..domain.menu import get_monday_and_sunday
 from ..domain.menu_database import MenuDatabase
-from ...monthly_menus.domain.monthly_menu import MonthlyMenu
 from ...utils.log import Log
 from ...weekly_menus.application.add_weekly_menu import AddWeeklyMenu
 from ...weekly_menus.domain.weekly_menu import WeeklyMenu
@@ -16,10 +17,14 @@ class LockMenu:
         self.__add_monthly_menu = add_monthly_menu
         self.__log = log
 
-    def execute(self, date):
+    def execute(self, year_week):
         self.__log.trace('LockMenu')
-        menus = self.__database.find_lt_date(date)
+        monday_and_sunday = get_monday_and_sunday(year_week)
+        monday_str = monday_and_sunday['monday_str']
+        sunday_str = monday_and_sunday['sunday_str']
+        self.__log.trace('LockMenu first weekday {0} and last weekday {1}', monday_str, sunday_str)
 
+        menus = self.__database.find_all_between(monday_str, sunday_str)
         if menus:
             for menu in menus:
                 self.__log.trace('LockMenu locking menu={0}', menu)

@@ -1,4 +1,6 @@
 import inject
+
+from ..domain.menu import get_monday_and_sunday
 from ..domain.menu_database import MenuDatabase
 
 
@@ -8,7 +10,9 @@ class GetMenu:
         self.__database = database
 
     def execute(self, params=None):
-        if params is None:
-            params = {}
+        if params:
+            if 'year_week' in params and 'username' in params:
+                monday_and_sunday = get_monday_and_sunday(params['year_week'])
+                return self.__database.find_between(params['username'], monday_and_sunday['monday_str'], monday_and_sunday['sunday_str'])
 
         return self.__database.find_all()

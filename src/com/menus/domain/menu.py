@@ -1,3 +1,14 @@
+import datetime
+
+
+def get_monday_and_sunday(year_week):
+    monday = datetime.datetime.strptime(year_week + '-1', "%Y-W%W-%w")
+    sunday = (monday + datetime.timedelta(days=6))
+
+    return {'monday_str': monday.strftime('%Y-%m-%d'),
+            'sunday_str': sunday.strftime('%Y-%m-%d')}
+
+
 class Menu:
     def __init__(self, params):
         self.username = params['username']
