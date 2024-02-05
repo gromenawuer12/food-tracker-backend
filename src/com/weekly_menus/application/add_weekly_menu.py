@@ -7,7 +7,7 @@ from ...utils.log import Log
 
 
 def merge_weekly_menu(old_weekly_menu, new_weekly_menu, log: Log):
-    log.trace('merge_weekly_menu {0} {1}', old_weekly_menu, new_weekly_menu.to_json())
+    log.trace('merge_weekly_menu {0} ------ {1}', old_weekly_menu, new_weekly_menu.to_json())
     old_weekly_menu['menus'][new_weekly_menu.menu['date']] = new_weekly_menu.menu
     for nutritional_value in new_weekly_menu.nutritional_value:
         log.trace('AddWeeklyMenu has nutritional_value={0}?', nutritional_value)
@@ -18,8 +18,11 @@ def merge_weekly_menu(old_weekly_menu, new_weekly_menu, log: Log):
                 new_weekly_menu.nutritional_value[nutritional_value]['value']
             )
         else:
-            old_weekly_menu['nutritional_value'][nutritional_value] = new_weekly_menu.nutritional_value[
-                nutritional_value]
+            old_weekly_menu['nutritional_value'][nutritional_value] = {
+                'name': new_weekly_menu.nutritional_value[nutritional_value]['name'],
+                'value': new_weekly_menu.nutritional_value[nutritional_value]['value'],
+                'unit': new_weekly_menu.nutritional_value[nutritional_value]['unit']
+            }
     return old_weekly_menu
 
 
