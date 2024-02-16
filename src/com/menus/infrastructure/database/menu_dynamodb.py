@@ -84,6 +84,23 @@ class MenuDynamoDB(MenuDatabase):
             return []
         return response['Items']
 
+    def find_from_to(self, from_date, to_date):
+        response = self.table.scan(
+            FilterExpression="#sk BETWEEN :start_date AND :end_date",
+            ExpressionAttributeNames={
+                "#sk": "SK",
+                "#dt": "date"
+            },
+            ExpressionAttributeValues={
+                ":start_date": from_date,
+                ":end_date": to_date
+            },
+            ProjectionExpression="#dt, username, recipes, nutritional_value, products",
+        )
+        if 'Items' not in response:
+            return []
+        return response['Items']
+
     def find_all_between(self, from_date, to_date):
         partition_key_prefix = 'menu'
 
