@@ -39,7 +39,7 @@ class MenusBlueprint:
     def get(self, event):
         self.log.debug('MenusBlueprint get: queryStringParameters={0}', event['queryStringParameters'])
         query_string_parameters = event['queryStringParameters']
-        return self.get_menu.execute(query_string_parameters)
+        return {'items': self.get_menu.execute(query_string_parameters)}
 
     @token_required
     def post(self, event):

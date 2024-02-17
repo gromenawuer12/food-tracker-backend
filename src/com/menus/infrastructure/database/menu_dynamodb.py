@@ -1,3 +1,6 @@
+import inject
+
+from ....utils.log import Log
 from ...domain.menu_database import MenuDatabase
 from ...domain.menu_exception import MenuException
 from botocore.exceptions import ClientError
@@ -5,9 +8,11 @@ from boto3.dynamodb.conditions import Key, Attr
 
 
 class MenuDynamoDB(MenuDatabase):
-    def __init__(self, client):
+
+    def __init__(self, client, log: Log):
         self.client = client
         self.table = self.client.Table('food-tracker')
+        self.log = log
 
     def create(self, menu):
         try:
@@ -42,8 +47,9 @@ class MenuDynamoDB(MenuDatabase):
 
         return response['Item']
 
-    def find_by_user_between(self, user, from_date, to_date):
-        user_list = user.split(',')
+    def find_by_user_between(self, username, from_date, to_date):
+        self.log.trace('MenuDynamoDB find_by_user_between: {0} {1} {2}', username, from_date, to_date)
+        user_list = username.split(',')
 
         results = []
         for user in user_list:
@@ -59,47 +65,10 @@ class MenuDynamoDB(MenuDatabase):
                     ':end_date': to_date,
                     ':user': 'menu#' + user
                 },
-                ProjectionExpression="#dt, recipes, nutritional_value, PK",
+                ProjectionExpression="#dt, username, recipes, nutritional_value, products",
             )
             results.extend(response['Items'])
         return results
-
-    def find_between(self, username, from_date, to_date):
-        partition_key_prefix = 'menu'
-
-        response = self.table.scan(
-            FilterExpression="PK = :pk AND #sk BETWEEN :start_date AND :end_date",
-            ExpressionAttributeNames={
-                "#sk": "SK",
-                "#dt": "date"
-            },
-            ExpressionAttributeValues={
-                ":pk": partition_key_prefix + '#' + username,
-                ":start_date": from_date,
-                ":end_date": to_date
-            },
-            ProjectionExpression="#dt, username, recipes, nutritional_value, products",
-        )
-        if 'Items' not in response:
-            return []
-        return response['Items']
-
-    def find_from_to(self, from_date, to_date):
-        response = self.table.scan(
-            FilterExpression="#sk BETWEEN :start_date AND :end_date",
-            ExpressionAttributeNames={
-                "#sk": "SK",
-                "#dt": "date"
-            },
-            ExpressionAttributeValues={
-                ":start_date": from_date,
-                ":end_date": to_date
-            },
-            ProjectionExpression="#dt, username, recipes, nutritional_value, products",
-        )
-        if 'Items' not in response:
-            return []
-        return response['Items']
 
     def find_all_between(self, from_date, to_date):
         partition_key_prefix = 'menu'
@@ -121,11 +90,19 @@ class MenuDynamoDB(MenuDatabase):
             return []
         return response['Items']
 
-    def find_by_user(self, user):
+    def find_by_username(self, username):
+        self.log.trace('MenuDynamoDB find_by_username: {0}', username)
+
         response = self.table.query(
-            ProjectionExpression="#dt, recipes, nutritional_value, PK",
-            ExpressionAttributeNames={"#dt": "date"},
-            KeyConditionExpression=Key("PK").eq('menu#' + user)
+            KeyConditionExpression='#pk = :user',
+            ExpressionAttributeNames={
+                '#pk': 'PK',
+                '#dt': 'date',
+            },
+            ExpressionAttributeValues={
+                ':user': 'menu#' + username
+            },
+            ProjectionExpression="#dt, nutritional_value, username, recipes, products",
         )
         if 'Items' not in response:
             return []
@@ -164,7 +141,9 @@ class MenuDynamoDB(MenuDatabase):
             ExpressionAttributeNames={"#dt": "date"},
             FilterExpression=Key("PK").begins_with('menu#')
         )
-        return {'items': response['Items']}
+        if 'Items' not in response:
+            return []
+        return response['Items']
 
     def updateIsLocked(self, user, date):
         self.table.update_item(

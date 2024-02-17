@@ -34,7 +34,7 @@ def configure_inject(request_id) -> None:
         binder.bind(UnitDatabase, UnitDynamoDB(client))
         binder.bind(NutritionalValueDatabase, NutritionalValueDynamoDB(client, log))
         binder.bind(ProductDatabase, ProductDynamoDB(client, log))
-        binder.bind(MenuDatabase, MenuDynamoDB(client))
+        binder.bind(MenuDatabase, MenuDynamoDB(client, log))
         binder.bind(RecipeDatabase, RecipeDynamoDB(client))
 
     if not inject.is_configured():
