@@ -48,7 +48,8 @@ class AddMenu:
 
             for nutritional_value_element in nutritional_value:
                 self.__log.trace('AddMenu nutritional_value_element: {0}', nutritional_value_element)
-                value = float(nutritional_value_element[2]) * quantity / 100
+                multiply_by = quantity if 'recipe_name' in product else quantity / 100
+                value = float(nutritional_value_element[2]) * multiply_by
 
                 if nutritional_value_element[0] in nutritional_value_calculated:
                     nutritional_value_calculated[nutritional_value_element[0]]['value'] = str(round(
@@ -59,7 +60,7 @@ class AddMenu:
                     nutritional_value_calculated[nutritional_value_element[0]] = \
                         {
                             'unit': nutritional_value_element[1],
-                            'value': str(value),
+                            'value': str(round(value, 2)),
                             'name': nutritional_value_element[0],
                         }
 

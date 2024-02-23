@@ -22,6 +22,7 @@ class ProductDynamoDB(ProductDatabase):
                     'nutritional_value': product.nutritional_value,
                     'description': product.description,
                     'supermarket': product.supermarket,
+                    'recipe_name': product.recipe_name
                 },
                 ConditionExpression='attribute_not_exists(SK)'
             )
@@ -33,7 +34,7 @@ class ProductDynamoDB(ProductDatabase):
         self.log.trace('ProductDynamoDB findAll: {0} : {1}', last_evaluated_key, items_per_page)
 
         params = {
-            'ProjectionExpression': "#nm, nutritional_value, description, quantity, supermarket, units",
+            'ProjectionExpression': "#nm, nutritional_value, description, quantity, supermarket, units, recipe_name",
             'ExpressionAttributeNames': {"#nm": "name"},
             'KeyConditionExpression': Key("PK").eq('product'),
         }
@@ -71,7 +72,7 @@ class ProductDynamoDB(ProductDatabase):
                 'PK': 'product',
                 'SK': name
             },
-            ProjectionExpression="#nm, nutritional_value, description, quantity, supermarket, units",
+            ProjectionExpression="#nm, nutritional_value, description, quantity, supermarket, units, recipe_name",
             ExpressionAttributeNames={"#nm": "name"},
         )
         if 'Item' not in response:

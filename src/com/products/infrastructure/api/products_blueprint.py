@@ -6,6 +6,7 @@ from ...application.count_product import CountProduct
 from ...application.edit_product import EditProduct
 from ...application.get_product import GetProduct
 from ...application.delete_product import DeleteProduct
+from ...application.recipe_to_product import RecipeToProduct
 from ...domain.product import Product
 from ....resources.token.token_required_decorator import token_required
 from ....utils.log import Log
@@ -15,6 +16,9 @@ def resolve(event):
     products_blueprint = ProductsBlueprint()
     if re.search('/products/count', event['path']):
         return products_blueprint.length(event=event)
+
+    if re.search('/products/recipe', event['path']):
+        return products_blueprint.recipe_to_product(event=event)
 
     return {"GET": products_blueprint.get,
             "POST": products_blueprint.post,
@@ -26,13 +30,14 @@ def resolve(event):
 class ProductsBlueprint:
     @inject.autoparams()
     def __init__(self, get_product: GetProduct, add_product: AddProduct, delete_product: DeleteProduct,
-                 count_product: CountProduct, edit_product: EditProduct, log: Log):
+                 count_product: CountProduct, edit_product: EditProduct, log: Log, recipe_to_product: RecipeToProduct):
         self.get_product = get_product
         self.add_product = add_product
         self.delete_product = delete_product
         self.count_product = count_product
         self.edit_product = edit_product
         self.log = log
+        self.__recipe_to_product = recipe_to_product
 
     @token_required
     def get(self, event):
@@ -75,3 +80,10 @@ class ProductsBlueprint:
         self.log.trace('put: body={0}', body)
 
         self.edit_product.execute(name, Product(body))
+
+    @token_required
+    def recipe_to_product(self, event):
+        body = json.loads(event['body'])
+        self.log.trace('recipe_to_product: body={0}', body)
+
+        self.__recipe_to_product.execute(body['recipe_name'], body['portions'])
