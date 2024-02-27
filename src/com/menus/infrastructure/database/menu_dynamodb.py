@@ -1,5 +1,3 @@
-import inject
-
 from ....utils.log import Log
 from ...domain.menu_database import MenuDatabase
 from ...domain.menu_exception import MenuException

@@ -27,7 +27,7 @@ class RecipeToProduct:
             )
 
         product = Product({
-            "name": 'Portion of ' + recipe_name,
+            "name": recipe_name,
             "description": recipe['description'],
             "nutritional_value": nutritional_value_calculated,
             "recipe_name": recipe_name

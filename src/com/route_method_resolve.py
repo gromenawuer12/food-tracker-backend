@@ -12,6 +12,7 @@ from .nutritional_values.infrastructure.api.nutritional_value_blueprint import r
 from .products.infrastructure.api.products_blueprint import resolve as products_resolver
 from .menus.infrastructure.api.menus_blueprint import resolve as menus_resolver
 from .recipes.infrastructure.api.recipes_blueprint import resolve as recipes_resolver
+from .settings.infrastructure.api.settings_blueprint import resolve as settings_resolver
 from .utils.log import Log
 
 paths = {
@@ -23,6 +24,7 @@ paths = {
     r"\/products.*": products_resolver,
     r"\/menus.*": menus_resolver,
     r"\/recipes.*": recipes_resolver,
+    r"\/settings.*": settings_resolver,
 }
 
 

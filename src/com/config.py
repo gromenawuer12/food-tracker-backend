@@ -9,6 +9,8 @@ from .nutritional_values.infrastructure.database.nutritional_value_dynamodb impo
 from .products.domain.product_database import ProductDatabase
 from .products.infrastructure.database.product_dynamodb import ProductDynamoDB
 from .recipes.domain.recipe_database import RecipeDatabase
+from .settings.domain.settings_database import SettingsDatabase
+from .settings.infrastructure.database.settings_dynamodb import SettingsDynamoDB
 from .units.domain.unit_database import UnitDatabase
 from .units.infrastructure.database.unit_dynamodb import UnitDynamoDB
 from .users.domain.user_database import UserDatabase
@@ -36,6 +38,7 @@ def configure_inject(request_id) -> None:
         binder.bind(ProductDatabase, ProductDynamoDB(client, log))
         binder.bind(MenuDatabase, MenuDynamoDB(client, log))
         binder.bind(RecipeDatabase, RecipeDynamoDB(client))
+        binder.bind(SettingsDatabase, SettingsDynamoDB(client, log))
 
     if not inject.is_configured():
         inject.configure(config)
