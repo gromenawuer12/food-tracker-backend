@@ -4,6 +4,8 @@ from ...domain.menu_exception import MenuException
 from botocore.exceptions import ClientError
 from boto3.dynamodb.conditions import Key, Attr
 
+PROJECTIONS = "#dt, username, recipes, nutritional_value, products"
+
 
 class MenuDynamoDB(MenuDatabase):
 
@@ -63,7 +65,7 @@ class MenuDynamoDB(MenuDatabase):
                     ':end_date': to_date,
                     ':user': 'menu#' + user
                 },
-                ProjectionExpression="#dt, username, recipes, nutritional_value, products",
+                ProjectionExpression=PROJECTIONS,
             )
             results.extend(response['Items'])
         return results
@@ -82,7 +84,7 @@ class MenuDynamoDB(MenuDatabase):
                 ":start_date": from_date,
                 ":end_date": to_date
             },
-            ProjectionExpression="#dt, username, recipes, nutritional_value, products",
+            ProjectionExpression=PROJECTIONS,
         )
         if 'Items' not in response:
             return []
@@ -100,7 +102,7 @@ class MenuDynamoDB(MenuDatabase):
             ExpressionAttributeValues={
                 ':user': 'menu#' + username
             },
-            ProjectionExpression="#dt, nutritional_value, username, recipes, products",
+            ProjectionExpression=PROJECTIONS,
         )
         if 'Items' not in response:
             return []

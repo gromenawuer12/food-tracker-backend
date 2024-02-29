@@ -34,7 +34,7 @@ class ProductDynamoDB(ProductDatabase):
         self.log.trace('ProductDynamoDB findAll: {0} : {1}', last_evaluated_key, items_per_page)
 
         params = {
-            'ProjectionExpression': "#nm, nutritional_value, description, quantity, supermarket, units, recipe_name",
+            'ProjectionExpression': "#nm, SK, nutritional_value, description, quantity, supermarket, units, recipe_name",
             'ExpressionAttributeNames': {"#nm": "name"},
             'KeyConditionExpression': Key("PK").eq('product'),
         }
@@ -66,11 +66,11 @@ class ProductDynamoDB(ProductDatabase):
 
         return response['Count']
 
-    def find(self, name):
+    def find(self, sk):
         response = self.table.get_item(
             Key={
                 'PK': 'product',
-                'SK': name
+                'SK': sk
             },
             ProjectionExpression="#nm, nutritional_value, description, quantity, supermarket, units, recipe_name",
             ExpressionAttributeNames={"#nm": "name"},
@@ -79,12 +79,12 @@ class ProductDynamoDB(ProductDatabase):
             raise ProductException("Product value not found", 404)
         return response['Item']
 
-    def delete(self, name):
+    def delete(self, sk):
         try:
             self.table.delete_item(
                 Key={
                     'PK': 'product',
-                    'SK': name
+                    'SK': sk
                 }
             )
         except ClientError:

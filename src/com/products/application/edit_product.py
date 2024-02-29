@@ -11,12 +11,12 @@ class EditProduct:
         self.__database = database
         self.log = log
 
-    def execute(self, name, product: Product):
-        product_old = Product(self.__database.find(name))
+    def execute(self, sk, product: Product):
+        product_old = Product(self.__database.find(sk))
         self.log.trace('edit_product: product={0}', product_old.to_json())
 
-        self.__database.delete(name)
-        self.log.trace('edit_product: product with name={0} deleted', name)
+        self.__database.delete(sk)
+        self.log.trace('edit_product: product with name={0} deleted', sk)
         try:
             self.log.trace('edit_product: creating product={0}', product.to_json())
             self.__database.create(product)

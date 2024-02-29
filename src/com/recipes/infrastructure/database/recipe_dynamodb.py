@@ -3,6 +3,8 @@ from ...domain.recipe_exception import RecipeException
 from botocore.exceptions import ClientError
 from boto3.dynamodb.conditions import Key
 
+PROJECTIONS = "#nm, description, products, nutritional_value, SK"
+
 
 class RecipeDynamoDB(RecipeDatabase):
     def __init__(self, client):
@@ -28,7 +30,7 @@ class RecipeDynamoDB(RecipeDatabase):
 
     def find_all(self):
         response = self.table.query(
-            ProjectionExpression="#nm, description, products, nutritional_value",
+            ProjectionExpression=PROJECTIONS,
             ExpressionAttributeNames={"#nm": "name"},
             KeyConditionExpression=Key("PK").eq('recipe')
         )
@@ -37,13 +39,13 @@ class RecipeDynamoDB(RecipeDatabase):
 
         return {'items': response['Items']}
 
-    def find(self, name):
+    def find(self, sk):
         response = self.table.get_item(
             Key={
                 'PK': 'recipe',
-                'SK': name
+                'SK': sk
             },
-            ProjectionExpression="#nm, description, products, nutritional_value",
+            ProjectionExpression=PROJECTIONS,
             ExpressionAttributeNames={"#nm": "name"},
         )
         if 'Item' not in response:
@@ -51,12 +53,12 @@ class RecipeDynamoDB(RecipeDatabase):
 
         return response['Item']
 
-    def delete(self, name):
+    def delete(self, sk):
         try:
             self.table.delete_item(
                 Key={
                     'PK': 'recipe',
-                    'SK': name
+                    'SK': sk
                 }
             )
         except ClientError:

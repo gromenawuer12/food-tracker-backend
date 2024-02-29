@@ -14,12 +14,12 @@ class EditRecipe:
         self.__add_recipe = add_recipe
         self.__log = log
 
-    def execute(self, name, recipe: Recipe):
-        recipe_old = Recipe(self.__database.find(name))
+    def execute(self, sk, recipe: Recipe):
+        recipe_old = Recipe(self.__database.find(sk))
         self.__log.trace('EditRecipe: recipe={0}', recipe_old.to_json())
 
-        self.__database.delete(name)
-        self.__log.trace('EditRecipe: recipe with name={0} deleted', name)
+        self.__database.delete(sk)
+        self.__log.trace('EditRecipe: recipe with name={0} deleted', sk)
         try:
             self.__log.trace('EditRecipe: creating recipe={0}', recipe.to_json())
             self.__add_recipe.execute(recipe)
