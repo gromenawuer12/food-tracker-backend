@@ -5,8 +5,8 @@ from ...products.application.get_product import GetProduct
 from ...utils.log import Log
 
 
-def calculate(other, value, grams):
-    return str(round(float(other) + (float(value) * float(grams) / 100), 2))
+def calculate(other, value):
+    return str(round(float(other) + value, 2))
 
 
 class AddRecipe:
@@ -26,21 +26,25 @@ class AddRecipe:
             self.__log.trace("->AddRecipe product found {0}", obj_product)
             nutritional_value = obj_product['nutritional_value']
             self.__log.trace("->AddRecipe nutritional_value: {0}", nutritional_value)
+            quantity = float(product[2])
+
             for nutritional_value_component in nutritional_value:
                 self.__log.trace("-->AddRecipe nutritional_value_component: {0}", nutritional_value_component)
+                multiply_by = quantity if 'portions' in product else quantity / 100
+                value = float(nutritional_value_component[2]) * multiply_by
+
                 if nutritional_value_component[0] not in nutritional_value_calculated:
                     self.__log.trace("--->AddRecipe nutritional_value_component not calculated")
                     nutritional_value_calculated[nutritional_value_component[0]] = \
                         {
                             'unit': nutritional_value_component[1],
-                            'value': calculate(0, product[2], nutritional_value_component[2]),
+                            'value': calculate(0, value),
                             'name': nutritional_value_component[0]
                         }
                 else:
                     self.__log.trace("--->AddRecipe nutritional_value_component was calculated")
                     nutritional_value_calculated[nutritional_value_component[0]]['value'] = calculate(
-                        nutritional_value_calculated[nutritional_value_component[0]]['value'], product[2],
-                        nutritional_value_component[2])
+                        nutritional_value_calculated[nutritional_value_component[0]]['value'], value)
 
         self.__log.trace("AddRecipe nutritional_value={0}", nutritional_value_calculated)
         nutritional_value_calculated_array = []
