@@ -52,7 +52,7 @@ class AddMenu:
 
                 for nutritional_value_element in nutritional_value:
                     self.__log.trace('AddMenu nutritional_value_element: {0}', nutritional_value_element)
-                    multiply_by = quantity if 'recipe_name' in product else quantity / 100
+                    multiply_by = quantity if 'recipe_name' in product and product['recipe_name'] else quantity / 100
                     value = float(nutritional_value_element[2]) * multiply_by
 
                     if nutritional_value_element[0] in nutritional_value_calculated:
@@ -95,7 +95,7 @@ class AddMenu:
 
             for nutritional_value_element in nutritional_value:
                 self.__log.trace('AddMenu nutritional_value_element: {0}', nutritional_value_element)
-                multiply_by = quantity if 'recipe_name' in product else quantity / 100
+                multiply_by = quantity if 'recipe_name' in product and product['recipe_name'] else quantity / 100
                 value = float(nutritional_value_element[2]) * multiply_by
 
                 if nutritional_value_element[0] in nutritional_value_calculated:
