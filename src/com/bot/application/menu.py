@@ -54,6 +54,7 @@ class Menu:
         return self.format(self.__menu_db.find('elias', datetime.date.today().strftime("%Y-%m-%d")))
 
     def format(self, data):
+        self.__log.trace(data)
         date = data['date'].replace('-', '\-')
         nutritional_values = data['nutritional_value']
         recipes = ", ".join(data['recipes'])
