@@ -56,9 +56,10 @@ class Menu:
 
     def escape_markdown_v2(self, text):
         self.__log.trace('escape_markdown_v2 {0}', text)
-        caracteres_a_escapar = ['_', '*', '[', ']', '(', ')', '~', '>', '#', '+', '-', '=', '|', '{', '}', '.', '!']
-        for char in caracteres_a_escapar:
-            text = text.replace(char, f'\\{char}')  # Escapar cada carácter
+        char_to_scape = ['_', '*', '[', ']', '(', ')', '~', '>', '#', '+', '-', '=', '|', '{', '}', '.', '!']
+        char_scaped = ['\_', '\*', '\[', '\]', '\(', '\)', '\~', '\>', '\#', '\+', '\-', '\=', '\|', '\{', '\}', '\.', '\!']
+        for index, char in enumerate(char_to_scape):
+            text = text.replace(char, char_scaped[index])
         return text
 
     def format(self, data):
@@ -67,16 +68,16 @@ class Menu:
         mensaje += f"👤 *Usuario:* {self.escape_markdown_v2(data['username'])}\n\n"
         mensaje += "*Valores Nutricionales:*\n"
         for item in data['nutritional_value']:
-            mensaje += f" - {self.escape_markdown_v2(item['name'])}: {self.escape_markdown_v2(item['value'])} {self.escape_markdown_v2(item['unit'])}\n"
+            mensaje += f" \- {self.escape_markdown_v2(item['name'])}: {self.escape_markdown_v2(item['value'])} {self.escape_markdown_v2(item['unit'])}\n"
 
         mensaje += "\n*Productos:*\n"
         for comida, items in data['products'].items():
             mensaje += f"🍽️ *{self.escape_markdown_v2(comida)}:*\n"
             for item in items:
                 if 'recipe_name' in item and item['recipe_name']:
-                    mensaje += f"   - {self.escape_markdown_v2(item['name'])} (Cantidad: {self.escape_markdown_v2(item['value'])} - Receta: {self.escape_markdown_v2(item['recipe_name'])})\n"
+                    mensaje += f"   \- {self.escape_markdown_v2(item['name'])} (Cantidad: {self.escape_markdown_v2(item['value'])} \- Receta: {self.escape_markdown_v2(item['recipe_name'])})\n"
                 else:
-                    mensaje += f"   - {self.escape_markdown_v2(item['name'])} (Cantidad: {self.escape_markdown_v2(item['value'])})\n"
+                    mensaje += f"   \- {self.escape_markdown_v2(item['name'])} (Cantidad: {self.escape_markdown_v2(item['value'])})\n"
 
         return mensaje
 
