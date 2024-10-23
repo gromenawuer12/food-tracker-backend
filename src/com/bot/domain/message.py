@@ -20,7 +20,6 @@ class Message:
             'chat_id': self.__chat_id,
             'text': self.__text
         }
-        print(self.__reply_markup)
         if self.__reply_markup:
             payload['reply_markup'] = self.__reply_markup
 

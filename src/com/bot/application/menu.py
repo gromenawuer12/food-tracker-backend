@@ -48,31 +48,36 @@ class Menu:
         try:
             return Message(chat_id, self.format(self.__menu_db.find(command_parts[2], command_parts[3])))
         except MenuException:
-            return Message(chat_id, f'There are not a menu for {command_parts[2]} on {command_parts[3]}')
+            date = command_parts[3].replace('-', '\-')
+            return Message(chat_id, f'There are not a menu for {command_parts[2]} on {date}')
 
     def today(self):
         return self.format(self.__menu_db.find('elias', datetime.date.today().strftime("%Y-%m-%d")))
 
+    def escape_markdown_v2(self, text):
+        self.__log.trace('escape_markdown_v2 {0}', text)
+        caracteres_a_escapar = ['_', '*', '[', ']', '(', ')', '~', '>', '#', '+', '-', '=', '|', '{', '}', '.', '!']
+        for char in caracteres_a_escapar:
+            text = text.replace(char, f'\\{char}')  # Escapar cada carácter
+        return text
+
     def format(self, data):
-        self.__log.trace(data)
-        date = data['date'].replace('-', '\-')
-        nutritional_values = data['nutritional_value']
-        recipes = ", ".join(data['recipes'])
-        products = "\n".join([f"{item['name']}: {item['value']}" for item in data['products']])
+        self.__log.trace('format {0}', data)
+        mensaje = f"📅 *Fecha:* {self.escape_markdown_v2(data['date'])}\n"
+        mensaje += f"👤 *Usuario:* {self.escape_markdown_v2(data['username'])}\n\n"
+        mensaje += "*Valores Nutricionales:*\n"
+        for item in data['nutritional_value']:
+            mensaje += f" - {self.escape_markdown_v2(item['name'])}: {self.escape_markdown_v2(item['value'])} {self.escape_markdown_v2(item['unit'])}\n"
 
-        # Formatear el mensaje
-        message = f"\n__Menu de: {data['username']}__\n\n"
-        message += f"*Fecha:* {date}\n\n"
-        message += "*Valor Nutricional:*\n"
+        mensaje += "\n*Productos:*\n"
+        for comida, items in data['products'].items():
+            mensaje += f"🍽️ *{self.escape_markdown_v2(comida)}:*\n"
+            for item in items:
+                if item['recipe_name']:
+                    mensaje += f"   - {self.escape_markdown_v2(item['name'])} (Cantidad: {self.escape_markdown_v2(item['value'])} - Receta: {self.escape_markdown_v2(item['recipe_name'])})\n"
+                else:
+                    mensaje += f"   - {self.escape_markdown_v2(item['name'])} (Cantidad: {self.escape_markdown_v2(item['value'])})\n"
 
-        for item in nutritional_values:
-            value = item['value'].replace('.', '\.')
-            message += f"{item['name']}: {value} {item['unit']}\n"
-
-        message += f"\n*Recetas:* {recipes}\n"
-        message += f"\n*Productos:*\n{products}\n"
-
-        return message
 
     def get_week_days(self):
         hoy = datetime.datetime.now()
