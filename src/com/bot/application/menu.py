@@ -73,7 +73,7 @@ class Menu:
         for comida, items in data['products'].items():
             mensaje += f"🍽️ *{self.escape_markdown_v2(comida)}:*\n"
             for item in items:
-                if item['recipe_name']:
+                if 'recipe_name' in item and item['recipe_name']:
                     mensaje += f"   - {self.escape_markdown_v2(item['name'])} (Cantidad: {self.escape_markdown_v2(item['value'])} - Receta: {self.escape_markdown_v2(item['recipe_name'])})\n"
                 else:
                     mensaje += f"   - {self.escape_markdown_v2(item['name'])} (Cantidad: {self.escape_markdown_v2(item['value'])})\n"
