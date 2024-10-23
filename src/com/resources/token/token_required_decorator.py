@@ -9,7 +9,8 @@ from .token_invalid_exception import TokenInvalidException
 def token_required(f):
     @wraps(f)
     def decorator(*args, **kwargs):
-        if 'headers' not in kwargs['event'] and 'Authorization' not in kwargs['event']['headers']:
+        if 'headers' not in kwargs['event'] or 'Authorization' not in kwargs['event']['headers']:
+            print('Error getting token')
             raise TokenInvalidException()
         token = kwargs['event']['headers']['Authorization'].split()[1]
         try:
@@ -18,6 +19,7 @@ def token_required(f):
         except jwt.exceptions.ExpiredSignatureError:
             raise jwt.exceptions.ExpiredSignatureError()
         except Exception:
+            print('Error getting token')
             raise TokenInvalidException()
 
         return f(*args, **kwargs)

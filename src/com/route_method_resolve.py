@@ -13,6 +13,7 @@ from .products.infrastructure.api.products_blueprint import resolve as products_
 from .menus.infrastructure.api.menus_blueprint import resolve as menus_resolver
 from .recipes.infrastructure.api.recipes_blueprint import resolve as recipes_resolver
 from .settings.infrastructure.api.settings_blueprint import resolve as settings_resolver
+from .bot.infrastructure.api.bot import resolve as bot_resolver
 from .utils.log import Log
 
 paths = {
@@ -25,6 +26,7 @@ paths = {
     r"\/menus.*": menus_resolver,
     r"\/recipes.*": recipes_resolver,
     r"\/settings.*": settings_resolver,
+    r"\/bot.*": bot_resolver
 }
 
 

@@ -21,7 +21,7 @@ class LoginUser:
 
     def execute(self, username, password):
         user = self.__database.find(username)
-        self.log.trace('LoginUser')
+        self.log.trace('LoginUser {0}', hash_password(password))
 
         if user is None or not user['password'] == hash_password(password):
             raise LoginException("Invalid username or password")

@@ -11,12 +11,12 @@ from ....utils.log import Log
 
 
 def resolve(event):
-    nutritonal_values_blueprint = NutritionalValueBlueprint()
+    nutritional_values_blueprint = NutritionalValueBlueprint()
     return {
-        "GET": nutritonal_values_blueprint.get,
-        "POST": nutritonal_values_blueprint.post,
-        "PUT": nutritonal_values_blueprint.put,
-        "DELETE": nutritonal_values_blueprint.delete
+        "GET": nutritional_values_blueprint.get,
+        "POST": nutritional_values_blueprint.post,
+        "PUT": nutritional_values_blueprint.put,
+        "DELETE": nutritional_values_blueprint.delete
     }[event['httpMethod']](event=event)
 
 

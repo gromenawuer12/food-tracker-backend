@@ -5,6 +5,7 @@ import inject
 import jwt
 
 from com.utils.log import Log
+from com.resources.token.token_invalid_exception import TokenInvalidException
 
 try:
     from com.route_method_resolve import resolve
@@ -48,6 +49,19 @@ def __manage_lambda(event, log: Log):
                 'body': json.dumps(response),
                 'isBase64Encoded': False
             }
+    except TokenInvalidException :
+        log.error('Token invalid')
+        return {
+            'statusCode': 401,
+            'headers': {
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
+            },
+            'body': json.dumps({
+                'description': str('Token invalid')
+            }),
+            'isBase64Encoded': False
+        }
     except jwt.exceptions.ExpiredSignatureError :
         log.error('Token timeout')
         return {

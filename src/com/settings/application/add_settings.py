@@ -15,7 +15,7 @@ class AddSettings:
     def execute(self, settings: Settings):
         self.__log.trace('AddSettings: settings={0}', settings.to_json())
         try:
-            settings_old = Settings(self.__database.find(settings.shortname))
+            settings_old = self.__database.find(settings.shortname)
         except SettingsException:
             self.__database.create(settings)
             return

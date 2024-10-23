@@ -13,4 +13,4 @@ class GetSettings:
             response = self.__database.find_all()
         else:
             response = self.__database.find(shortname)
-        return response
+        return response.serialize()

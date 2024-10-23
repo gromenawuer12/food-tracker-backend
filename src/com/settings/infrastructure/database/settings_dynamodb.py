@@ -1,3 +1,4 @@
+from ...domain.settings import Settings
 from ....utils.log import Log
 from ...domain.settings_database import SettingsDatabase
 from botocore.exceptions import ClientError
@@ -43,14 +44,14 @@ class SettingsDynamoDB(SettingsDatabase):
                 'PK': 'settings',
                 'SK': shortname
             },
-            ProjectionExpression="SK, settings"
+            ProjectionExpression="settings"
         )
         if 'Item' not in response:
             self.__log.error("DB settings not found {0}", shortname)
             raise SettingsException("Settings value not found", 404)
 
         self.__log.trace("DB settings found {0}", response['Item'])
-        return response['Item']
+        return Settings(response['Item']['settings'])
 
     def delete(self, shortname):
         try:

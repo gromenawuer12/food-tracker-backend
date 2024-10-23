@@ -13,5 +13,5 @@ class SettingsDatabase(ABC):
         pass
 
     @abstractmethod
-    def find(self, shortname: str) -> str:
+    def find(self, shortname: str) -> Settings:
         pass

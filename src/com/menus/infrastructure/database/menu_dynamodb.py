@@ -33,6 +33,7 @@ class MenuDynamoDB(MenuDatabase):
                 raise MenuException("There is a conflict to create this resource", 409)
 
     def find(self, username, date):
+        self.log.trace('Menu.find({0}, {1})', username, date)
         response = self.table.get_item(
             Key={
                 'PK': 'menu#' + username,
