@@ -78,6 +78,8 @@ class Menu:
                 else:
                     mensaje += f"   - {self.escape_markdown_v2(item['name'])} (Cantidad: {self.escape_markdown_v2(item['value'])})\n"
 
+        return mensaje
+
 
     def get_week_days(self):
         hoy = datetime.datetime.now()
