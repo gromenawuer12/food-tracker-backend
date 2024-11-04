@@ -26,3 +26,6 @@ class MessageRequest:
     @property
     def message_id(self):
         return self.__message_id
+
+    def to_string(self):
+        return f'{{"chat_id": {self.__chat_id}, "mesage_id": {self.__message_id}, "command_parts": {self.__command_parts}}}'

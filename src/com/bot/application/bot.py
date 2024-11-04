@@ -72,6 +72,7 @@ class Bot:
     def send_message(self, message: MessageResponse):
         self.__log.trace("ID {0} TEXT {1}", message.chat_id, message.text)
         action = 'editMessageText' if message.message_id else 'sendMessage'
+        self.__log.trace("ACTION {0}", action)
         url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/{action}"
 
         self.__log.trace("Payload {0}", message.payload)

@@ -6,11 +6,8 @@ import inject
 from .format import escape_markdown_v2
 from ..domain.message_request import MessageRequest
 from ..domain.message_response import MessageResponse
-from ...menus.domain.menu_database import MenuDatabase
-from ...menus.domain.menu_exception import MenuException
 from ...utils.log import Log
 from ...weekly_menus.application.get_weekly_menu import GetWeeklyMenu
-from ...weekly_menus.domain.weekly_menu_database import WeeklyMenuDatabase
 from ...weekly_menus.domain.weekly_menu_exception import WeeklyMenuException
 
 
@@ -24,7 +21,7 @@ class WeeklyMenu:
         }
 
     def resolver(self, message_request: MessageRequest):
-        self.__log.trace('WeeklyMenu resolver {0}', message_request)
+        self.__log.trace('WeeklyMenu resolver {0}', message_request.to_string())
         return self.__commands[message_request.command_parts[1]](message_request)
 
     def get(self, message_request: MessageRequest):
@@ -35,7 +32,7 @@ class WeeklyMenu:
             return self.request_weeks(message_request)
 
         try:
-            return MessageResponse(message_request.chat_id, self.formatear(self.__get_weekly_menu.execute(message_request.command_parts[2], message_request.command_parts[3])), message_id = message_request.message_id)
+            return MessageResponse(message_request.chat_id, self.format(message_request.command_parts[2], self.__get_weekly_menu.execute(message_request.command_parts[2], message_request.command_parts[3])), message_id = message_request.message_id)
         except WeeklyMenuException:
             date = message_request.command_parts[3].replace('-', '\-')
             return MessageResponse(message_request.chat_id, f'There are not a weekly_menu for {message_request.command_parts[2]} on {date}', message_id = message_request.message_id)
@@ -85,37 +82,42 @@ class WeeklyMenu:
             'inline_keyboard': inline_days
         }), message_id = message_request.message_id)
 
-    def formatear(self, data):
-        # Escapando el nombre del usuario
-        username = escape_markdown_v2(data.get('username', 'Desconocido'))
+    def format(self, username, data):
+        self.__log.trace("Formating {0}", data)
 
-        # Escapando el número de la semana
         weekly_number = escape_markdown_v2(data.get('weekly_number', 'No especificado'))
+        self.__log.trace(weekly_number)
 
         mensaje = f"*Usuario:* {username}\n*Número de semana:* {weekly_number}\n\n"
+        self.__log.trace(mensaje)
 
         for fecha, detalles in data.get('menus', {}).items():
             mensaje += f"*Fecha:* {escape_markdown_v2(fecha)}\n\n"
+            self.__log.trace(mensaje)
 
-            # Valores nutricionales
             mensaje += "*Valores Nutricionales:*\n"
             for valor in detalles.get('nutritional_value', []):
                 nombre = escape_markdown_v2(valor['name'])
                 cantidad = escape_markdown_v2(str(valor['value']))
                 unidad = escape_markdown_v2(valor['unit'])
                 mensaje += f" \- {nombre}: {cantidad} {unidad}\n"
+            self.__log.trace(mensaje)
 
-            # Recetas
-            mensaje += "\n*Recetas:*\n"
+            mensaje += "\n*Recetas:*\n" if len(detalles.get('recipes', [])) > 0 else ''
             for receta in detalles.get('recipes', []):
                 mensaje += f" \- {escape_markdown_v2(receta)}\n"
+            self.__log.trace(mensaje)
 
-            # Productos
             mensaje += "\n*Productos:*\n"
-            for producto in detalles.get('products', []):
-                nombre_producto = escape_markdown_v2(producto['name'])
-                cantidad_producto = escape_markdown_v2(str(producto['value']))
-                mensaje += f" \- {nombre_producto} \(Cantidad: {cantidad_producto}\)\n"
+            details = detalles.get('products', [])
+            for part_of_day in details:
+                self.__log.trace("PartOfDay {0}: {1}", part_of_day, details[part_of_day])
+                for product in details[part_of_day]:
+                    self.__log.trace("Product {0}", product)
+                    name = escape_markdown_v2(product['name'])
+                    quantity = escape_markdown_v2(str(product['value']))
+                    mensaje += f" \- {name} \(Cantidad: {quantity}\)\n"
+            self.__log.trace(mensaje)
 
             mensaje += "\n"
 

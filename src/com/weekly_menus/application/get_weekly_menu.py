@@ -21,6 +21,8 @@ class GetWeeklyMenu:
             date_time = datetime.datetime.strptime(year_week + '-1', "%Y-W%W-%w")
             week_number = get_week_number(date_time)
             weekly_menu = self.__database.find(username, week_number)
+
+            self.__log.trace("WeeklyMenu found {0}", weekly_menu)
             return weekly_menu
         except WeeklyMenuException:
             menus = self.__get_menu.execute({'username': username, 'year_week': year_week})
@@ -34,4 +36,5 @@ class GetWeeklyMenu:
                 }
                 weekly_menu = merge_weekly_menu(weekly_menu, WeeklyMenu(data), self.__log)
 
+            self.__log.trace("WeeklyMenu generated {0}", weekly_menu)
             return weekly_menu
