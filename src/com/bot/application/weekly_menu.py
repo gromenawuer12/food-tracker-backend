@@ -6,6 +6,7 @@ import inject
 from .format import escape_markdown_v2
 from ..domain.message_request import MessageRequest
 from ..domain.message_response import MessageResponse
+from ...settings.application.get_settings import GetSettings
 from ...utils.log import Log
 from ...weekly_menus.application.get_weekly_menu import GetWeeklyMenu
 from ...weekly_menus.domain.weekly_menu_exception import WeeklyMenuException
@@ -13,9 +14,10 @@ from ...weekly_menus.domain.weekly_menu_exception import WeeklyMenuException
 
 class WeeklyMenu:
     @inject.autoparams()
-    def __init__(self, log: Log, get_weekly_menu: GetWeeklyMenu):
+    def __init__(self, log: Log, get_weekly_menu: GetWeeklyMenu, get_settings: GetSettings):
         self.__log = log
         self.__get_weekly_menu = get_weekly_menu
+        self.__get_settings = get_settings
         self.__commands = {
             'get': self.get
         }
@@ -110,13 +112,17 @@ class WeeklyMenu:
 
             mensaje += "\n*Productos:*\n"
             details = detalles.get('products', [])
-            for part_of_day in details:
-                self.__log.trace("PartOfDay {0}: {1}", part_of_day, details[part_of_day])
-                for product in details[part_of_day]:
-                    self.__log.trace("Product {0}", product)
-                    name = escape_markdown_v2(product['name'])
-                    quantity = escape_markdown_v2(str(product['value']))
-                    mensaje += f" \- {name} \(Cantidad: {quantity}\)\n"
+            parts_of_day = self.__get_settings.execute('settings_v1').get('partsOfDay', '').split(',')
+            for part_of_day in parts_of_day:
+                items = details.get(part_of_day, None)
+                self.__log.trace("PartOfDay {0}: {1}", part_of_day, items)
+                if items:
+                    mensaje += f" *{part_of_day}*:\n"
+                    for product in items:
+                        self.__log.trace("Product {0}", product)
+                        name = escape_markdown_v2(product['name'])
+                        quantity = escape_markdown_v2(str(product['value']))
+                        mensaje += f"  \- {name} \(Cantidad: {quantity}\)\n"
             self.__log.trace(mensaje)
 
             mensaje += "\n"

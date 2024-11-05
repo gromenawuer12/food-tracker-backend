@@ -8,14 +8,16 @@ from ..domain.message_request import MessageRequest
 from ..domain.message_response import MessageResponse
 from ...menus.domain.menu_database import MenuDatabase
 from ...menus.domain.menu_exception import MenuException
+from ...settings.application.get_settings import GetSettings
 from ...utils.log import Log
 
 
 class Menu:
     @inject.autoparams()
-    def __init__(self, log: Log, menu_db: MenuDatabase):
+    def __init__(self, log: Log, menu_db: MenuDatabase, get_settings: GetSettings):
         self.__log = log
         self.__menu_db = menu_db
+        self.__get_settings = get_settings
         self.__commands = {
             'get': self.get
         }
@@ -49,30 +51,20 @@ class Menu:
             mensaje += f" \- {escape_markdown_v2(item['name'])}: {escape_markdown_v2(item['value'])} {escape_markdown_v2(item['unit'])}\n"
 
         mensaje += "\n*Productos:*\n"
+        parts_of_day = self.__get_settings.execute('settings_v1').get('partsOfDay', '').split(',')
         if isinstance(data['products'], dict):
-            for comida, items in data['products'].items():
-                mensaje += f"🍽️ *{escape_markdown_v2(comida)}:*\n"
-                for item in items:
-                    if 'recipe_name' in item and item['recipe_name']:
-                        mensaje += f"   \- {escape_markdown_v2(item['name'])} \(Cantidad: {escape_markdown_v2(item['value'])} \- Receta: {escape_markdown_v2(item['recipe_name'])}\)\n"
-                    else:
-                        mensaje += f"   \- {escape_markdown_v2(item['name'])} \(Cantidad: {escape_markdown_v2(item['value'])}\)\n"
+            for part_of_day in parts_of_day:
+                comida = part_of_day
+                items = data['products'].get(part_of_day, None)
+                if items:
+                    mensaje += f"🍽️ *{escape_markdown_v2(comida)}:*\n"
+                    for item in items:
+                        if 'recipe_name' in item and item['recipe_name']:
+                            mensaje += f"   \- {escape_markdown_v2(item['name'])} \(Cantidad: {escape_markdown_v2(item['value'])} \- Receta: {escape_markdown_v2(item['recipe_name'])}\)\n"
+                        else:
+                            mensaje += f"   \- {escape_markdown_v2(item['name'])} \(Cantidad: {escape_markdown_v2(item['value'])}\)\n"
 
         return mensaje
-
-
-    def get_week_days(self):
-        hoy = datetime.datetime.now()
-
-        monday = hoy - datetime.timedelta(days=hoy.weekday())
-
-        week_days = []
-
-        for i in range(7):
-            day = monday + datetime.timedelta(days=i)
-            week_days.append(day)
-
-        return week_days
 
     def request_users(self, message_request: MessageRequest):
         return MessageResponse(message_request.chat_id, 'Choose user:', json.dumps({
@@ -83,12 +75,18 @@ class Menu:
         }), message_id = message_request.message_id)
 
     def request_days(self, message_request):
-        week_days = self.get_week_days()
+        menus = self.__menu_db.find_by_username(message_request.command_parts[2])
+        days = []
+        for menu in menus:
+            day = menu.get('date', None)
+            if day:
+                days.append(day)
+
         inline_days = []
-        for day in week_days:
+        for day in days:
             inline_days.append([{
-                'text': day.strftime('%Y-%m-%d'),
-                'callback_data': f"{message_request.message_id} " + " ".join(message_request.command_parts) + ' ' + day.strftime('%Y-%m-%d')}]
+                'text': day,
+                'callback_data': f"{message_request.message_id} " + " ".join(message_request.command_parts) + ' ' + day}]
             )
         return MessageResponse(message_request.chat_id, 'Day:', json.dumps({
             'inline_keyboard': inline_days

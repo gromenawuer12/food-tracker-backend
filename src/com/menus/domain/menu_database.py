@@ -9,3 +9,7 @@ class MenuDatabase(ABC):
     @abstractmethod
     def find(self, username, date):
         pass
+
+    @abstractmethod
+    def find_by_username(self, username):
+        pass
