@@ -5,3 +5,7 @@ class ProductDatabase(ABC):
     @abstractmethod
     def create(self, product: Product) -> None:
         pass
+
+    @abstractmethod
+    def find_all(self, last_evaluated_key, items_per_page):
+        pass

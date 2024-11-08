@@ -9,7 +9,7 @@ class GetProduct:
 
     def execute(self, name, last_evaluated_key=None, items_per_page=None):
         if name is None:
-            response = self.__database.findAll(last_evaluated_key, items_per_page)
+            response = self.__database.find_all(last_evaluated_key, items_per_page)
         else:
             response = self.__database.find(name)
         return response
