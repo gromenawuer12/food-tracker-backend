@@ -46,11 +46,13 @@ class ProductsBlueprint:
         query_string_parameters = event['queryStringParameters'];
         items_per_page = None
         last_evaluated_key = None
+        query = None
         if query_string_parameters:
-            items_per_page = query_string_parameters.get('itemsPerPage', None)
+            query = query_string_parameters.get('query', None)
+            items_per_page = query_string_parameters.get('items_per_page', None)
             last_evaluated_key = query_string_parameters.get('last_evaluated_key', None)
 
-        return self.get_product.execute(name, last_evaluated_key, items_per_page)
+        return self.get_product.execute(name, query, last_evaluated_key, items_per_page)
 
     @token_required
     def length(self, event):

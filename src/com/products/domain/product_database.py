@@ -7,5 +7,5 @@ class ProductDatabase(ABC):
         pass
 
     @abstractmethod
-    def find_all(self, last_evaluated_key, items_per_page):
+    def find_all(self, query, last_evaluated_key, items_per_page):
         pass

@@ -30,19 +30,23 @@ class ProductDynamoDB(ProductDatabase):
             if e.response['Error']['Code'] == 'ConditionalCheckFailedException':
                 raise ProductException("There is a conflict to create this resource", 409)
 
-    def find_all(self, last_evaluated_key, items_per_page):
-        self.log.trace('ProductDynamoDB find_all: {0} : {1}', last_evaluated_key, items_per_page)
+    def find_all(self, query, last_evaluated_key, items_per_page):
+        self.log.trace('ProductDynamoDB find_all: "{0}" [{1} : {2}]', query, last_evaluated_key, items_per_page)
 
         params = {
             'ProjectionExpression': "#nm, SK, nutritional_value, description, quantity, supermarket, units, recipe_name",
             'ExpressionAttributeNames': {"#nm": "name"},
             'KeyConditionExpression': Key("PK").eq('product'),
         }
-        if items_per_page:
+        if query:
+            params['FilterExpression'] = 'contains(#nm, :nameQuery)'
+            params['ExpressionAttributeValues'] = {':nameQuery': query}
+        if not query and items_per_page:
             params['Limit'] = int(items_per_page)
-        if last_evaluated_key:
+        if not query and last_evaluated_key:
             params['ExclusiveStartKey'] = json.loads(last_evaluated_key)
 
+        self.log.trace(params)
         response = self.table.query(**params)
 
         if 'Items' not in response:
