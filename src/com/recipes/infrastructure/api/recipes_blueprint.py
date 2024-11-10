@@ -30,7 +30,17 @@ class RecipesBlueprint:
     @token_required
     def get(self, event):
         name = event['pathParameters'].get("name", None)
-        return self.get_recipe.execute(name)
+
+        query_string_parameters = event['queryStringParameters'];
+        items_per_page = None
+        last_evaluated_key = None
+        query = None
+        if query_string_parameters:
+            query = query_string_parameters.get('query', None)
+            items_per_page = query_string_parameters.get('items_per_page', None)
+            last_evaluated_key = query_string_parameters.get('last_evaluated_key', None)
+
+        return self.get_recipe.execute(name, query, last_evaluated_key, items_per_page)
 
     @token_required
     def post(self, event):
