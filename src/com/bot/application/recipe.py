@@ -57,7 +57,7 @@ class Recipe:
 
     def __format(self, data):
         self.__log.trace('format {0}', data)
-        output = f"*Recipe*: {data['name']}\n\n"
+        output = f"*Recipe*: {data['name']}\n`/recipes get {escape_markdown_v2('+'.join(data['name'].split(' ')))}`\n\n"
         self.__log.trace('format {0}', output)
 
         output += "*Nutritional Value*:\n"
