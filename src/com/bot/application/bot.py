@@ -6,6 +6,7 @@ import inject
 import requests
 
 from .menu import Menu
+from .recipe import Recipe
 from .weekly_menu import WeeklyMenu
 from ..domain.message_response import MessageResponse
 from ..domain.message_request import MessageRequest
@@ -15,13 +16,14 @@ TELEGRAM_TOKEN = os.environ['TELEGRAM_TOKEN']
 
 class Bot:
     @inject.autoparams()
-    def __init__(self, log: Log, menu: Menu, weekly_menu: WeeklyMenu):
+    def __init__(self, log: Log, menu: Menu, weekly_menu: WeeklyMenu, recipe: Recipe):
         self.__log = log
         self.__commands = {
             "/start": lambda message_request: MessageResponse(message_request.chat_id, 'Choose an option', json.dumps({
                 'inline_keyboard': [
-                    [{'text': 'Menus', 'callback_data': f'{message_request.message_id} /menu get'}],
-                    [{'text': 'WeeklyMenus', 'callback_data': f'{message_request.message_id} /weekly-menu get'}]
+                    [{'text': 'Menus', 'callback_data': f'{message_request.message_id} /menus get'}],
+                    [{'text': 'WeeklyMenus', 'callback_data': f'{message_request.message_id} /weekly-menus get'}],
+                    [{'text': 'Recipes', 'callback_data': f'{message_request.message_id} /recipes help'}]
                 ]
             }), message_id = message_request.message_id),
             '/help': json.dumps({
@@ -29,8 +31,9 @@ class Bot:
                     {'text': 'TODAY', 'callback_data': 'today'},
                 ]]
             }),
-            '/menu': menu.resolver,
-            '/weekly-menu': weekly_menu.resolver
+            '/menus': menu.resolver,
+            '/weekly-menus': weekly_menu.resolver,
+            '/recipes': recipe.resolver
         }
 
     def execute(self, body):

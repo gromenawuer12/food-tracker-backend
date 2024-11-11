@@ -9,3 +9,7 @@ class RecipeDatabase(ABC):
     @abstractmethod
     def find_all(self, query, last_evaluated_key, items_per_page) -> None:
         pass
+
+    @abstractmethod
+    def find(self, name):
+        pass
