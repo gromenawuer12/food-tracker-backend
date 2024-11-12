@@ -8,6 +8,7 @@ from ..domain.message_response import MessageResponse
 from ...recipes.application.get_recipe import GetRecipe
 from ...utils.log import Log
 
+RECIPES_COMMAND = '/recipes'
 
 class Recipe:
     @inject.autoparams()
@@ -25,7 +26,7 @@ class Recipe:
         return self.__commands[message_request.command_parts[1]](message_request)
 
     def __help(self, message_request: MessageRequest):
-        return MessageResponse(message_request.chat_id, '`/recipes get <THE+NAME>`\n`/recipes search <TEXT>`', message_id = message_request.message_id)
+        return MessageResponse(message_request.chat_id, f'`{RECIPES_COMMAND} get <THE+NAME>`\n`{RECIPES_COMMAND} search <TEXT>`', message_id = message_request.message_id)
 
     def __search(self, message_request: MessageRequest):
         if message_request.command_parts_length == 3:
@@ -39,7 +40,7 @@ class Recipe:
                 name = recipe['name']
                 inline_recipes.append([{
                     'text': name,
-                    'callback_data': f"{message_request.message_id} " + " /recipes get " + "+".join(name.split())}]
+                    'callback_data': f"{message_request.message_id} " + RECIPES_COMMAND + " get " + "+".join(name.split())}]
                 )
             return MessageResponse(message_request.chat_id, 'Recipes:', json.dumps({
                 'inline_keyboard': inline_recipes
@@ -57,7 +58,7 @@ class Recipe:
 
     def __format(self, data):
         self.__log.trace('format {0}', data)
-        output = f"*Recipe*: {data['name']}\n`/recipes get {escape_markdown_v2('+'.join(data['name'].split(' ')))}`\n\n"
+        output = f"*Recipe*: {data['name']}\n`{RECIPES_COMMAND} get {escape_markdown_v2('+'.join(data['name'].split(' ')))}`\n\n"
         self.__log.trace('format {0}', output)
 
         output += "*Nutritional Value*:\n"

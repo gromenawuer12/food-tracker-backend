@@ -11,6 +11,7 @@ from ...utils.log import Log
 from ...weekly_menus.application.get_weekly_menu import GetWeeklyMenu
 from ...weekly_menus.domain.weekly_menu_exception import WeeklyMenuException
 
+WEEKLY_MENU_COMMAND = '/weekly-menus'
 
 class WeeklyMenu:
     @inject.autoparams()
@@ -67,8 +68,8 @@ class WeeklyMenu:
     def request_users(self, message_request: MessageRequest):
         return MessageResponse(message_request.chat_id, 'Choose user:', json.dumps({
             'inline_keyboard': [[
-                {'text': 'Elias', 'callback_data': f'{message_request.message_id} /weekly-menu get elias'},
-                {'text': 'Roma', 'callback_data': f'{message_request.message_id} /weekly-menu get roma'},
+                {'text': 'Elias', 'callback_data': f'{message_request.message_id} {WEEKLY_MENU_COMMAND} get elias'},
+                {'text': 'Roma', 'callback_data': f'{message_request.message_id} {WEEKLY_MENU_COMMAND} get roma'},
             ]]
         }), message_id = message_request.message_id)
 

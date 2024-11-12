@@ -11,6 +11,7 @@ from ...menus.domain.menu_exception import MenuException
 from ...settings.application.get_settings import GetSettings
 from ...utils.log import Log
 
+MENU_COMMAND = '/menus'
 
 class Menu:
     @inject.autoparams()
@@ -27,6 +28,7 @@ class Menu:
         return self.__commands[message_request.command_parts[1]](message_request)
 
     def get(self, message_request: MessageRequest):
+        self.__log.trace('Bot Menu' + message_request.to_string())
         if message_request.command_parts_length == 2:
             return self.request_users(message_request)
 
@@ -69,12 +71,13 @@ class Menu:
     def request_users(self, message_request: MessageRequest):
         return MessageResponse(message_request.chat_id, 'Choose user:', json.dumps({
             'inline_keyboard': [[
-                {'text': 'Elias', 'callback_data': f'{message_request.message_id} /menu get elias'},
-                {'text': 'Roma', 'callback_data': f'{message_request.message_id} /menu get roma'},
+                {'text': 'Elias', 'callback_data': f'{message_request.message_id} {MENU_COMMAND} get elias'},
+                {'text': 'Roma', 'callback_data': f'{message_request.message_id} {MENU_COMMAND} get roma'},
             ]]
         }), message_id = message_request.message_id)
 
     def request_days(self, message_request):
+        self.__log.trace('request days')
         menus = self.__menu_db.find_by_username(message_request.command_parts[2])
         days = []
         for menu in menus:

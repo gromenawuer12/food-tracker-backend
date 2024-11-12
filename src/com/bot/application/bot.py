@@ -5,9 +5,9 @@ import sys
 import inject
 import requests
 
-from .menu import Menu
-from .recipe import Recipe
-from .weekly_menu import WeeklyMenu
+from .menu import Menu, MENU_COMMAND
+from .recipe import Recipe, RECIPES_COMMAND
+from .weekly_menu import WeeklyMenu, WEEKLY_MENU_COMMAND
 from ..domain.message_response import MessageResponse
 from ..domain.message_request import MessageRequest
 from ...utils.log import Log
@@ -21,9 +21,9 @@ class Bot:
         self.__commands = {
             "/start": lambda message_request: MessageResponse(message_request.chat_id, 'Choose an option', json.dumps({
                 'inline_keyboard': [
-                    [{'text': 'Menus', 'callback_data': f'{message_request.message_id} /menus get'}],
-                    [{'text': 'WeeklyMenus', 'callback_data': f'{message_request.message_id} /weekly-menus get'}],
-                    [{'text': 'Recipes', 'callback_data': f'{message_request.message_id} /recipes help'}]
+                    [{'text': 'Menus', 'callback_data': f'{message_request.message_id} {MENU_COMMAND} get'}],
+                    [{'text': 'WeeklyMenus', 'callback_data': f'{message_request.message_id} {WEEKLY_MENU_COMMAND} get'}],
+                    [{'text': 'Recipes', 'callback_data': f'{message_request.message_id} {RECIPES_COMMAND} help'}]
                 ]
             }), message_id = message_request.message_id),
             '/help': json.dumps({
@@ -31,9 +31,9 @@ class Bot:
                     {'text': 'TODAY', 'callback_data': 'today'},
                 ]]
             }),
-            '/menus': menu.resolver,
-            '/weekly-menus': weekly_menu.resolver,
-            '/recipes': recipe.resolver
+            MENU_COMMAND: menu.resolver,
+            WEEKLY_MENU_COMMAND: weekly_menu.resolver,
+            RECIPES_COMMAND: recipe.resolver
         }
 
     def execute(self, body):
