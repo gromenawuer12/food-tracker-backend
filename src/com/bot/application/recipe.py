@@ -79,7 +79,7 @@ class Recipe:
 
         if data['description']:
             output += "\n*Instructions:*\n"
-            output += data['description'].replace('.', '\.')
+            output += data['description'].replace('.', '\.').replace('-', '\-')
         self.__log.trace('format {0}', output)
 
         return output
