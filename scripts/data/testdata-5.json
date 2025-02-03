@@ -1,16 +1,928 @@
-{"food-tracker":[
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Cous - Cous"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"349"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"12"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"69"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"2.4"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"1.80"}]}]},"description":{"S":""},"name":{"S":"Cous - Cous"},"supermarket":{"L":[{"S":"Carrefour"}]}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Crema de cacahuete"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"618"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"50"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"7"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"3.6"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"30"}]}]},"description":{"NULL":true},"name":{"S":"Crema de cacahuete"},"recipe_name":{"NULL":true},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Croquestas de coliflor"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"342.0"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"20.98"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"45.73"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"8.95"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"33.22"}]}]},"description":{"NULL":true},"name":{"S":"Croquestas de coliflor"},"recipe_name":{"S":"Croquestas de coliflor"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Curry de espinaca"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"609.1"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"29.69"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"77.71"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"22.08"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"113.9"}]}]},"description":{"S":"Pick up limes"},"name":{"S":"Curry de espinaca"},"recipe_name":{"S":"Curry de espinaca"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Edamame"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"134"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"12"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"12"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"0.9"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"3.3"}]}]},"description":{"NULL":true},"name":{"S":"Edamame"},"recipe_name":{"NULL":true},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Embutido vegetal"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"153"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"5.2"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"1.5"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":".7"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"14"}]}]},"description":{"NULL":true},"name":{"S":"Embutido vegetal"},"recipe_name":{"NULL":true},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Empanadillas de espinaca"},"nutritional_value":{"L":[{"L":[{"S":"Azucares"},{"S":"g"},{"S":"1.33"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"41.62"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"62.15"}]},{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"695.75"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"22.27"}]}]},"description":{"NULL":true},"name":{"S":"Empanadillas de espinaca"},"recipe_name":{"S":"Empanadillas de espinaca"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Endivias"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"17"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"1.3"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"3.4"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"0.3"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0.2"}]}]},"description":{"NULL":true},"name":{"S":"Endivias"},"recipe_name":{"NULL":true},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Endivias con queso azul"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"321.35"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"9.6"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"36.9"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"20.99"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"18.05"}]}]},"description":{"NULL":true},"name":{"S":"Endivias con queso azul"},"recipe_name":{"S":"Endivias con queso azul"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Ensalada de Sarraceno"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"623.25"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"17.59"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"109.58"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"32.83"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"13.88"}]}]},"description":{"NULL":true},"name":{"S":"Ensalada de Sarraceno"},"recipe_name":{"S":"Ensalada de Sarraceno"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Ensalada de col"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"66.0"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"2.2"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"16.0"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"7.9"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0.3"}]}]},"description":{"NULL":true},"name":{"S":"Ensalada de col"},"recipe_name":{"S":"Ensalada de col"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Ensalada de lombarda"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"370.3"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"7.35"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"22.48"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"8.25"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"27.8"}]}]},"description":{"NULL":true},"name":{"S":"Ensalada de lombarda"},"recipe_name":{"S":"Ensalada de lombarda"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Ensalada de remolacha"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"346.85"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"13.74"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"37.13"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"22.17"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"18.11"}]}]},"description":{"NULL":true},"name":{"S":"Ensalada de remolacha"},"recipe_name":{"S":"Ensalada de remolacha"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Esparrago"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"20"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"2.2"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"3.9"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"1.9"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0.1"}]}]},"description":{"NULL":true},"name":{"S":"Esparrago"},"supermarket":{"NULL":true}}}}
-]}
+{
+  "food-tracker": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Calabacin relleno de lenteja"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "590.6"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "37.1"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "52.81"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "14.7"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "28.65"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Calabacin relleno de lenteja"
+          },
+          "recipe_name": {
+            "S": "Calabacin relleno de lenteja"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Calabacin relleno de soja"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "547.9"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "40.71"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "33.36"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "19.95"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "30.61"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Calabacin relleno de soja"
+          },
+          "recipe_name": {
+            "S": "Calabacin relleno de soja"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Calabaza"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "19"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1.13"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "4.59"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1.9"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.13"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": ""
+          },
+          "name": {
+            "S": "Calabaza"
+          },
+          "supermarket": {
+            "L": [
+              {
+                "S": "Mercado"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Caldo vegetal"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "15"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.2"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.3"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": "Casero"
+          },
+          "name": {
+            "S": "Caldo vegetal"
+          },
+          "supermarket": {
+            "L": [
+              {
+                "S": "Fruteria"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Canela"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "247"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1.2"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "81"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "2.2"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "4"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Canela"
+          },
+          "recipe_name": {
+            "NULL": true
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Carpaccio de remolacha, zanahoria y branza"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "240.7"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "20.65"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "32.7"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "20.83"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "4.35"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Carpaccio de remolacha, zanahoria y branza"
+          },
+          "recipe_name": {
+            "S": "Carpaccio de remolacha, zanahoria y branza"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Castaña"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "245"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "3"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "52.96"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "10.6"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "2.2"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Castaña"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Cebolla"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "40"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1.1"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "9"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "4.2"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.1"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Cebolla"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Cecina"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "259"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "38"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "12"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Cecina"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Champiñones"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "22"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "3"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "3.3"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "2"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.3"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": ""
+          },
+          "name": {
+            "S": "Champiñones"
+          },
+          "supermarket": {
+            "L": [
+              {
+                "S": "Fruteria"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

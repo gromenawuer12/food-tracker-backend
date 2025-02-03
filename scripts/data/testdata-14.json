@@ -1,16 +1,922 @@
-{"food-tracker":[
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Shitake"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"34"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"2.2"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"7"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"2.4"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0.5"}]}]},"description":{"NULL":true},"name":{"S":"Shitake"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Sirope de agave"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"420"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"0"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"105"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"105"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0"}]}]},"description":{"NULL":true},"name":{"S":"Sirope de agave"},"recipe_name":{"NULL":true},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Soja Texturizada"},"nutritional_value":{"L":[{"L":[{"S":"Azucares"},{"S":"g"},{"S":"15"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"7.3"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"31"}]},{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"348"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"44.6"}]}]},"description":{"S":""},"name":{"S":"Soja Texturizada"},"recipe_name":{"NULL":true},"supermarket":{"L":[{"S":"Carrefour"}]}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Sushi vegano"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"830.22"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"37.68"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"108.11"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"20.08"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"28.66"}]}]},"description":{"NULL":true},"name":{"S":"Sushi vegano"},"recipe_name":{"S":"Sushi vegano"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Taco de lechuga y seitan"},"nutritional_value":{"L":[{"L":[{"S":"Azucares"},{"S":"g"},{"S":"1.53"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"9.04"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"10.54"}]},{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"186.21"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"14.18"}]}]},"description":{"NULL":true},"name":{"S":"Taco de lechuga y seitan"},"recipe_name":{"S":"Taco de lechuga y seitan"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Taco de soja texturizada"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"173.4"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"17.82"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"15.39"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"7.5"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"3.83"}]}]},"description":{"NULL":true},"name":{"S":"Taco de soja texturizada"},"recipe_name":{"S":"Taco de soja texturizada"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Tahini"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"595"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"17"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"21"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"0.5"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"54"}]}]},"description":{"S":"Pasta de sesamo"},"name":{"S":"Tahini"},"supermarket":{"L":[{"S":"Carrefour"}]}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Tallarines con pesto y champiñones"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"569.15"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"14.0"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"7.0"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"29.4"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"63.15"}]}]},"description":{"NULL":true},"name":{"S":"Tallarines con pesto y champiñones"},"recipe_name":{"S":"Tallarines con pesto y champiñones"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Tallarines de trigo"},"nutritional_value":{"L":[{"L":[{"S":"Azucares"},{"S":"g"},{"S":"3"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0.6"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"75"}]},{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"345"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"10"}]}]},"description":{"S":"75 gramos por persona"},"name":{"S":"Tallarines de trigo"},"recipe_name":{"NULL":true},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Tapioca"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"353"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"0"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"88"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"0"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0"}]}]},"description":{"NULL":true},"name":{"S":"Tapioca"},"recipe_name":{"NULL":true},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Terchiniki"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"1020.9"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"28.95"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"107.79"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"12.38"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"1.62"}]}]},"description":{"NULL":true},"name":{"S":"Terchiniki"},"recipe_name":{"S":"Terchiniki"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Tofu"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"168"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"17"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"0.9"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"0.5"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"10"}]}]},"description":{"NULL":true},"name":{"S":"Tofu"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Tofu con zanahoria y col"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"316.1"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"19.91"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"8.32"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"17.88"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"20.13"}]}]},"description":{"NULL":true},"name":{"S":"Tofu con zanahoria y col"},"recipe_name":{"S":"Tofu con zanahoria y col"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Tomate"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"22"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"1"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"3.5"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"0"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0.11"}]}]},"description":{"S":""},"name":{"S":"Tomate"},"supermarket":{"L":[{"S":"Frurteria"}]}}}}
-]}
+{
+  "food-tracker": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Hummus"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "376.1"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "13.22"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.4"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "21.09"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "33.81"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Hummus"
+          },
+          "recipe_name": {
+            "S": "Hummus"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Jamón Iberico"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "335"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "33"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "13"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": ""
+          },
+          "name": {
+            "S": "Jamón Iberico"
+          },
+          "supermarket": {
+            "L": []
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Jengibre"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "80"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1.8"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "18"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "2"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.8"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Jengibre"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Kcal"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "40"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "70"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "1000"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "5"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Kcal"
+          },
+          "recipe_name": {
+            "NULL": true
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Kefir"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "65"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "3.4"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "3.8"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "3.8"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "3.8"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": "Pastoret - con leche de vacas de pasto"
+          },
+          "name": {
+            "S": "Kefir"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Kefir con fruta y nueces"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "352.33"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "12.67"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "29.33"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "21.06"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "19.83"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Kefir con fruta y nueces"
+          },
+          "recipe_name": {
+            "S": "Kefir con fruta y nueces"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Kimchi"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "30"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "6"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Kimchi"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Kofta de bulgur y lentejas"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "19.2"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "18.13"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "104.78"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "652.5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "24.91"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Kofta de bulgur y lentejas"
+          },
+          "recipe_name": {
+            "S": "Kofta de bulgur y lentejas"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Koftas de alubias y nueces"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "604.44"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "20.55"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "3.99"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "34.59"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "43.86"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Koftas de alubias y nueces"
+          },
+          "recipe_name": {
+            "S": "Koftas de alubias y nueces"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Lasaña"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "590.75"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "35.43"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "54.04"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "7.29"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "21.97"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Lasaña"
+          },
+          "recipe_name": {
+            "S": "Lasaña"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,16 +1,923 @@
-{"food-tracker":[
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Jamón Iberico"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"335"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"33"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"0"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"0"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"13"}]}]},"description":{"S":""},"name":{"S":"Jamón Iberico"},"supermarket":{"L":[]}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Jengibre"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"80"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"1.8"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"18"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"2"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0.8"}]}]},"description":{"NULL":true},"name":{"S":"Jengibre"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Kcal"},"nutritional_value":{"L":[{"L":[{"S":"Azucares"},{"S":"g"},{"S":"40"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"50"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"70"}]},{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"1000"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"5"}]}]},"description":{"NULL":true},"name":{"S":"Kcal"},"recipe_name":{"NULL":true},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Kefir"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"65"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"3.4"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"3.8"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"3.8"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"3.8"}]}]},"description":{"S":"Pastoret - con leche de vacas de pasto"},"name":{"S":"Kefir"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Kefir con fruta y nueces"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"352.33"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"12.67"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"29.33"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"21.06"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"19.83"}]}]},"description":{"NULL":true},"name":{"S":"Kefir con fruta y nueces"},"recipe_name":{"S":"Kefir con fruta y nueces"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Kimchi"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"30"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"1"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"6"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"0"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0"}]}]},"description":{"NULL":true},"name":{"S":"Kimchi"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Kofta de bulgur y lentejas"},"nutritional_value":{"L":[{"L":[{"S":"Azucares"},{"S":"g"},{"S":"19.2"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"18.13"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"104.78"}]},{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"652.5"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"24.91"}]}]},"description":{"NULL":true},"name":{"S":"Kofta de bulgur y lentejas"},"recipe_name":{"S":"Kofta de bulgur y lentejas"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Koftas de alubias y nueces"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"604.44"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"20.55"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"3.99"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"34.59"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"43.86"}]}]},"description":{"NULL":true},"name":{"S":"Koftas de alubias y nueces"},"recipe_name":{"S":"Koftas de alubias y nueces"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Lasaña"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"959.88"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"53.67"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"78.49"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"10.85"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"41.71"}]}]},"description":{"NULL":true},"name":{"S":"Lasaña"},"recipe_name":{"S":"Lasaña"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Leche de coco"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"201"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"2.2"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"2.2"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"2.2"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"17.6"}]}]},"description":{"NULL":true},"name":{"S":"Leche de coco"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Leche de nuez"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"71"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"1.1"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"8.8"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"5.8"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"3.3"}]}]},"description":{"NULL":true},"name":{"S":"Leche de nuez"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Lechuga"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"15"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"1"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"2.9"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"0.8"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0.2"}]}]},"description":{"S":""},"name":{"S":"Lechuga"},"supermarket":{"L":[{"S":"Fruteria"}]}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Lechuga aliñada"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"113.8"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"1.61"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"5.25"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"1.45"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"10.33"}]}]},"description":{"NULL":true},"name":{"S":"Lechuga aliñada"},"recipe_name":{"S":"Lechuga aliñada"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Lenteja"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"329"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"24"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"60.6"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"0"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"1.2"}]}]},"description":{"NULL":true},"name":{"S":"Lenteja"},"supermarket":{"NULL":true}}}}
-]}
+{
+  "food-tracker": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Esparrago"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "2.2"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "3.9"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1.9"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.1"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Esparrago"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Esparragos al wok"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "128.4"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "4.4"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "3.8"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "10.2"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "7.8"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Esparragos al wok"
+          },
+          "recipe_name": {
+            "S": "Esparragos al wok"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Espinaca"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "23"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "2.9"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "3.6"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.4"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.4"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Espinaca"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Espinacas con queso azul"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "342.15"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "16.85"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1.46"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "28.2"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "12.2"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Espinacas con queso azul"
+          },
+          "recipe_name": {
+            "S": "Espinacas con queso azul"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Falafel "
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "223"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "8.5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "24"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1.7"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "10"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Falafel "
+          },
+          "recipe_name": {
+            "NULL": true
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Falafel con comino"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "324.55"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "12.5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "39.07"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "2.44"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "12.29"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Falafel con comino"
+          },
+          "recipe_name": {
+            "S": "Falafel con comino"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Fibra de Avena"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "376"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "13"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "49"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1.4"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "11"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": ""
+          },
+          "name": {
+            "S": "Fibra de Avena"
+          },
+          "supermarket": {
+            "L": [
+              {
+                "S": "Carrefour"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Fideos de arroz"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "357"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "2.9"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "78.2"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1.2"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Fideos de arroz"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Fideos de arroz con curry"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "616.05"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "13.57"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "86.21"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "16.2"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "24.73"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Fideos de arroz con curry"
+          },
+          "recipe_name": {
+            "S": "Fideos de arroz con curry"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Frambuesa"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "53"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1.2"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "12"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "4.4"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.7"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Frambuesa"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    }
+  ]
+}

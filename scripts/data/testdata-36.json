@@ -1,0 +1,1486 @@
+{
+  "food-tracker": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Milanesa vegana con setas"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "2240.05"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "76.8"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "7.68"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "156.64"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "138.96"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "S": "Ingredientes\n- 3 cucharas de lino, mezclar con 9 cucharas de agua.\n- 4 cuchas de harina de garbanzos, mezclar con 4 cucharas de agua.\n- 250 - 300 gramos de setas laminada, cortadas en finas tiras.\n- Sal\n- Pimienta\n- Finas hierbas\n- Salsa de soja\n- 150 gramos de semillas de girasol\n- 75 gramos de sesamo\n- 1 cdita. pimienta negra \n- 1 cdita. ajo en polvo\n- 1 cdita. especies carne\n- Puede que un poco de agua.\n- Pan rallado\nPreparacion\n1. Hacer huevo de lino y garbanzo.\n2. Cortar las setas en finas tiras y hacerlas en la sarten con salsa de soja, finas hierbas y pimienta.\n3. En un batidora triturar semillas de girasol y sesamo.\n4. Mezclar las semillas, las setas con pimienta, ajo en polvo y especies de carne. \n5. Si la mezcla es muy seca, añadir agua poco a poco.\n6. Dividir la masa en 4 o 8 milanesas.\n7. Aplanarlas y empanarlas en pan rallado.\n8. Hacer en la sarten.\n"
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Lino"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "45"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Harina de garbanzos"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "60"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Seta laminada"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "300"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Pipas de girasol"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "150"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Sesamo"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "75"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Pan rallado"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Milanesa vegana con setas"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Mungo con queso"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "566.35"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "27.75"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "3.58"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "37.35"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "31.88"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "15"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Mungo"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Queso raclette"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "75"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Mungo con queso"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Pak choi con salsa de miso"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "412.3"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "30.13"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "38.81"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "22.26"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "16.02"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "S": "- 1 cucharada de vinagre de arroz\n- 2 cucharadas de agua\n- 1 cucharas de sirope de agave\n- 3 cucharadas de miso\n- 1 cucharadas de salsa de soja\n- 1 o 2 cucharadas de zumo de limon o naranja"
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Aceite de coco"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "10"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Pak choi"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "300"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Miso"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "30"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Limon"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "30"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Sirope de agave"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "10"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Soja Texturizada"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Pak choi con salsa de miso"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Pan Elias"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "273.0"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "7.5"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "57.0"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "0.22"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "0.75"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Harina de trigo"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "75"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Pan Elias"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Pan PIzza"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "832.4"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "46.2"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "69.59"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "8.1"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "39.67"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Barra pan"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Tomate Frito"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Queso curado"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "80"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Queso azul"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "40"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Pan PIzza"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Pan con queso"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "1300.0"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "62.0"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "128.0"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "7.2"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "61.6"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Barra pan"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Queso azul"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Pan con queso"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Patata con salsa de Queso"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "1654.5"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "45.02"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "147.75"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "46.09"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "8.82"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Patata "
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "650"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Leche de nuez"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Amidon de tapioca"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Champiñones"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "150"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Queso azul"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "70"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Patata con salsa de Queso"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Pate de aceitunas con tostas"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "1112.85"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "10.8"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "3.09"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "89.04"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "64.92"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "60"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Aceitunas negras"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "150"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Pan redondo chapata"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "90"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Pate de aceitunas con tostas"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Pita con falafel"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "1490.0"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "61.0"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "262.56"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "17.28"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "20.19"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Barra pan"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "320"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Lechuga"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Tomate"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Pepino"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Perejil"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Falafel "
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Pita con falafel"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Pizza"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "1389.72"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "54.2"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "5.58"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "52.22"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "166.88"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "6"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Harina de trigo"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "192"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Pan rallado"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Tomate Frito"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "60"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Queso azul"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "60"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Queso camembert"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Pizza"
+          }
+        }
+      }
+    }
+  ]
+}

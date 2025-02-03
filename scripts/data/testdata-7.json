@@ -1,16 +1,935 @@
-{"food-tracker":[
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Garden gourmet bocaditos"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"220"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"23.1"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"3.4"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"2.6"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"11"}]}]},"description":{"S":"175 gramos"},"name":{"S":"Garden gourmet bocaditos"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Garden gourmet hamburguesa"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"197"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"14"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"1.9"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"1"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"13.5"}]}]},"description":{"S":"115 por persona"},"name":{"S":"Garden gourmet hamburguesa"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Garden gourmet merluza"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"226"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"13.2"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"14.2"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"1.3"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"12.4"}]}]},"description":{"NULL":true},"name":{"S":"Garden gourmet merluza"},"recipe_name":{"NULL":true},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Gluten"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"358"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"69"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"13.8"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"1.3"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"1.9"}]}]},"description":{"S":""},"name":{"S":"Gluten"},"supermarket":{"L":[{"S":"Herbolario"}]}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Gofre de falafel"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"404.32"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"16.76"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"4.26"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"16.12"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"45.12"}]}]},"description":{"NULL":true},"name":{"S":"Gofre de falafel"},"recipe_name":{"S":"Gofre de falafel"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Gofres"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"574.11"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"14.0"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"19.66"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"20.66"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"68.13"}]}]},"description":{"NULL":true},"name":{"S":"Gofres"},"recipe_name":{"S":"Gofres"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Golubtsi"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"518.77"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"34.38"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"17.73"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"16.34"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"64.22"}]}]},"description":{"NULL":true},"name":{"S":"Golubtsi"},"recipe_name":{"S":"Golubtsi"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Grissini"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"226"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"8.5"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"45"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"0.8"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0.7"}]}]},"description":{"NULL":true},"name":{"S":"Grissini"},"recipe_name":{"NULL":true},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Guisante en lata"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"80"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"5.4"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"10"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"1.7"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0.8"}]}]},"description":{"NULL":true},"name":{"S":"Guisante en lata"},"recipe_name":{"NULL":true},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Guisante fresco"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"81"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"5"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"14"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"6"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0.4"}]}]},"description":{"NULL":true},"name":{"S":"Guisante fresco"},"recipe_name":{"NULL":true},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Habas"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"65"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"4.6"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"8.6"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"4.4"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0.4"}]}]},"description":{"NULL":true},"name":{"S":"Habas"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Halloumi"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"317"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"17.5"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"3"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"2"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"20"}]}]},"description":{"NULL":true},"name":{"S":"Halloumi"},"recipe_name":{"NULL":true},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Halloumi con lechga"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"420.4"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"27.7"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"5.9"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"2.8"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"21.0"}]}]},"description":{"NULL":true},"name":{"S":"Halloumi con lechga"},"recipe_name":{"S":"Halloumi con lechga"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Hambuerguesa de garbanzos y queso"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"1331.55"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"55.2"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"132.28"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"0.52"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"60.62"}]}]},"description":{"NULL":true},"name":{"S":"Hambuerguesa de garbanzos y queso"},"recipe_name":{"S":"Hambuerguesa de garbanzos y queso"},"supermarket":{"NULL":true}}}}
-]}
+{
+  "food-tracker": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Coliflor al horno con ensalada"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "5.05"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "35.51"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "20.65"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "275.6"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "11.3"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Coliflor al horno con ensalada"
+          },
+          "recipe_name": {
+            "S": "Coliflor al horno con ensalada"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Coliflor estilo pollo"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "377.75"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "12.37"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "74.91"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "11.85"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "26.46"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": "1. Cortar coliflor en trozos pequeños.\n2. En un bol grande añadir 250 gramos de leche, 2 cucharas de vinagre y 1 cuchara de cayena. Dejar reposar 20 minutos. \n3. En un plato hondo mezclar 1 cuchara de maizena, 160 gramos de harina, 1 cuchara de azucar, 1 cuchara de pimienta, 1 cuchara de paprika, 1 cucharas de cayena, 1 cuchara de ajo en polvo y1 1/2 de sal. \n4. Del bol grande sacar la coliflor y a la mezcla de leche, añades 50 de leche y 40 gramos de harina. \n5. Rebozamos una  vez, Liquido,harina, . \n6. Los dejamos en el horno a 180 gramos unos 30 minutos. Dar la vuelta a la mitad\n7. Sale para 4 raciones.\n"
+          },
+          "name": {
+            "S": "Coliflor estilo pollo"
+          },
+          "recipe_name": {
+            "S": "Coliflor estilo pollo"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Copos de maiz"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "371"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "8"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "80"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Copos de maiz"
+          },
+          "recipe_name": {
+            "NULL": true
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Cous - Cous"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "349"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "12"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "69"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "2.4"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1.80"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": ""
+          },
+          "name": {
+            "S": "Cous - Cous"
+          },
+          "supermarket": {
+            "L": [
+              {
+                "S": "Carrefour"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Cozonac"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "395"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "18.7"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "44.5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "21.7"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "12.1"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Cozonac"
+          },
+          "recipe_name": {
+            "NULL": true
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Crema de cacahuete"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "618"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "7"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "3.6"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "30"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Crema de cacahuete"
+          },
+          "recipe_name": {
+            "NULL": true
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Croquestas de coliflor"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "342.0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "20.98"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "45.73"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "8.95"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "33.22"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Croquestas de coliflor"
+          },
+          "recipe_name": {
+            "S": "Croquestas de coliflor"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Curry de espinaca"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "609.1"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "29.69"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "77.71"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "22.08"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "113.9"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": "Pick up limes"
+          },
+          "name": {
+            "S": "Curry de espinaca"
+          },
+          "recipe_name": {
+            "S": "Curry de espinaca"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Curry de mungo, guisantes, batata y espinaca"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "553.98"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "18.84"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "80.77"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "11.15"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "17.08"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Curry de mungo, guisantes, batata y espinaca"
+          },
+          "recipe_name": {
+            "S": "Curry de mungo, guisantes, batata y espinaca"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Curry en polvo"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "325"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "14"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "58"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "2.2"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "13"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Curry en polvo"
+          },
+          "recipe_name": {
+            "NULL": true
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    }
+  ]
+}

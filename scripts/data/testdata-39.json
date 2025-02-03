@@ -1,0 +1,1603 @@
+{
+  "food-tracker": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Taco de lechuga y seitan"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "3.5"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "25.34"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "26.36"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "567.24"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "51.9"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Seitan 1/8"
+                  },
+                  {
+                    "S": "portions"
+                  },
+                  {
+                    "S": "2"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "10"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Lechuga"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Tomate"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Cebolla"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Perejil"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Taco de lechuga y seitan"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Taco de soja texturizada"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "346.8"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "35.65"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "30.79"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "15.01"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "7.67"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Caldo vegetal"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Soja Texturizada"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "75"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Tomate Frito"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "40"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Lechuga"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Taco de soja texturizada"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Tacos al seitan"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "1442.45"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "53.62"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "131.66"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "1.66"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "65.86"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Gluten"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "45"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "15"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Caldo vegetal"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "400"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Tortilla de maiz azul"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "250"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Aguacate"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "300"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Tomate"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "300"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Perejil"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Limon"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "25"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Tacos al seitan"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Tallarines con pesto y champiñones"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "1138.3"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "28.0"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "14.0"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "58.8"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "126.3"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Champiñones"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "300"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Pesto"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Tallarines de trigo"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "150"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Tallarines con pesto y champiñones"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Terchiniki"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "2041.8"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "57.9"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "215.58"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "24.75"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "3.25"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Patata "
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1000"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Perejil"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Cilantro"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Lino"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "15"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Levadura nutricional"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Harina de trigo"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "25"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "15"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Terchiniki"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Tofu con romanescu"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "702.8"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "46.4"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "1.0"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "40.5"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "26.8"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Tofu"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Romanescu"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "500"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Tofu con romanescu"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Tofu con zanahoria y col"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "632.2"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "39.82"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "16.65"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "35.76"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "40.26"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "15"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Ajo"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Jengibre"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Tofu"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Col"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "250"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Zanahoria"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "150"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Tofu con zanahoria y col"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Tortilla de Calabacin"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "570.9"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "27.4"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "11.84"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "38.52"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "27.63"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Calabacin"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "400"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Harina de garbanzos"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "30"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Queso curado"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Tortilla de Calabacin"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Tortitas de patatas"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "2511.35"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "80.08"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "3.95"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "41.04"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "288.95"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Patata "
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "900"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Harina de trigo"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "150"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Queso cascaval"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "60"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Levadura nutricional"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "25"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Perejil"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "30"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Tortitas de patatas"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Tostada de aguacate"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "1207.15"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "31.4"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "157.7"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "18.29"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "46.02"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Barra pan"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Aguacate"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Bayas goji"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "25"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Brotes de soja"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Tostada de aguacate"
+          }
+        }
+      }
+    }
+  ]
+}

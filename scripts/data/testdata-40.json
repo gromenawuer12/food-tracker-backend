@@ -1,0 +1,998 @@
+{
+  "food-tracker": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Tostada de aguacate 2"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "915.75"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "38.81"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "12.95"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "33.67"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "106.83"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "10"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Barra pan"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "120"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Aguacate"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "160"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Pipas de calabaza"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "15"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Bayas goji"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "15"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Branza slaba de vaci"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Tostada de aguacate 2"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Tostada de aguacate y jamón"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "771.15"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "26.55"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "75.47"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "3.6"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "33.43"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Barra pan"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Tomate"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "75"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Aguacate"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "150"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "10"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Jamón Iberico"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "35"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Tostada de aguacate y jamón"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Tostada de embutido y brotes"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "1085.8"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "40.39"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "165.05"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "15.98"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "26.89"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Pan redondo chapata"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Tomate"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Salami Aivia"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "70"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Bayas goji"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "10"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Brotes de soja"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "60"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Tostada de embutido y brotes"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Vareniki"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "2509.5"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "86.01"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "339.58"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "1.5"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "36.67"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Harina de trigo"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "300"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Huevo"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Patata "
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "600"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Queso cascaval"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Vareniki"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Yuba al horno"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "186.88"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "30.5"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "19.25"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "1.65"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "19.75"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Yuba nudos"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "75"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Caldo vegetal"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "250"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "10"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Yuba al horno"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Yuba con verduras"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "245.37"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "34.2"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "28.8"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "9.15"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "20.8"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Caldo vegetal"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "300"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Yuba nudos"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "75"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "10"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Calabacin"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "300"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Yuba con verduras"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "nutritional_value"
+          },
+          "SK": {
+            "S": "Azucares"
+          },
+          "unit": {
+            "S": "g"
+          },
+          "shortname": {
+            "S": "Azucares"
+          },
+          "name": {
+            "S": "Azucares"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "nutritional_value"
+          },
+          "SK": {
+            "S": "Grasas"
+          },
+          "unit": {
+            "S": "g"
+          },
+          "shortname": {
+            "S": "Grasas"
+          },
+          "name": {
+            "S": "Grasas"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "nutritional_value"
+          },
+          "SK": {
+            "S": "HC"
+          },
+          "unit": {
+            "S": "g"
+          },
+          "shortname": {
+            "S": "HC"
+          },
+          "name": {
+            "S": "Hidratos de Carbono"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "nutritional_value"
+          },
+          "SK": {
+            "S": "Kcal"
+          },
+          "unit": {
+            "S": "Kcal"
+          },
+          "shortname": {
+            "S": "Kcal"
+          },
+          "name": {
+            "S": "Kilocalorías"
+          }
+        }
+      }
+    }
+  ]
+}

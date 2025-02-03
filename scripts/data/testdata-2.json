@@ -1,16 +1,922 @@
-{"food-tracker":[
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Arandanos"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"57"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"07"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"14"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"10"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0.3"}]}]},"description":{"NULL":true},"name":{"S":"Arandanos"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Arroz Basmati"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"342"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"8.8"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"75"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"0"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0.9"}]}]},"description":{"S":""},"name":{"S":"Arroz Basmati"},"supermarket":{"L":[{"S":"Carrefour"}]}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Avena"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"389"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"10.9"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"57.6"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"1"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"5.7"}]}]},"description":{"S":""},"name":{"S":"Avena"},"supermarket":{"L":[{"S":"Herbolario"}]}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Azucar"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"387"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"100"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"100"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"00"}]}]},"description":{"NULL":true},"name":{"S":"Azucar"},"recipe_name":{"NULL":true},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Baked oats con arandanos"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"418.27"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"14.21"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"62.41"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"37.46"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"11.8"}]}]},"description":{"NULL":true},"name":{"S":"Baked oats con arandanos"},"recipe_name":{"S":"Baked oats con arandanos"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Banana"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"89"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"1.1"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"23"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"12"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0.3"}]}]},"description":{"NULL":true},"name":{"S":"Banana"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Barra pan"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"309"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"12"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"64"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"3.6"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0.8"}]}]},"description":{"S":""},"name":{"S":"Barra pan"},"supermarket":{"L":[{"S":"Panaderia"}]}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Batata"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"86"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"1.6"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"20"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"4.2"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0.1"}]}]},"description":{"NULL":true},"name":{"S":"Batata"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Bayas goji"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"351"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"14.4"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"69.9"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"44.2"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"1.1"}]}]},"description":{"NULL":true},"name":{"S":"Bayas goji"},"recipe_name":{"NULL":true},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Bizcocho de calabacin"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"635.67"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"13.96"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"61.63"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"30.36"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"37.35"}]}]},"description":{"NULL":true},"name":{"S":"Bizcocho de calabacin"},"recipe_name":{"S":"Bizcocho de calabacin"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Bizcocho de limon"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"497.52"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"10.61"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"35.42"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"24.84"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"57.64"}]}]},"description":{"NULL":true},"name":{"S":"Bizcocho de limon"},"recipe_name":{"S":"Bizcocho de limon"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Brocoli"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"34"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"2.8"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"7"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"1.7"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0.4"}]}]},"description":{"NULL":true},"name":{"S":"Brocoli"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Brocoli al horno"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"181.9"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"7.7"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"4.67"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"11.1"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"19.25"}]}]},"description":{"NULL":true},"name":{"S":"Brocoli al horno"},"recipe_name":{"S":"Brocoli al horno"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Brocoli and patata sheet"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"806.2"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"33.1"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"61.8"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"3.05"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"28.0"}]}]},"description":{"NULL":true},"name":{"S":"Brocoli and patata sheet"},"recipe_name":{"S":"Brocoli and patata sheet"},"supermarket":{"NULL":true}}}}
-]}
+{
+  "food-tracker": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Alcachofa hervida"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "251.5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "9.9"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "3.0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "13.1"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "33.0"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Alcachofa hervida"
+          },
+          "recipe_name": {
+            "S": "Alcachofa hervida"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Alga nori"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "34.1"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "35.7"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Alga nori"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Almendra"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "576"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "21"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "22"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "3.9"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "49"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": ""
+          },
+          "name": {
+            "S": "Almendra"
+          },
+          "supermarket": {
+            "L": [
+              {
+                "S": "Lidl"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Alubias"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "349"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "19"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "41"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "3.6"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1.8"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": ""
+          },
+          "name": {
+            "S": "Alubias"
+          },
+          "supermarket": {
+            "L": []
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Amidon de tapioca"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "345"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.6"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "85"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.1"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.2"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Amidon de tapioca"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Anacardos"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "600"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "20.5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "19.8"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "6.5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "47.6"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Anacardos"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Arandanos"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "57"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "07"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "14"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "10"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.3"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Arandanos"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Arepa"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "696.35"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "19.12"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "64.34"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1.83"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "35.25"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": "Una arepa por persona"
+          },
+          "name": {
+            "S": "Arepa"
+          },
+          "recipe_name": {
+            "S": "Arepa"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Arroz Basmati"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "342"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "8.8"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "75"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.9"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": ""
+          },
+          "name": {
+            "S": "Arroz Basmati"
+          },
+          "supermarket": {
+            "L": [
+              {
+                "S": "Carrefour"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Avena"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "389"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "10.9"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "57.6"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "5.7"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": ""
+          },
+          "name": {
+            "S": "Avena"
+          },
+          "supermarket": {
+            "L": [
+              {
+                "S": "Herbolario"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

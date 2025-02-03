@@ -1,0 +1,1681 @@
+{
+  "food-tracker": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Sarraceno, champis y soja"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "914.8"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "64.7"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "20.0"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "31.35"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "101.35"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Champiñones"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "250"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Soja Texturizada"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Sarraceno"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Sarraceno, champis y soja"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Sarrano con castaña y shitake"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "473.6"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "11.1"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "8.9"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "18.5"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "68.03"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "15"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Castaña"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Shitake"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "150"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Sarraceno"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Sarrano con castaña y shitake"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Seitan"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "1558.6"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "188.3"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "42.26"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "3.51"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "58.13"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Gluten"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "270"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Caldo vegetal"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "1000"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Seitan"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Seitan con lentejas y coliflor"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "917.2"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "102.9"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "122.02"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "18.37"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "42.71"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Caldo vegetal"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Gluten"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "90"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Coliflor"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "400"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Shitake"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "400"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Lenteja"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Seitan con lentejas y coliflor"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Seitan con sarraceno y brocoli"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "8.04"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "19.8"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "104.2"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "951.6"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "89.76"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Seitan 1/4"
+                  },
+                  {
+                    "S": "portions"
+                  },
+                  {
+                    "S": "2"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Sarraceno"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Brocoli"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "400"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Seitan con sarraceno y brocoli"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Smashed falafel"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "1581.5"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "60.98"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "12.07"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "42.72"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "240.07"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "S": "Ingredientes\n- 100 gramos de garbanzos secos\n- 2 ajos\n- 2 hojas de laurel\n- 50 gramos de perejil\n- 50 gramos de cilantro\n- 1 cucharada de comino molido\n- 1 cucharadita de cilantro molido\n- 1 cucharadita de pimenton en polvo\n- 1 pizca de copos de chile\n- 1 cucharada de harina\n- 1 cucharadita de sal\n- 1 tomate\n- 1 pepino\n- Lechuga\n- Pan de pita 4\n"
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "30"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Garbanzos"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Ajo"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Perejil"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "500"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Cilantro"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Harina de trigo"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "30"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Tomate"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Pepino"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Lechuga"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Pan pita mediano"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Smashed falafel"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Sushi vegano"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "1660.43"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "75.36"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "216.23"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "40.16"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "57.32"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Alga nori"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "30"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Arroz Basmati"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Aguacate"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "150"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Vuna"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "180"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Zanahoria"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Pepino"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Mango"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Sushi vegano"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Taco con tortita"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "1242.24"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "69.63"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "197.21"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "18.99"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "17.94"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Harina de Maiz"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Harina de trigo"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Remolacha"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Seitan 1/8"
+                  },
+                  {
+                    "S": "portions"
+                  },
+                  {
+                    "S": "2"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Tomate"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "150"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Lechuga"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Perejil"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "10"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Cebolla"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Taco con tortita"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Taco de alubias y soja"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "1169.3"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "68.72"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "92.7"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "22.58"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "47.67"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Lechuga"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "150"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Alubias"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Soja Texturizada"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Perejil"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Cebolla"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Limon"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Aguacate"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "150"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Taco de alubias y soja"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Taco de lechuga y Heura"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "497.9"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "19.6"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "1.18"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "33.31"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "17.76"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "10"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Heura bocados"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "80"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Aguacate"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "150"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Cebolla"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "10"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Perejil"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "10"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Tomate"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Lechuga"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "74"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Taco de lechuga y Heura"
+          }
+        }
+      }
+    }
+  ]
+}

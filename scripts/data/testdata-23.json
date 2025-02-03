@@ -1,16 +1,932 @@
-{"food-tracker":[
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Tacos al seitan"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1442.45"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"53.62"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"131.66"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"1.66"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"65.86"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Gluten"},{"NULL":true},{"S":"45"}]},{"L":[{"S":"Aceite de Oliva"},{"NULL":true},{"S":"15"}]},{"L":[{"S":"Caldo vegetal"},{"NULL":true},{"S":"400"}]},{"L":[{"S":"Tortilla de maiz azul"},{"NULL":true},{"S":"250"}]},{"L":[{"S":"Aguacate"},{"NULL":true},{"S":"300"}]},{"L":[{"S":"Tomate"},{"NULL":true},{"S":"300"}]},{"L":[{"S":"Perejil"},{"NULL":true},{"S":"50"}]},{"L":[{"S":"Limon"},{"NULL":true},{"S":"25"}]}]},"name":{"S":"Tacos al seitan"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Tallarines con pesto y champiñones"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1138.3"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"28.0"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"14.0"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"58.8"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"126.3"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Aceite de Oliva"},{"S":"gr"},{"S":"20"}]},{"L":[{"S":"Champiñones"},{"S":"gr"},{"S":"300"}]},{"L":[{"S":"Pesto"},{"S":"gr"},{"S":"100"}]},{"L":[{"S":"Tallarines de trigo"},{"S":"gr"},{"S":"150"}]}]},"name":{"S":"Tallarines con pesto y champiñones"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Terchiniki"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"2041.8"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"57.9"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"215.58"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"24.75"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"3.25"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Patata "},{"S":"g"},{"S":"1000"}]},{"L":[{"S":"Perejil"},{"S":"g"},{"S":"50"}]},{"L":[{"S":"Cilantro"},{"S":"g"},{"S":"50"}]},{"L":[{"S":"Lino"},{"S":"g"},{"S":"15"}]},{"L":[{"S":"Levadura nutricional"},{"S":"g"},{"S":"20"}]},{"L":[{"S":"Harina de trigo"},{"S":"g"},{"S":"25"}]},{"L":[{"S":"Aceite de Oliva"},{"S":"g"},{"S":"15"}]}]},"name":{"S":"Terchiniki"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Tofu con romanescu"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"702.8"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"46.4"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"1.0"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"40.5"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"26.8"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Aceite de Oliva"},{"S":"gr"},{"S":"20"}]},{"L":[{"S":"Tofu"},{"S":"gr"},{"S":"200"}]},{"L":[{"S":"Romanescu"},{"S":"gr"},{"S":"500"}]}]},"name":{"S":"Tofu con romanescu"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Tofu con zanahoria y col"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"632.2"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"39.82"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"16.65"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"35.76"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"40.26"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Aceite de Oliva"},{"NULL":true},{"S":"15"}]},{"L":[{"S":"Ajo"},{"NULL":true},{"S":"20"}]},{"L":[{"S":"Jengibre"},{"NULL":true},{"S":"20"}]},{"L":[{"S":"Tofu"},{"NULL":true},{"S":"200"}]},{"L":[{"S":"Col"},{"NULL":true},{"S":"250"}]},{"L":[{"S":"Zanahoria"},{"NULL":true},{"S":"150"}]}]},"name":{"S":"Tofu con zanahoria y col"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Tortilla de Calabacin"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"570.9"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"27.4"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"11.84"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"38.52"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"27.63"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Aceite de Oliva"},{"NULL":true},{"S":"20"}]},{"L":[{"S":"Calabacin"},{"NULL":true},{"S":"400"}]},{"L":[{"S":"Harina de garbanzos"},{"NULL":true},{"S":"30"}]},{"L":[{"S":"Queso curado"},{"NULL":true},{"S":"50"}]}]},"name":{"S":"Tortilla de Calabacin"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Tostada de aguacate"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1207.15"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"31.4"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"157.7"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"18.29"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"46.02"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Barra pan"},{"S":"g"},{"S":"200"}]},{"L":[{"S":"Aguacate"},{"S":"g"},{"S":"200"}]},{"L":[{"S":"Aceite de Oliva"},{"S":"g"},{"S":"20"}]},{"L":[{"S":"Bayas goji"},{"NULL":true},{"S":"25"}]},{"L":[{"S":"Brotes de soja"},{"S":"gr"},{"S":"20"}]}]},"name":{"S":"Tostada de aguacate"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Tostada de aguacate y jamón"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"771.15"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"26.55"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"75.47"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"3.6"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"33.43"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Barra pan"},{"S":"g"},{"S":"100"}]},{"L":[{"S":"Tomate"},{"S":"g"},{"S":"75"}]},{"L":[{"S":"Aguacate"},{"S":"g"},{"S":"150"}]},{"L":[{"S":"Aceite de Oliva"},{"S":"g"},{"S":"10"}]},{"L":[{"S":"Jamón Iberico"},{"S":"g"},{"S":"35"}]}]},"name":{"S":"Tostada de aguacate y jamón"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Tostada de embutido y brotes"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1085.8"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"40.39"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"165.05"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"15.98"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"26.89"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Pan redondo chapata"},{"S":"gr"},{"S":"200"}]},{"L":[{"S":"Tomate"},{"S":"gr"},{"S":"100"}]},{"L":[{"S":"Salami Aivia"},{"S":"gr"},{"S":"70"}]},{"L":[{"S":"Bayas goji"},{"S":"gr"},{"S":"20"}]},{"L":[{"S":"Aceite de Oliva"},{"S":"gr"},{"S":"10"}]},{"L":[{"S":"Brotes de soja"},{"S":"gr"},{"S":"60"}]}]},"name":{"S":"Tostada de embutido y brotes"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Yuba al horno"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"186.88"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"30.5"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"19.25"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"1.65"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"19.75"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Yuba nudos"},{"S":"g"},{"S":"75"}]},{"L":[{"S":"Caldo vegetal"},{"S":"g"},{"S":"250"}]},{"L":[{"S":"Aceite de Oliva"},{"S":"g"},{"S":"10"}]}]},"name":{"S":"Yuba al horno"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Yuba con verduras"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"245.37"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"34.2"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"28.8"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"9.15"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"20.8"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Caldo vegetal"},{"NULL":true},{"S":"300"}]},{"L":[{"S":"Yuba nudos"},{"NULL":true},{"S":"75"}]},{"L":[{"S":"Aceite de Oliva"},{"NULL":true},{"S":"10"}]},{"L":[{"S":"Calabacin"},{"NULL":true},{"S":"300"}]}]},"name":{"S":"Yuba con verduras"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"nutritional_value"},"SK":{"S":"Azucares"},"unit":{"S":"g"},"shortname":{"S":"Azucares"},"name":{"S":"Azucares"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"nutritional_value"},"SK":{"S":"Grasas"},"unit":{"S":"g"},"shortname":{"S":"Grasas"},"name":{"S":"Grasas"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"nutritional_value"},"SK":{"S":"HC"},"unit":{"S":"g"},"shortname":{"S":"HC"},"name":{"S":"Hidratos de Carbono"}}}}
-]}
+{
+  "food-tracker": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Seta laminada"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "35"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "2"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "4"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Seta laminada"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Shitake"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "34"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "2.2"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "7"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "2.4"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.5"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Shitake"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Sirope de agave"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "420"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "105"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "105"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Sirope de agave"
+          },
+          "recipe_name": {
+            "NULL": true
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Smashed falafel"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "790.75"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "30.49"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "6.04"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "21.36"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "120.03"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": "Ingredientes\n- 100 gramos de garbanzos secos\n- 2 ajos\n- 2 hojas de laurel\n- 50 gramos de perejil\n- 50 gramos de cilantro\n- 1 cucharada de comino molido\n- 1 cucharadita de cilantro molido\n- 1 cucharadita de pimenton en polvo\n- 1 pizca de copos de chile\n- 1 cucharada de harina\n- 1 cucharadita de sal\n- 1 tomate\n- 1 pepino\n- Lechuga\n- Pan de pita 4\n"
+          },
+          "name": {
+            "S": "Smashed falafel"
+          },
+          "recipe_name": {
+            "S": "Smashed falafel"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Soja Texturizada"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "15"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "7.3"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "31"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "348"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "44.6"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": ""
+          },
+          "name": {
+            "S": "Soja Texturizada"
+          },
+          "recipe_name": {
+            "NULL": true
+          },
+          "supermarket": {
+            "L": [
+              {
+                "S": "Carrefour"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Soja verde"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "347"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "63"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "7"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1.2"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "24"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Soja verde"
+          },
+          "recipe_name": {
+            "NULL": true
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Sushi vegano"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "830.22"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "37.68"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "108.11"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "20.08"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "28.66"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Sushi vegano"
+          },
+          "recipe_name": {
+            "S": "Sushi vegano"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Taco con tortita"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "621.12"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "34.81"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "98.61"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "9.49"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "8.97"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Taco con tortita"
+          },
+          "recipe_name": {
+            "S": "Taco con tortita"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Taco de alubias y soja"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "584.65"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "34.36"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "46.35"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "11.29"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "23.84"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Taco de alubias y soja"
+          },
+          "recipe_name": {
+            "S": "Taco de alubias y soja"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Taco de lechuga y seitan"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1.75"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "12.67"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "13.18"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "283.62"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "25.95"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Taco de lechuga y seitan"
+          },
+          "recipe_name": {
+            "S": "Taco de lechuga y seitan"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    }
+  ]
+}

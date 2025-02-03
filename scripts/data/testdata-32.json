@@ -1,0 +1,1837 @@
+{
+  "food-tracker": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Chorizo vegano 1|4 (living like a Panda)"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "491.55"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "16.53"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "41.07"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "8.98"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "23.65"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Tomate seco"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "65"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Almendra"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "25"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Avena"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "10"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Chorizo vegano 1|4 (living like a Panda)"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Coliflor al horno con ensalada"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "551.2"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "22.6"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "10.1"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "71.01"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "41.3"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "30"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Coliflor"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "400"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Lechuga"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Tomate"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Edamame"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Coliflor al horno con ensalada"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Coliflor estilo pollo"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "1511.0"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "49.46"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "299.62"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "47.4"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "105.85"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "S": "1. Cortar coliflor en trozos pequeños.\n2. En un bol grande añadir 250 gramos de leche, 2 cucharas de vinagre y 1 cuchara de cayena. Dejar reposar 20 minutos. \n3. En un plato hondo mezclar 1 cuchara de maizena, 160 gramos de harina, 1 cuchara de azucar, 1 cuchara de pimienta, 1 cuchara de paprika, 1 cucharas de cayena, 1 cuchara de ajo en polvo y1 1/2 de sal. \n4. Del bol grande sacar la coliflor y a la mezcla de leche, añades 50 de leche y 40 gramos de harina. \n5. Rebozamos una  vez, Liquido,harina, . \n6. Los dejamos en el horno a 180 gramos unos 30 minutos. Dar la vuelta a la mitad\n7. Sale para 4 raciones.\n"
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Coliflor"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "1000"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Leche de nuez"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "300"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Harina de Maiz"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "30"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Harina de trigo"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "250"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucar"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "10"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Coliflor estilo pollo"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Cous - Cous"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "791.6"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "23.16"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "102.58"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "11.2"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "29.56"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Cous - Cous"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Caldo vegetal"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "400"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Calabaza"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Calabacin"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Pipas de calabaza"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "30"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Cous - Cous"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Croquestas de coliflor"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "684.0"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "41.97"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "91.46"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "17.89"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "66.43"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Coliflor"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "500"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Calabaza"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "250"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Perejil"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "30"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Huevo"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Barra pan"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "80"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Queso cascaval"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Croquestas de coliflor"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Curry de espinaca"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "2304.6"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "75.55"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "196.25"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "29.9"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "181.2"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "S": "Pick up limes"
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Aceite de coco"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "40"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Ajo"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "30"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Chiles"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "40"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Coliflor"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "600"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Cilantro"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "30"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Espinaca"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "350"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Jengibre"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "15"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Leche de coco"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "400"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Limon"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "80"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Tomate"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "240"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Tomate Frito"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Garbanzos"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Curry de espinaca"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Curry de mungo, guisantes, batata y espinaca"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "4431.87"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "150.68"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "646.14"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "89.18"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "136.64"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Aceite de coco"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "40"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Ajo"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "40"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Jengibre"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "40"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Chiles"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Tomate Frito"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "40"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Calabacin"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "600"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Batata"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "500"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Espinaca"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "300"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Leche de coco"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "400"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Mungo"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "166"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Guisante seco"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "105"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Yogur"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "400"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Arroz Basmati"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "400"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Curry de mungo, guisantes, batata y espinaca"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Empanadillas de espinaca"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "1391.5"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "44.55"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "2.67"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "83.25"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "124.3"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "40"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Harina de trigo"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "140"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Espinaca"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "400"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Nueces"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "25"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Queso azul"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "80"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Empanadillas de espinaca"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Endivias con queso azul"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "642.7"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "19.2"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "73.8"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "41.98"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "36.1"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Endivias"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "400"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Manzana"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "400"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Queso azul"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Nueces"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "30"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Endivias con queso azul"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Ensalada de Sarraceno"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "1246.5"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "35.17"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "219.15"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "65.65"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "27.76"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Sarraceno"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "90"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Caldo vegetal"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Remolacha"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "300"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Naranja"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Castaña"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Col"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Lechuga"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Limon"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "30"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Sirope de agave"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "10"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Lenteja"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Ensalada de Sarraceno"
+          }
+        }
+      }
+    }
+  ]
+}

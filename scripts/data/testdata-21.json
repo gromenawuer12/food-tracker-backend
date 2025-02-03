@@ -1,16 +1,926 @@
-{"food-tracker":[
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Lasaña con soja texturizada"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"3720.5"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"250.3"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"53.98"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"208.94"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"220.57"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Aceite de Oliva"},{"NULL":true},{"S":"40"}]},{"L":[{"S":"Soja Texturizada"},{"NULL":true},{"S":"200"}]},{"L":[{"S":"Champiñones"},{"NULL":true},{"S":"300"}]},{"L":[{"S":"Levadura nutricional"},{"NULL":true},{"S":"50"}]},{"L":[{"S":"Tomate Frito"},{"NULL":true},{"S":"120"}]},{"L":[{"S":"Queso raclette"},{"NULL":true},{"S":"500"}]},{"L":[{"S":"Placas lasaña"},{"NULL":true},{"S":"160"}]}]},"name":{"S":"Lasaña con soja texturizada"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Lechuga aliñada"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"227.6"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"3.22"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"10.5"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"2.9"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"20.66"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Lechuga"},{"S":"gr"},{"S":"300"}]},{"L":[{"S":"Aceite de Oliva"},{"S":"gr"},{"S":"20"}]},{"L":[{"S":"Limon"},{"S":"gr"},{"S":"20"}]}]},"name":{"S":"Lechuga aliñada"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Migas con chorizo vegano (living like a Panda)"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"955.05"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"34.53"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"137.07"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"14.37"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"24.85"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Barra pan"},{"S":"g"},{"S":"150"}]},{"L":[{"S":"Tomate seco"},{"S":"g"},{"S":"65"}]},{"L":[{"S":"Almendra"},{"S":"g"},{"S":"25"}]},{"L":[{"S":"Avena"},{"S":"g"},{"S":"20"}]},{"L":[{"S":"Aceite de Oliva"},{"S":"g"},{"S":"10"}]}]},"name":{"S":"Migas con chorizo vegano (living like a Panda)"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Milanesa + Batata"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1083.76"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"28.46"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"21.64"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"50.95"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"131.82"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Aceite de Oliva"},{"NULL":true},{"S":"15"}]},{"L":[{"S":"Seta laminada"},{"NULL":true},{"S":"100"}]},{"L":[{"S":"Pipas de girasol"},{"NULL":true},{"S":"40"}]},{"L":[{"S":"Sesamo"},{"NULL":true},{"S":"20"}]},{"L":[{"S":"Lino"},{"NULL":true},{"S":"10"}]},{"L":[{"S":"Harina de garbanzos"},{"NULL":true},{"S":"13"}]},{"L":[{"S":"Barra pan"},{"NULL":true},{"S":"25"}]},{"L":[{"S":"Batata"},{"NULL":true},{"S":"450"}]}]},"name":{"S":"Milanesa + Batata"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Mungo con queso"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"566.35"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"27.75"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"3.58"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"37.35"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"31.88"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Aceite de Oliva"},{"NULL":true},{"S":"15"}]},{"L":[{"S":"Mungo"},{"NULL":true},{"S":"50"}]},{"L":[{"S":"Queso raclette"},{"NULL":true},{"S":"75"}]}]},"name":{"S":"Mungo con queso"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Pan Elias"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"273.0"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"7.5"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"57.0"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"0.22"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"0.75"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Harina de trigo"},{"S":"gr"},{"S":"75"}]}]},"name":{"S":"Pan Elias"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Pan PIzza"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"832.4"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"46.2"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"69.59"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"8.1"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"39.67"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Barra pan"},{"S":"g"},{"S":"100"}]},{"L":[{"S":"Tomate Frito"},{"S":"g"},{"S":"50"}]},{"L":[{"S":"Queso curado"},{"S":"g"},{"S":"80"}]},{"L":[{"S":"Queso azul"},{"S":"g"},{"S":"40"}]}]},"name":{"S":"Pan PIzza"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Pan con queso"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1300.0"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"62.0"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"128.0"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"7.2"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"61.6"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Barra pan"},{"S":"g"},{"S":"200"}]},{"L":[{"S":"Queso azul"},{"S":"g"},{"S":"200"}]}]},"name":{"S":"Pan con queso"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Patata con salsa de Queso"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1654.5"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"45.02"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"147.75"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"46.09"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"8.82"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Patata "},{"NULL":true},{"S":"650"}]},{"L":[{"S":"Aceite de Oliva"},{"NULL":true},{"S":"20"}]},{"L":[{"S":"Leche de nuez"},{"NULL":true},{"S":"100"}]},{"L":[{"S":"Amidon de tapioca"},{"NULL":true},{"S":"20"}]},{"L":[{"S":"Champiñones"},{"NULL":true},{"S":"150"}]},{"L":[{"S":"Queso azul"},{"NULL":true},{"S":"70"}]}]},"name":{"S":"Patata con salsa de Queso"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Pate de aceitunas con tostas"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1112.85"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"10.8"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"3.09"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"89.04"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"64.92"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Aceite de Oliva"},{"NULL":true},{"S":"60"}]},{"L":[{"S":"Aceitunas negras"},{"NULL":true},{"S":"150"}]},{"L":[{"S":"Pan redondo chapata"},{"NULL":true},{"S":"90"}]}]},"name":{"S":"Pate de aceitunas con tostas"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Pita con falafel"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1490.0"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"61.0"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"262.56"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"17.28"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"20.19"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Barra pan"},{"S":"gr"},{"S":"320"}]},{"L":[{"S":"Lechuga"},{"S":"gr"},{"S":"100"}]},{"L":[{"S":"Tomate"},{"S":"gr"},{"S":"100"}]},{"L":[{"S":"Pepino"},{"S":"gr"},{"S":"100"}]},{"L":[{"S":"Perejil"},{"S":"gr"},{"S":"20"}]},{"L":[{"S":"Falafel "},{"S":"gr"},{"S":"200"}]}]},"name":{"S":"Pita con falafel"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Pizza de lenteja"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1214.2"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"55.6"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"6.67"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"80.0"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"68.63"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Aceite de Oliva"},{"NULL":true},{"S":"40"}]},{"L":[{"S":"Lenteja"},{"NULL":true},{"S":"100"}]},{"L":[{"S":"Tomate Frito"},{"NULL":true},{"S":"80"}]},{"L":[{"S":"Queso camembert"},{"NULL":true},{"S":"150"}]}]},"name":{"S":"Pizza de lenteja"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Roasted Veggi Glow"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1334.9"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"44.15"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"28.04"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"94.03"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"152.09"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Aceite de Oliva"},{"S":"gr"},{"S":"30"}]},{"L":[{"S":"Coliflor"},{"S":"gr"},{"S":"350"}]},{"L":[{"S":"Quinoa"},{"S":"gr"},{"S":"90"}]},{"L":[{"S":"Caldo vegetal"},{"S":"gr"},{"S":"200"}]},{"L":[{"S":"Col"},{"S":"gr"},{"S":"100"}]},{"L":[{"S":"Lechuga"},{"S":"gr"},{"S":"200"}]},{"L":[{"S":"Pipas de calabaza"},{"S":"gr"},{"S":"30"}]},{"L":[{"S":"Perejil"},{"S":"gr"},{"S":"30"}]},{"L":[{"S":"Tahini"},{"S":"gr"},{"S":"30"}]},{"L":[{"S":"Sirope de agave"},{"S":"gr"},{"S":"10"}]},{"L":[{"S":"Garbanzos"},{"S":"gr"},{"S":"50"}]}]},"name":{"S":"Roasted Veggi Glow"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Rollitios de tofu"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1287.6"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"43.65"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"25.9"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"51.78"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"167.28"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Aceite de Oliva"},{"NULL":true},{"S":"30"}]},{"L":[{"S":"Ajo"},{"NULL":true},{"S":"40"}]},{"L":[{"S":"Jengibre"},{"NULL":true},{"S":"40"}]},{"L":[{"S":"Tofu"},{"NULL":true},{"S":"200"}]},{"L":[{"S":"Zanahoria"},{"NULL":true},{"S":"300"}]},{"L":[{"S":"Col"},{"NULL":true},{"S":"300"}]},{"L":[{"S":"Oleas de arroz"},{"NULL":true},{"S":"120"}]}]},"name":{"S":"Rollitios de tofu"}}}}
-]}
+{
+  "food-tracker": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Queso raclette"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "347"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "21"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.1"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "29"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": ""
+          },
+          "name": {
+            "S": "Queso raclette"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Quinoa"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "389"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "14"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "66.1"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "6.3"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "6.1"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Quinoa"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Rabano blanco"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "14"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "3"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Rabano blanco"
+          },
+          "recipe_name": {
+            "NULL": true
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Regaña"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "402"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "11"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "68"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "2.8"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "8.5"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": "200 gramos"
+          },
+          "name": {
+            "S": "Regaña"
+          },
+          "recipe_name": {
+            "NULL": true
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Remolacha"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "43"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "10"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "7"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.2"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": ""
+          },
+          "name": {
+            "S": "Remolacha"
+          },
+          "supermarket": {
+            "L": [
+              {
+                "S": "Fruteria"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Roasted Veggi Glow"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "667.45"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "22.07"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "14.02"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "47.02"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "76.05"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Roasted Veggi Glow"
+          },
+          "recipe_name": {
+            "S": "Roasted Veggi Glow"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Rollitos de primavera con coliflor"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "669.0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "31.77"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "83.25"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "18.93"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "45.98"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Rollitos de primavera con coliflor"
+          },
+          "recipe_name": {
+            "S": "Rollitos de primavera con coliflor"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Rollitos de primavera de seitan y brotes"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "9.66"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "25.59"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "65.41"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "656.8"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "42.63"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Rollitos de primavera de seitan y brotes"
+          },
+          "recipe_name": {
+            "S": "Rollitos de primavera de seitan y brotes"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Romanescu"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "38"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "2.48"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.1"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Romanescu"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Romanescu al horno"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "248.05"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "7.5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.12"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "15.31"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "15.45"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Romanescu al horno"
+          },
+          "recipe_name": {
+            "S": "Romanescu al horno"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    }
+  ]
+}

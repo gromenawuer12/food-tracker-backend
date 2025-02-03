@@ -1,16 +1,932 @@
-{"food-tracker":[
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Levadura Royal"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"163"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"5.2"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"37.8"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"0"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0"}]}]},"description":{"NULL":true},"name":{"S":"Levadura Royal"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Levadura nutricional"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"343"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"51"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"36.9"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"12.4"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"4"}]}]},"description":{"S":""},"name":{"S":"Levadura nutricional"},"supermarket":{"L":[{"S":"Herbolario"}]}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Limon"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"29"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"1.1"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"9"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"2.5"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0.3"}]}]},"description":{"S":""},"name":{"S":"Limon"},"supermarket":{"L":[{"S":"Mercado"}]}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Lino"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"534"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"18"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"29"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"1.6"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"42"}]}]},"description":{"S":""},"name":{"S":"Lino"},"supermarket":{"L":[{"S":"Carrefour"}]}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Lomo"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"297"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"35"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"1"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"1"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"17"}]}]},"description":{"NULL":true},"name":{"S":"Lomo"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Mango"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"60"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"0.8"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"15"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"14"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0.4"}]}]},"description":{"NULL":true},"name":{"S":"Mango"},"recipe_name":{"NULL":true},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Manzana"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"52"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"14"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"10"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0.2"}]}]},"description":{"S":""},"name":{"S":"Manzana"},"supermarket":{"L":[{"S":"Fruteria"}]}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Manzana deshidratada"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"243"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"0.9"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"65.89"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"57.19"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0.32"}]}]},"description":{"NULL":true},"name":{"S":"Manzana deshidratada"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Masa rollitos vietnamitas"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"307"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"7.4"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"58"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"1.4"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"4.9"}]}]},"description":{"NULL":true},"name":{"S":"Masa rollitos vietnamitas"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Mayonesa vegana"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"612"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"0.5"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"3.7"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"2.5"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"67"}]}]},"description":{"NULL":true},"name":{"S":"Mayonesa vegana"},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Menta"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"67"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"3.75"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"6.89"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"0"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0.94"}]}]},"description":{"NULL":true},"name":{"S":"Menta"},"recipe_name":{"NULL":true},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Mici vegetal"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"217"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"13.6"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"6.6"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"1.1"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"16.1"}]}]},"description":{"NULL":true},"name":{"S":"Mici vegetal"},"recipe_name":{"NULL":true},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Mix burger Kaufland"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"361"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"7.4"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"33"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"2.9"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"34"}]}]},"description":{"NULL":true},"name":{"S":"Mix burger Kaufland"},"recipe_name":{"NULL":true},"supermarket":{"NULL":true}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Mozarella"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"245"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"13"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"1.5"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"1.5"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"18"}]}]},"description":{"NULL":true},"name":{"S":"Mozarella"},"recipe_name":{"NULL":true},"supermarket":{"NULL":true}}}}
-]}
+{
+  "food-tracker": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Fresa"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "40"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.7"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "7"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "5.5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.5"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": ""
+          },
+          "name": {
+            "S": "Fresa"
+          },
+          "supermarket": {
+            "L": [
+              {
+                "S": "Mercado"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Gachas de avena"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "400.95"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "10.2"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "62.16"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "23.62"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "11.73"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Gachas de avena"
+          },
+          "recipe_name": {
+            "S": "Gachas de avena"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Galet Francesa"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "230"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "9"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "30"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "7.6"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": ""
+          },
+          "name": {
+            "S": "Galet Francesa"
+          },
+          "supermarket": {
+            "L": [
+              {
+                "S": "Francia"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Galet bretona "
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "964.0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "41.88"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "5.41"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "44.28"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "90.83"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Galet bretona "
+          },
+          "recipe_name": {
+            "S": "Galet bretona "
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Galeta de persimon"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "477.38"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "19.99"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "62.43"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "24.3"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "16.89"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": "Ingredientes:\nMasa\n - 180 g harina de espelta \n- 60 ml de AOVE\n- 60 ml de Agua\n- 2 cucharadas de sirope de agave\n- 1/cucharadita de canela\nRelleno\n- 2 Persimon/Manzana/Pera\n- Ralladura de 1 limon\n- Zumo de 1 limon\n- 1 cucharadita de canela\n- 1 cuchara de harina de maiz\nAlmendras picadas para decorar\nPreparación\n1. Masa: mezclar todos los ingredientes, sin amasar demasiado. Envolver y y guardas 30 minutos en la nevera.\n2. Relleno: Mezclar queso y azucar en un bol. Mezclar, maizana, canela, relladura de limon en un plato. Pelar el persimon y cortar en rodajas, añadirlo a la mezcla, junto con el zumo de limón. \n3. Estirar la masa y colocar las rodajas del persimon. Dobla los bordes hacia dentro y aprieta con las manos para que quede bien prensada. Colocar las almendras por encima y en los bordes.\n4. Hornear 40-50 minutos a 180 grados."
+          },
+          "name": {
+            "S": "Galeta de persimon"
+          },
+          "recipe_name": {
+            "S": "Galeta de persimon"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Galletas"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "480"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "69"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "39"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "21"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": ""
+          },
+          "name": {
+            "S": "Galletas"
+          },
+          "supermarket": {
+            "L": [
+              {
+                "S": "Francia"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Galletas del mix"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "174.68"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "7.94"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "23.21"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "10.28"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "2.45"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": "1. Derretir la mantequilla.\n2. Romper los huevos y batirlos (a mano, hasta mezclar bien). \n3. Mezclar huevos y mantequilla.\n4. Añadir la mezcla.\n5. Amasar hasta que la mezcla este integrada.\n6. Formar bolas de unos 40 gramos.\n7. Hornear 15 minutos a 190 gramos\n8. Dejar reposar 5 min y comer.  "
+          },
+          "name": {
+            "S": "Galletas del mix"
+          },
+          "recipe_name": {
+            "S": "Galletas del mix"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Garbanzos"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "364"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "19"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "55"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "5.5"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": "Garbanzos en seco"
+          },
+          "name": {
+            "S": "Garbanzos"
+          },
+          "supermarket": {
+            "L": [
+              {
+                "S": "Carrefour"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Garden gourmet bocaditos"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "220"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "23.1"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "3.4"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "2.6"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "11"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": "175 gramos"
+          },
+          "name": {
+            "S": "Garden gourmet bocaditos"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Garden gourmet hamburguesa"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "197"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "14"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1.9"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "13.5"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": "115 por persona"
+          },
+          "name": {
+            "S": "Garden gourmet hamburguesa"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    }
+  ]
+}

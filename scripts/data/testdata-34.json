@@ -1,0 +1,1824 @@
+{
+  "food-tracker": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Galeta de persimon"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "1909.5"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "79.95"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "249.73"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "97.19"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "67.57"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "S": "Ingredientes:\nMasa\n - 180 g harina de espelta \n- 60 ml de AOVE\n- 60 ml de Agua\n- 2 cucharadas de sirope de agave\n- 1/cucharadita de canela\nRelleno\n- 2 Persimon/Manzana/Pera\n- Ralladura de 1 limon\n- Zumo de 1 limon\n- 1 cucharadita de canela\n- 1 cuchara de harina de maiz\nAlmendras picadas para decorar\nPreparación\n1. Masa: mezclar todos los ingredientes, sin amasar demasiado. Envolver y y guardas 30 minutos en la nevera.\n2. Relleno: Mezclar queso y azucar en un bol. Mezclar, maizana, canela, relladura de limon en un plato. Pelar el persimon y cortar en rodajas, añadirlo a la mezcla, junto con el zumo de limón. \n3. Estirar la masa y colocar las rodajas del persimon. Dobla los bordes hacia dentro y aprieta con las manos para que quede bien prensada. Colocar las almendras por encima y en los bordes.\n4. Hornear 40-50 minutos a 180 grados."
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Harina de espelta"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "180"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "60"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Sirope de agave"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Persimon"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "300"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Limon"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Harina de Maiz"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "15"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Nueces"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Branza slaba de vaci"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucar"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Agua"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "60"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Canela"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "5"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Galeta de persimon"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Galletas del mix"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "2620.2"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "119.12"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "348.08"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "154.13"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "36.74"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "S": "1. Derretir la mantequilla.\n2. Romper los huevos y batirlos \\(`a mano, hasta mezclar bien`\\). \n3. Mezclar huevos y mantequilla.\n4. Añadir la mezcla.\n5. *Amasar* hasta que la mezcla este integrada.\n6. Formar bolas de unos 40 gramos.\n7. Hornear 15 minutos a 190 gramos\n8. Dejar reposar 5 min y comer.  \n9. Salen unas 15 galletas."
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Mantequilla"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "120"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Huevo"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Mix Galletas"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "450"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Galletas del mix"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Gofre de falafel"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "808.65"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "33.52"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "8.53"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "32.25"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "90.24"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Ajo"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "10"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Garbanzos"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Harina de garbanzos"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Cilantro"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Perejil"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Limon"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "40"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Kefir"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "125"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Lechuga"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Tomate"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Gofre de falafel"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Gofres"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "1148.21"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "28.0"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "39.33"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "41.31"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "136.26"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "10"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Levadura Royal"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "7"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Lino"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "15"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Harina de trigo"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Pure de Manzana"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "120"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Almendra"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "25"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Huevo"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Leche de nuez"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Gofres"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Golubtsi"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "1037.55"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "68.75"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "35.45"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "32.67"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "128.43"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Caldo vegetal"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Col"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "400"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Soja Texturizada"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Shitake"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "300"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Sarraceno"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "75"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Cilantro"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Perejil"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Golubtsi"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Granizado"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "115.0"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "0.55"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "30.0"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "25.25"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "0.75"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Uva"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "150"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Limon"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Granizado"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Halloumi con lechga"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "840.8"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "55.4"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "11.8"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "5.6"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "42.0"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Halloumi"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Lechuga"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "200"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Halloumi con lechga"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Hambuerguesa de garbanzos y queso"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "2663.1"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "110.39"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "264.55"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "1.04"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "121.24"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Garbanzos"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "400"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Ajo"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "15"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Avena"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Tahini"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "30"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Perejil"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Queso azul"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Sesamo"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "40"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Hambuerguesa de garbanzos y queso"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Hamburguesa de garbanzos y espinaca"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "1223.05"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "60.88"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "107.09"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "1.76"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "59.79"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "S": "INGREDIENTES\n- 150 gramos de garbanzo seco\n- 1 hoja de laurel\n- 1 diente de ajo\n- 1 cucharadita de curry\n- 1 cucharadita de ajo en polvo\n- 50 gramos de queso azul\n- 50 gramos de queso cascaval\n- 300 gramos de espinacas\n- 20 gramos de harina de garbanzos, con agua para hacer huevo.\n- 1 cucharada de AOVE.\nPREPARACION\n1. Hervir los garbanzos con laurel y ajo.\n2. Lavar y secar la espinaca. \n3. Mezclar la harina de garbanzos con agua para crear huevo.\n4. Rallar el queso cascaval. \n5. Mezclar todos los ingredientes en un bol. \n5. Formar 4 hamburguesas y cocinarlas al horno o sarten.\n"
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Garbanzos"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "150"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Queso azul"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Queso cascaval"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "50"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Espinaca"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "150"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Harina de garbanzos"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Laurel"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Ajo"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Curry en polvo"
+                  },
+                  {
+                    "S": "gr"
+                  },
+                  {
+                    "S": "5"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Hamburguesa de garbanzos y espinaca"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "recipe"
+          },
+          "SK": {
+            "S": "Hamburguesa de legumbres"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "M": {
+                  "name": {
+                    "S": "Kilocalorías"
+                  },
+                  "value": {
+                    "S": "2058.0"
+                  },
+                  "unit": {
+                    "S": "Kcal"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "protein"
+                  },
+                  "value": {
+                    "S": "105.1"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Azucares"
+                  },
+                  "value": {
+                    "S": "12.04"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Grasas"
+                  },
+                  "value": {
+                    "S": "37.55"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              },
+              {
+                "M": {
+                  "name": {
+                    "S": "Hidratos de Carbono"
+                  },
+                  "value": {
+                    "S": "287.94"
+                  },
+                  "unit": {
+                    "S": "g"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "products": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Aceite de Oliva"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Alubias"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "120"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Garbanzos"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "120"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Lenteja"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "120"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Champiñones"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "150"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Avena"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Levadura nutricional"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "30"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Tapioca"
+                  },
+                  {
+                    "NULL": true
+                  },
+                  {
+                    "S": "30"
+                  }
+                ]
+              }
+            ]
+          },
+          "name": {
+            "S": "Hamburguesa de legumbres"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,16 +1,924 @@
-{"food-tracker":[
-{"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Aceite de Oliva"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"884"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"0"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"0"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"100"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"0"}]}]},"description":{"S":""},"name":{"S":"Aceite de Oliva"},"supermarket":{"L":[{"S":"Carrefour"}]}}}},
-{"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Aceite de coco"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"862"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"0"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"0"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"0"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"100"}]}]},"description":{"NULL":true},"name":{"S":"Aceite de coco"},"supermarket":{"NULL":true}}}},
-{"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Aceitunas negras"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"146.5"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"0.6"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"0.08"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"0.08"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"15.4"}]}]},"description":{"S":"peso 150"},"name":{"S":"Aceitunas negras"},"supermarket":{"NULL":true}}}},
-{"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Aguacate"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"160"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"1.5"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"5.9"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"0"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"12"}]}]},"description":{"S":""},"name":{"S":"Aguacate"},"supermarket":{"L":[{"S":"Fruteria"}]}}}},
-{"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Ajo"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"118"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"4.3"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"24.3"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"1"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0.23"}]}]},"description":{"S":"Mercado"},"name":{"S":"Ajo"},"supermarket":{"NULL":true}}}},
-{"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Albondigas de calabaza y queso"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"457.07"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"27.34"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"4.36"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"30.82"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"20.66"}]}]},"description":{"NULL":true},"name":{"S":"Albondigas de calabaza y queso"},"recipe_name":{"S":"Albondigas de calabaza y queso"},"supermarket":{"NULL":true}}}},
-{"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Albondigas de espinaca"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"532.05"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"36.3"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"70.0"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"5.42"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"12.63"}]}]},"description":{"NULL":true},"name":{"S":"Albondigas de espinaca"},"recipe_name":{"S":"Albondigas de espinaca"},"supermarket":{"NULL":true}}}},
-{"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Alcachofa"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"47"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"11"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"1"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"3.3"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0.2"}]}]},"description":{"NULL":true},"name":{"S":"Alcachofa"},"supermarket":{"NULL":true}}}},
-{"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Alcachofa hervida"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"251.5"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"9.9"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"3.0"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"13.1"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"33.0"}]}]},"description":{"NULL":true},"name":{"S":"Alcachofa hervida"},"recipe_name":{"S":"Alcachofa hervida"},"supermarket":{"NULL":true}}}},
-{"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Alga nori"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"34.1"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"35.7"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"0"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"0"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0"}]}]},"description":{"NULL":true},"name":{"S":"Alga nori"},"supermarket":{"NULL":true}}}},
-{"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Almendra"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"576"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"21"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"22"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"3.9"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"49"}]}]},"description":{"S":""},"name":{"S":"Almendra"},"supermarket":{"L":[{"S":"Lidl"}]}}}},
-{"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Alubias"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"349"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"19"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"41"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"3.6"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"1.8"}]}]},"description":{"S":""},"name":{"S":"Alubias"},"supermarket":{"L":[]}}}},
-{"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Amidon de tapioca"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"345"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"0.6"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"85"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"0.1"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"0.2"}]}]},"description":{"NULL":true},"name":{"S":"Amidon de tapioca"},"supermarket":{"NULL":true}}}},
-{"PutRequest":{"Item":{"PK":{"S":"product"},"SK":{"S":"Anacardos"},"nutritional_value":{"L":[{"L":[{"S":"Kilocalorías"},{"S":"Kcal"},{"S":"600"}]},{"L":[{"S":"protein"},{"S":"g"},{"S":"20.5"}]},{"L":[{"S":"Hidratos de Carbono"},{"S":"g"},{"S":"19.8"}]},{"L":[{"S":"Azucares"},{"S":"g"},{"S":"6.5"}]},{"L":[{"S":"Grasas"},{"S":"g"},{"S":"47.6"}]}]},"description":{"NULL":true},"name":{"S":"Anacardos"},"supermarket":{"NULL":true}}}}
-]}
+{
+  "food-tracker": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Aceite de Oliva"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "884"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": ""
+          },
+          "name": {
+            "S": "Aceite de Oliva"
+          },
+          "supermarket": {
+            "L": [
+              {
+                "S": "Carrefour"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Aceite de coco"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "862"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "100"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Aceite de coco"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Aceitunas negras"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "146.5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.6"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.08"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.08"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "15.4"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": "peso 150"
+          },
+          "name": {
+            "S": "Aceitunas negras"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Agua"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Agua"
+          },
+          "recipe_name": {
+            "NULL": true
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Aguacate"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "160"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1.5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "5.9"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "12"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": ""
+          },
+          "name": {
+            "S": "Aguacate"
+          },
+          "supermarket": {
+            "L": [
+              {
+                "S": "Fruteria"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Ajo"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "118"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "4.3"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "24.3"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.23"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": "Mercado"
+          },
+          "name": {
+            "S": "Ajo"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Albondigas Ikea"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "230"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "16.6"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "9.9"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1.3"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "7.9"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Albondigas Ikea"
+          },
+          "recipe_name": {
+            "NULL": true
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Albondigas de calabaza y queso"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "457.07"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "27.34"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "4.36"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "30.82"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "20.66"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Albondigas de calabaza y queso"
+          },
+          "recipe_name": {
+            "S": "Albondigas de calabaza y queso"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Albondigas de espinaca"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "532.05"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "36.3"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "70.0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "5.42"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "12.63"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Albondigas de espinaca"
+          },
+          "recipe_name": {
+            "S": "Albondigas de espinaca"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Alcachofa"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "47"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "11"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "3.3"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.2"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Alcachofa"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    }
+  ]
+}

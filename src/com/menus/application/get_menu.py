@@ -25,6 +25,7 @@ class GetMenu:
 
             if check_param(params, 'year_week'):
                 monday_and_sunday = get_monday_and_sunday(params['year_week'])
+                self.log.trace('{0}', monday_and_sunday)
                 return self.__database.find_all_between(monday_and_sunday['monday_str'],
                                                         monday_and_sunday['sunday_str'])
 

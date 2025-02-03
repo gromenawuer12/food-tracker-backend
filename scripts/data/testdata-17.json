@@ -1,16 +1,928 @@
-{"food-tracker":[
-  {"PutRequest":{"Item":{"PK":{"S":"weekly_menu#roma"},"SK":{"S":"2024-5"},"weekly_number":{"S":"2024-5"},"username":{"S":"roma"},"menus":{"M":{"2024-02-03":{"M":{"date":{"S":"2024-02-03"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"3499.9"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"85.02"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"157.75"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"58.09"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"15.82"},"unit":{"S":"g"}}}]},"recipes":{"L":[{"S":"Patata con salsa de Queso"}]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Kcal"},"value":{"S":"1000"}}},{"M":{"name":{"S":"Galletas"},"value":{"S":"30"}}},{"M":{"name":{"S":"Pipas de girasol"},"value":{"S":"80"}}},{"M":{"name":{"S":"Burger de tempeh "},"value":{"S":"100"}}},{"M":{"name":{"S":"Kimchi"},"value":{"S":"50"}}}]}}},"2024-02-02":{"M":{"date":{"S":"2024-02-02"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"2172.56"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"79.88"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"55.0"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"5.0"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"1.0"},"unit":{"S":"g"}}}]},"recipes":{"L":[{"S":"Gofres"},{"S":"Pan con queso"}]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Almendra"},"value":{"S":"10"}}},{"M":{"name":{"S":"Chocolate con leche"},"value":{"S":"50"}}},{"M":{"name":{"S":"Manzana"},"value":{"S":"250"}}},{"M":{"name":{"S":"Nueces"},"value":{"S":"25"}}},{"M":{"name":{"S":"Alcachofa"},"value":{"S":"500"}}}]}}},"2024-02-04":{"M":{"date":{"S":"2024-02-04"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"4085.4"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"136.77"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"40.44"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"182.59"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"336.67"},"unit":{"S":"g"}}}]},"recipes":{"L":[{"S":"Tacos al seitan"},{"S":"Tostada de aguacate"}]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Galletas"},"value":{"S":"60"}}},{"M":{"name":{"S":"Pistacho"},"value":{"S":"100"}}},{"M":{"name":{"S":"Pipas de girasol"},"value":{"S":"80"}}},{"M":{"name":{"S":"Galet Francesa"},"value":{"S":"100"}}},{"M":{"name":{"S":"Kimchi"},"value":{"S":"45"}}},{"M":{"name":{"S":"Manzana"},"value":{"S":"200"}}}]}}},"2024-01-29":{"M":{"date":{"S":"2024-01-29"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"2228.63"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"68.17"},"unit":{"S":"g"}}}]},"recipes":{"L":[{"S":"Tostada de aguacate"},{"S":"Chorizo de calabaza vegano"},{"S":"Curry de espinaca"}]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Almendra"},"value":{"S":"10"}}},{"M":{"name":{"S":"Manzana deshidratada"},"value":{"S":"25"}}},{"M":{"name":{"S":"Nueces"},"value":{"S":"25"}}},{"M":{"name":{"S":"Chocolate con leche"},"value":{"S":"15"}}},{"M":{"name":{"S":"Seta laminada"},"value":{"S":"300"}}},{"M":{"name":{"S":"Naranja"},"value":{"S":"300"}}}]}}},"2024-01-31":{"M":{"date":{"S":"2024-01-31"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1900.17"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"75.64"},"unit":{"S":"g"}}}]},"recipes":{"L":[{"S":"Gachas de avena"},{"S":"Lasaña"}]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Almendra"},"value":{"S":"10"}}},{"M":{"name":{"S":"Chocolate con leche"},"value":{"S":"15"}}},{"M":{"name":{"S":"Manzana deshidratada"},"value":{"S":"25"}}},{"M":{"name":{"S":"Nueces"},"value":{"S":"25"}}},{"M":{"name":{"S":"Kimchi"},"value":{"S":"60"}}},{"M":{"name":{"S":"Remolacha"},"value":{"S":"350"}}}]}}},"2024-01-30":{"M":{"date":{"S":"2024-01-30"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1569.77"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"39.24"},"unit":{"S":"g"}}}]},"recipes":{"L":[{"S":"Gachas de avena"},{"S":"Rollitos vietnamitas"},{"S":"Brocoli al horno"}]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Almendra"},"value":{"S":"10"}}},{"M":{"name":{"S":"Chocolate con leche"},"value":{"S":"15"}}},{"M":{"name":{"S":"Manzana"},"value":{"S":"250"}}},{"M":{"name":{"S":"Kimchi"},"value":{"S":"80"}}},{"M":{"name":{"S":"Quely"},"value":{"S":"25"}}}]}}},"2024-02-01":{"M":{"date":{"S":"2024-02-01"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1583.05"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"40.63"},"unit":{"S":"g"}}}]},"recipes":{"L":[{"S":"Gachas de avena"},{"S":"Sarrano con castaña y shitake"}]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Almendra"},"value":{"S":"10"}}},{"M":{"name":{"S":"Chocolate con leche"},"value":{"S":"15"}}},{"M":{"name":{"S":"Manzana deshidratada"},"value":{"S":"25"}}},{"M":{"name":{"S":"Quely"},"value":{"S":"25"}}},{"M":{"name":{"S":"Galet Francesa"},"value":{"S":"100"}}},{"M":{"name":{"S":"Kimchi"},"value":{"S":"50"}}}]}}}}},"nutritional_value":{"M":{"Azucares":{"M":{"name":{"S":"Azucares"},"value":{"S":"61.26"},"unit":{"S":"g"}}},"Grasas":{"M":{"name":{"S":"Grasas"},"value":{"S":"241.68"},"unit":{"S":"g"}}},"Hidratos de Carbono":{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"549.42"},"unit":{"S":"g"}}},"Kilocalorías":{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"17039.48"},"unit":{"S":"Kcal"}}},"protein":{"M":{"name":{"S":"protein"},"value":{"S":"525.35"},"unit":{"S":"g"}}}}}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"weekly_menu#roma"},"SK":{"S":"2024-6"},"weekly_number":{"S":"2024-6"},"username":{"S":"roma"},"menus":{"M":{"2024-02-05":{"M":{"date":{"S":"2024-02-05"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"862.5"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"46.05"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"197.0"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"96.0"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"5.35"},"unit":{"S":"g"}}}]},"recipes":{"L":[]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Fresa"},"value":{"S":"500"}}},{"M":{"name":{"S":"Arandanos"},"value":{"S":"300"}}},{"M":{"name":{"S":"Alcachofa"},"value":{"S":"500"}}},{"M":{"name":{"S":"Col"},"value":{"S":"150"}}},{"M":{"name":{"S":"Zanahoria"},"value":{"S":"100"}}},{"M":{"name":{"S":"Banana"},"value":{"S":"200"}}}]}}},"2024-02-07":{"M":{"date":{"S":"2024-02-07"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1572.2"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"67.37"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"157.25"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"54.56"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"66.52"},"unit":{"S":"g"}}}]},"recipes":{"L":[{"S":"Gachas de avena"},{"S":"Taco de lechuga y seitan"}]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Fresa"},"value":{"S":"250"}}},{"M":{"name":{"S":"Almendra"},"value":{"S":"25"}}},{"M":{"name":{"S":"Chocolate con leche"},"value":{"S":"20"}}},{"M":{"name":{"S":"Alcachofa"},"value":{"S":"300"}}}]}}},"2024-02-06":{"M":{"date":{"S":"2024-02-06"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1631.01"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"49.31"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"47.52"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"70.17"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"195.05"},"unit":{"S":"g"}}}]},"recipes":{"L":[{"S":"Gofres"},{"S":"Rollitios de tofu"}]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Fresa"},"value":{"S":"250"}}},{"M":{"name":{"S":"Nueces"},"value":{"S":"25"}}},{"M":{"name":{"S":"Chocolate con leche"},"value":{"S":"15"}}},{"M":{"name":{"S":"Brotes de soja"},"value":{"S":"150"}}}]}}},"2024-02-09":{"M":{"date":{"S":"2024-02-09"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1566.68"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"55.89"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"188.63"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"60.19"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"69.61"},"unit":{"S":"g"}}}]},"recipes":{"L":[{"S":"Gachas de avena"},{"S":"Hambuerguesa de garbanzos y queso"},{"S":"Romanescu al horno"}]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Banana"},"value":{"S":"200"}}},{"M":{"name":{"S":"Almendra"},"value":{"S":"25"}}},{"M":{"name":{"S":"Brotes de soja"},"value":{"S":"100"}}},{"M":{"name":{"S":"Lechuga"},"value":{"S":"100"}}},{"M":{"name":{"S":"Arandanos"},"value":{"S":"100"}}}]}}},"2024-02-08":{"M":{"date":{"S":"2024-02-08"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1641.8"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"36.6"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"183.07"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"50.36"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"82.62"},"unit":{"S":"g"}}}]},"recipes":{"L":[{"S":"Gachas de avena"},{"S":"Arepa"}]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Nueces"},"value":{"S":"25"}}},{"M":{"name":{"S":"Brotes de soja"},"value":{"S":"100"}}},{"M":{"name":{"S":"Lechuga"},"value":{"S":"100"}}},{"M":{"name":{"S":"Banana"},"value":{"S":"200"}}},{"M":{"name":{"S":"Queso raclette"},"value":{"S":"20"}}}]}}},"2024-02-10":{"M":{"date":{"S":"2024-02-10"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1930.45"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"88.9"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"128.24"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"22.13"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"117.96"},"unit":{"S":"g"}}}]},"recipes":{"L":[{"S":"Tostada de aguacate"},{"S":"Esparragos al wok"}]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Pipas de girasol"},"value":{"S":"80"}}},{"M":{"name":{"S":"Kimchi"},"value":{"S":"60"}}},{"M":{"name":{"S":"Burger de tempeh "},"value":{"S":"100"}}},{"M":{"name":{"S":"Frambuesa"},"value":{"S":"125"}}},{"M":{"name":{"S":"Heura bocados"},"value":{"S":"80"}}}]}}},"2024-02-11":{"M":{"date":{"S":"2024-02-11"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"2108.6"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"75.7"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"147.29"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"25.28"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"133.93"},"unit":{"S":"g"}}}]},"recipes":{"L":[{"S":"Tostada de aguacate"},{"S":"Pizza de lenteja"}]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Pipas de girasol"},"value":{"S":"80"}}},{"M":{"name":{"S":"Chocolate con leche"},"value":{"S":"10"}}},{"M":{"name":{"S":"Kimchi"},"value":{"S":"50"}}},{"M":{"name":{"S":"Fresa"},"value":{"S":"200"}}}]}}}}},"nutritional_value":{"M":{"Azucares":{"M":{"name":{"S":"Azucares"},"value":{"S":"356.04"},"unit":{"S":"g"}}},"Grasas":{"M":{"name":{"S":"Grasas"},"value":{"S":"546.16"},"unit":{"S":"g"}}},"Hidratos de Carbono":{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"1196.53"},"unit":{"S":"g"}}},"Kilocalorías":{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"11313.24"},"unit":{"S":"Kcal"}}},"protein":{"M":{"name":{"S":"protein"},"value":{"S":"419.82"},"unit":{"S":"g"}}}}}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"weekly_menu#roma"},"SK":{"S":"2024-7"},"weekly_number":{"S":"2024-7"},"username":{"S":"roma"},"menus":{"M":{"2024-02-14":{"M":{"date":{"S":"2024-02-14"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1694.62"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"52.32"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"153.54"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"53.69"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"97.94"},"unit":{"S":"g"}}}]},"recipes":{"L":[{"S":"Gachas de avena"},{"S":"Curry de espinaca"},{"S":"Taco de lechuga y Heura"}]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Chocolate con leche"},"value":{"S":"15"}}},{"M":{"name":{"S":"Fresa"},"value":{"S":"280"}}},{"M":{"name":{"S":"Nueces"},"value":{"S":"25"}}}]}}},"2024-02-13":{"M":{"date":{"S":"2024-02-13"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1544.65"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"51.28"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"214.96"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"65.56"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"57.44"},"unit":{"S":"g"}}}]},"recipes":{"L":[{"S":"Gachas de avena"},{"S":"Rollitios de tofu"}]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Fresa"},"value":{"S":"250"}}},{"M":{"name":{"S":"Habas"},"value":{"S":"20"}}},{"M":{"name":{"S":"Alcachofa"},"value":{"S":"300"}}},{"M":{"name":{"S":"Chocolate con leche"},"value":{"S":"20"}}},{"M":{"name":{"S":"Almendra"},"value":{"S":"25"}}}]}}},"2024-02-16":{"M":{"date":{"S":"2024-02-16"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1929.6"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"103.17"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"174.92"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"94.7"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"87.14"},"unit":{"S":"g"}}}]},"recipes":{"L":[{"S":"Gachas de avena"},{"S":"Brocoli al horno"},{"S":"Calabacin relleno"}]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Nueces"},"value":{"S":"25"}}},{"M":{"name":{"S":"Chocolate con leche"},"value":{"S":"20"}}},{"M":{"name":{"S":"Arandanos"},"value":{"S":"125"}}},{"M":{"name":{"S":"Manzana"},"value":{"S":"200"}}},{"M":{"name":{"S":"Quely"},"value":{"S":"25"}}},{"M":{"name":{"S":"Garden gourmet bocaditos"},"value":{"S":"90"}}}]}}},"2024-02-15":{"M":{"date":{"S":"2024-02-15"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1496.92"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"35.73"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"143.56"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"49.19"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"80.58"},"unit":{"S":"g"}}}]},"recipes":{"L":[{"S":"Gachas de avena"},{"S":"Pate de aceitunas con tostas"},{"S":"Esparragos al wok"}]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Tomate"},"value":{"S":"100"}}},{"M":{"name":{"S":"Queso curado"},"value":{"S":"20"}}},{"M":{"name":{"S":"Fresa"},"value":{"S":"250"}}},{"M":{"name":{"S":"Almendra"},"value":{"S":"25"}}},{"M":{"name":{"S":"Frambuesa"},"value":{"S":"125"}}}]}}},"2024-02-18":{"M":{"date":{"S":"2024-02-18"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"2362.15"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"90.55"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"162.18"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"38.28"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"150.11"},"unit":{"S":"g"}}}]},"recipes":{"L":[{"S":"Tostada de aguacate"},{"S":"Mungo con queso"}]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Pipas de girasol"},"value":{"S":"80"}}},{"M":{"name":{"S":"Chocolate con leche"},"value":{"S":"15"}}},{"M":{"name":{"S":"Aguacate"},"value":{"S":"20"}}},{"M":{"name":{"S":"Garden gourmet hamburguesa"},"value":{"S":"115"}}},{"M":{"name":{"S":"Manzana"},"value":{"S":"200"}}}]}}},"2024-02-17":{"M":{"date":{"S":"2024-02-17"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"2253.68"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"92.55"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"207.89"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"31.57"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"119.87"},"unit":{"S":"g"}}}]},"recipes":{"L":[{"S":"Tostada de aguacate"},{"S":"Kofta de bulgur y lentejas"}]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Pipas de girasol"},"value":{"S":"80"}}},{"M":{"name":{"S":"Kimchi"},"value":{"S":"60"}}},{"M":{"name":{"S":"Burger de tempeh "},"value":{"S":"100"}}}]}}},"2024-02-12":{"M":{"date":{"S":"2024-02-12"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"2030.61"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"74.12"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"179.66"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"41.12"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"107.84"},"unit":{"S":"g"}}}]},"recipes":{"L":[{"S":"Tostada de aguacate"},{"S":"Esparragos al wok"},{"S":"Sandwich de sushi"}]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Fresa"},"value":{"S":"250"}}},{"M":{"name":{"S":"Habas"},"value":{"S":"100"}}},{"M":{"name":{"S":"Chocolate con leche"},"value":{"S":"20"}}},{"M":{"name":{"S":"Tomate"},"value":{"S":"100"}}}]}}}}},"nutritional_value":{"M":{"Azucares":{"M":{"name":{"S":"Azucares"},"value":{"S":"374.11"},"unit":{"S":"g"}}},"Grasas":{"M":{"name":{"S":"Grasas"},"value":{"S":"700.92"},"unit":{"S":"g"}}},"Hidratos de Carbono":{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"1236.71"},"unit":{"S":"g"}}},"Kilocalorías":{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"13312.23"},"unit":{"S":"Kcal"}}},"protein":{"M":{"name":{"S":"protein"},"value":{"S":"499.72"},"unit":{"S":"g"}}}}}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"weekly_menu#roma"},"SK":{"S":"2024-8"},"weekly_number":{"S":"2024-8"},"username":{"S":"roma"},"menus":{"M":{"2024-02-25":{"M":{"date":{"S":"2024-02-25"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"2399.12"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"94.36"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"254.15"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"64.26"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"116.81"},"unit":{"S":"g"}}}]},"recipes":{"L":[]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Portion of Tostada de aguacate"},"value":{"S":"1"},"recipe_name":{"S":"Tostada de aguacate"}}},{"M":{"name":{"S":"Portion of Kofta de bulgur y lentejas"},"value":{"S":"1"},"recipe_name":{"S":"Kofta de bulgur y lentejas"}}},{"M":{"name":{"S":"Pipas de girasol"},"value":{"S":"80"}}},{"M":{"name":{"S":"Kimchi"},"value":{"S":"50"}}},{"M":{"name":{"S":"Heura bocados"},"value":{"S":"80"}}},{"M":{"name":{"S":"Chocolate con leche"},"value":{"S":"10"}}},{"M":{"name":{"S":"Arandanos"},"value":{"S":"85"}}},{"M":{"name":{"S":"Manzana"},"value":{"S":"200"}}}]}}},"2024-02-24":{"M":{"date":{"S":"2024-02-24"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"2156.77"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"108.0"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"166.11"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"51.64"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"117.4"},"unit":{"S":"g"}}}]},"recipes":{"L":[]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Portion of Tostada de aguacate"},"value":{"S":"1"},"recipe_name":{"S":"Tostada de aguacate"}}},{"M":{"name":{"S":"Portion of Seitan"},"value":{"S":"1"},"recipe_name":{"S":"Seitan"}}},{"M":{"name":{"S":"Pipas de girasol"},"value":{"S":"80"}}},{"M":{"name":{"S":"Kimchi"},"value":{"S":"50"}}},{"M":{"name":{"S":"Burger de tempeh "},"value":{"S":"110"}}},{"M":{"name":{"S":"Lechuga"},"value":{"S":"100"}}},{"M":{"name":{"S":"Tomate"},"value":{"S":"50"}}},{"M":{"name":{"S":"Cebolla"},"value":{"S":"20"}}},{"M":{"name":{"S":"Chocolate con leche"},"value":{"S":"20"}}},{"M":{"name":{"S":"Manzana"},"value":{"S":"200"}}}]}}},"2024-02-19":{"M":{"date":{"S":"2024-02-19"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1591.7"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"65.87"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"155.25"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"54.24"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"70.52"},"unit":{"S":"g"}}}]},"recipes":{"L":[{"S":"Gachas de avena"},{"S":"Taco de lechuga y seitan"}]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Alcachofa"},"value":{"S":"300"}}},{"M":{"name":{"S":"Fresa"},"value":{"S":"250"}}},{"M":{"name":{"S":"Nueces"},"value":{"S":"25"}}},{"M":{"name":{"S":"Chocolate con leche"},"value":{"S":"20"}}}]}}},"2024-02-21":{"M":{"date":{"S":"2024-02-21"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1806.46"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"55.53"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"64.95"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"78.75"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"196.89"},"unit":{"S":"g"}}}]},"recipes":{"L":[{"S":"Gofres"},{"S":"Rollitios de tofu"},{"S":"Calabacin con queso"}]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Fresa"},"value":{"S":"250"}}},{"M":{"name":{"S":"Nueces"},"value":{"S":"25"}}},{"M":{"name":{"S":"Chocolate con leche"},"value":{"S":"20"}}},{"M":{"name":{"S":"Frambuesa"},"value":{"S":"125"}}}]}}},"2024-02-20":{"M":{"date":{"S":"2024-02-20"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1716.57"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"83.8"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"148.98"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"41.75"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"99.74"},"unit":{"S":"g"}}}]},"recipes":{"L":[{"S":"Tostada de aguacate"},{"S":"Yuba con verduras"},{"S":"Esparragos al wok"}]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Queso curado"},"value":{"S":"20"}}},{"M":{"name":{"S":"Tomate"},"value":{"S":"100"}}},{"M":{"name":{"S":"Fresa"},"value":{"S":"250"}}},{"M":{"name":{"S":"Almendra"},"value":{"S":"25"}}},{"M":{"name":{"S":"Chocolate con leche"},"value":{"S":"20"}}}]}}},"2024-02-23":{"M":{"date":{"S":"2024-02-23"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"2839.0"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"17.65"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"236.35"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"122.75"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"139.94"},"unit":{"S":"g"}}}]},"recipes":{"L":[]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Nueces"},"value":{"S":"25"}}},{"M":{"name":{"S":"Chocolate con leche"},"value":{"S":"20"}}},{"M":{"name":{"S":"Portion of Gofres"},"value":{"S":"1"},"recipe_name":{"S":"Gofres"}}},{"M":{"name":{"S":"Manzana"},"value":{"S":"200"}}},{"M":{"name":{"S":"Kcal"},"value":{"S":"200"},"recipe_name":{"NULL":true}}}]}}},"2024-02-22":{"M":{"date":{"S":"2024-02-22"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1738.55"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"46.65"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"192.77"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"59.22"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"88.89"},"unit":{"S":"g"}}}]},"recipes":{"L":[{"S":"Gachas de avena"},{"S":"Arepa"},{"S":"Brocoli al horno"}]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Col"},"value":{"S":"200"}}},{"M":{"name":{"S":"Almendra"},"value":{"S":"25"}}},{"M":{"name":{"S":"Chocolate con leche"},"value":{"S":"20"}}},{"M":{"name":{"S":"Arandanos"},"value":{"S":"125"}}}]}}}}},"nutritional_value":{"M":{"Azucares":{"M":{"name":{"S":"Azucares"},"value":{"S":"458.81"},"unit":{"S":"g"}}},"Grasas":{"M":{"name":{"S":"Grasas"},"value":{"S":"712.05"},"unit":{"S":"g"}}},"Hidratos de Carbono":{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"1350.5"},"unit":{"S":"g"}}},"Kilocalorías":{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"14248.17"},"unit":{"S":"Kcal"}}},"protein":{"M":{"name":{"S":"protein"},"value":{"S":"471.86"},"unit":{"S":"g"}}}}}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"weekly_menu#roma"},"SK":{"S":"2024-9"},"weekly_number":{"S":"2024-9"},"username":{"S":"roma"},"menus":{"M":{"2024-02-27":{"M":{"date":{"S":"2024-02-27"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1658.11"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"74.5"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"135.26"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"62.47"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"77.85"},"unit":{"S":"g"}}}]},"recipes":{"L":[]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Fresa"},"value":{"S":"250"}}},{"M":{"name":{"S":"Portion of Taco de lechuga y seitan"},"value":{"S":"1"},"recipe_name":{"S":"Taco de lechuga y seitan"}}},{"M":{"name":{"S":"Portion of Tortilla de Calabacin"},"value":{"S":"1"},"recipe_name":{"S":"Tortilla de Calabacin"}}},{"M":{"name":{"S":"Guisante fresco"},"value":{"S":"1.5"},"recipe_name":{"NULL":true}}},{"M":{"name":{"S":"Chocolate con leche"},"value":{"S":"20"}}},{"M":{"name":{"S":"Portion of Gofres"},"value":{"S":"1"},"recipe_name":{"S":"Gofres"}}}]}}},"2024-03-03":{"M":{"date":{"S":"2024-03-03"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"2356.89"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"108.49"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"59.67"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"123.41"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"206.62"},"unit":{"S":"g"}}}]},"recipes":{"L":[]},"username":{"S":"roma"},"products":{"M":{"Comida":{"L":[{"M":{"name":{"S":"Golubtsi"},"value":{"S":"1"},"recipe_name":{"S":"Golubtsi"}}}]},"Cena":{"L":[{"M":{"name":{"S":"Garden gourmet bocaditos"},"value":{"S":"110"}}},{"M":{"name":{"S":"Kimchi"},"value":{"S":"50"}}}]},"Almuerzo":{"L":[{"M":{"name":{"S":"Chocolate con leche"},"value":{"S":"15"}}},{"M":{"name":{"S":"Pipas de girasol"},"value":{"S":"80"}}},{"M":{"name":{"S":"Manzana"},"value":{"S":"200"}}}]},"Desayuno":{"L":[{"M":{"name":{"S":"Tostada de aguacate"},"value":{"S":"1"},"recipe_name":{"S":"Tostada de aguacate"}}}]}}}}},"2024-02-26":{"M":{"date":{"S":"2024-02-26"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1589.5"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"53.57"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"188.25"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"45.68"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"67.26"},"unit":{"S":"g"}}}]},"recipes":{"L":[]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Fresa"},"value":{"S":"250"}}},{"M":{"name":{"S":"Habas"},"value":{"S":"125"}}},{"M":{"name":{"S":"Alcachofa"},"value":{"S":"300"}}},{"M":{"name":{"S":"Portion of Gofres"},"value":{"S":"1"},"recipe_name":{"S":"Gofres"}}},{"M":{"name":{"S":"Portion of Empanadillas de espinaca"},"value":{"S":"1"},"recipe_name":{"S":"Empanadillas de espinaca"}}},{"M":{"name":{"S":"Chocolate con leche"},"value":{"S":"20"}}}]}}},"2024-02-29":{"M":{"date":{"S":"2024-02-29"},"nutritional_value":{"L":[{"M":{"name":{"S":"Azucares"},"value":{"S":"51.88"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"96.0"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"224.84"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"2184.42"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"89.12"},"unit":{"S":"g"}}}]},"recipes":{"L":[]},"username":{"S":"roma"},"products":{"M":{"Comida":{"L":[{"M":{"name":{"S":"Hamburguesa de legumbres"},"value":{"S":"1"},"recipe_name":{"S":"Hamburguesa de legumbres"}}},{"M":{"name":{"S":"Lechuga"},"value":{"S":"100"}}},{"M":{"name":{"S":"Tomate"},"value":{"S":"100"}}}]},"Cena":{"L":[{"M":{"name":{"S":"Calabacin con queso"},"value":{"S":"1"},"recipe_name":{"S":"Calabacin con queso"}}},{"M":{"name":{"S":"Frambuesa"},"value":{"S":"125"}}}]},"Almuerzo":{"L":[{"M":{"name":{"S":"Fresa"},"value":{"S":"300"}}},{"M":{"name":{"S":"Almendra"},"value":{"S":"25"}}},{"M":{"name":{"S":"Chocolate con leche"},"value":{"S":"20"}}}]},"Desayuno":{"L":[{"M":{"name":{"S":"Tostada de aguacate"},"value":{"S":"1"},"recipe_name":{"S":"Tostada de aguacate"}}}]}}}}},"2024-02-28":{"M":{"date":{"S":"2024-02-28"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1796.25"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"47.85"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"205.56"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"67.78"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"85.36"},"unit":{"S":"g"}}}]},"recipes":{"L":[]},"username":{"S":"roma"},"products":{"L":[{"M":{"name":{"S":"Fresa"},"value":{"S":"250"}}},{"M":{"name":{"S":"Habas"},"value":{"S":"125"}}},{"M":{"name":{"S":"Chocolate con leche"},"value":{"S":"20"}}},{"M":{"name":{"S":"Portion of Gachas de avena"},"value":{"S":"1"},"recipe_name":{"S":"Gachas de avena"}}},{"M":{"name":{"S":"Roasted Veggie Glow Bowls"},"value":{"S":"1"},"recipe_name":{"S":"Roasted Veggie Glow Bowls"}}},{"M":{"name":{"S":"Romanescu al horno"},"value":{"S":"1"},"recipe_name":{"S":"Romanescu al horno"}}},{"M":{"name":{"S":"Frambuesa"},"value":{"S":"125"}}}]}}},"2024-03-01":{"M":{"date":{"S":"2024-03-01"},"nutritional_value":{"L":[{"M":{"name":{"S":"Azucares"},"value":{"S":"76.5"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"73.92"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"213.12"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1762.65"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"70.98"},"unit":{"S":"g"}}}]},"recipes":{"L":[]},"username":{"S":"roma"},"products":{"M":{"Comida":{"L":[{"M":{"name":{"S":"Rollitos de primavera de seitan y brotes"},"value":{"S":"1"},"recipe_name":{"S":"Rollitos de primavera de seitan y brotes"}}}]},"Cena":{"L":[{"M":{"name":{"S":"Brocoli al horno"},"value":{"S":"1"},"recipe_name":{"S":"Brocoli al horno"}}},{"M":{"name":{"S":"Frambuesa"},"value":{"S":"125"}}}]},"Almuerzo":{"L":[{"M":{"name":{"S":"Fresa"},"value":{"S":"300"}}},{"M":{"name":{"S":"Nueces"},"value":{"S":"25"}}},{"M":{"name":{"S":"Chocolate con leche"},"value":{"S":"20"}}}]},"Desayuno":{"L":[{"M":{"name":{"S":"Gachas de avena"},"value":{"S":"1"},"recipe_name":{"S":"Gachas de avena"}}},{"M":{"name":{"S":"Frambuesa"},"value":{"S":"125"}}}]}}}}},"2024-03-02":{"M":{"date":{"S":"2024-03-02"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"2710.87"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"101.9"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"281.11"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"81.88"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"131.87"},"unit":{"S":"g"}}}]},"recipes":{"L":[]},"username":{"S":"roma"},"products":{"M":{"Comida":{"L":[{"M":{"name":{"S":"Galet Francesa"},"value":{"S":"100"}}},{"M":{"name":{"S":"Barra pan"},"value":{"S":"100"}}},{"M":{"name":{"S":"Queso curado"},"value":{"S":"100"}}}]},"Cena":{"L":[{"M":{"name":{"S":"Kimchi"},"value":{"S":"50"}}}]},"Almuerzo":{"L":[{"M":{"name":{"S":"Manzana"},"value":{"S":"500"}}},{"M":{"name":{"S":"Pipas de girasol"},"value":{"S":"80"}}},{"M":{"name":{"S":"Fresa"},"value":{"S":"200"}}}]},"Desayuno":{"L":[{"M":{"name":{"S":"Tostada de aguacate"},"value":{"S":"1"},"recipe_name":{"S":"Tostada de aguacate"}}}]}}}}}}},"nutritional_value":{"M":{"Azucares":{"M":{"name":{"S":"Azucares"},"value":{"S":"445.86"},"unit":{"S":"g"}}},"Grasas":{"M":{"name":{"S":"Grasas"},"value":{"S":"655.67"},"unit":{"S":"g"}}},"Hidratos de Carbono":{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"1454.76"},"unit":{"S":"g"}}},"Kilocalorías":{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"14058.69"},"unit":{"S":"Kcal"}}},"protein":{"M":{"name":{"S":"protein"},"value":{"S":"546.41"},"unit":{"S":"g"}}}}}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"menu#roma"},"SK":{"S":"2024-10-21"},"recipes":{"L":[]},"date":{"S":"2024-10-21"},"products":{"M":{"Comida":{"L":[{"M":{"name":{"S":"Hamburguesa de garbanzos y espinaca"},"value":{"S":"1"},"recipe_name":{"S":"Hamburguesa de garbanzos y espinaca"}}},{"M":{"name":{"S":"Lechuga"},"value":{"S":"100"}}}]},"Cena":{"L":[{"M":{"name":{"S":"Tofu con zanahoria y col"},"value":{"S":"1"},"recipe_name":{"S":"Tofu con zanahoria y col"}}},{"M":{"name":{"S":"Manzana"},"value":{"S":"250"}}}]},"Almuerzo":{"L":[{"M":{"name":{"S":"Pepino"},"value":{"S":"200"}}},{"M":{"name":{"S":"Ciruela"},"value":{"S":"200"},"recipe_name":{"NULL":true}}},{"M":{"name":{"S":"Nueces"},"value":{"S":"25"}}},{"M":{"name":{"S":"Chocolate con leche"},"value":{"S":"20"}}}]},"Desayuno":{"L":[{"M":{"name":{"S":"Uva"},"value":{"S":"250"}}},{"M":{"name":{"S":"Baked oats con arandanos"},"value":{"S":"1"},"recipe_name":{"S":"Baked oats con arandanos"}}}]}}},"username":{"S":"roma"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"2023.97"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"71.67"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"254.17"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"146.19"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"83.29"},"unit":{"S":"g"}}}]}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"menu#roma"},"SK":{"S":"2024-10-22"},"recipes":{"L":[]},"date":{"S":"2024-10-22"},"products":{"M":{"Comida":{"L":[{"M":{"name":{"S":"Croquestas de coliflor"},"value":{"S":"1"},"recipe_name":{"S":"Croquestas de coliflor"}}}]},"Cena":{"L":[{"M":{"name":{"S":"Taco de lechuga y seitan"},"value":{"S":"1"},"recipe_name":{"S":"Taco de lechuga y seitan"}}},{"M":{"name":{"S":"Naranja"},"value":{"S":"150"}}}]},"Almuerzo":{"L":[{"M":{"name":{"S":"Pepino"},"value":{"S":"200"}}},{"M":{"name":{"S":"Ciruela"},"value":{"S":"200"},"recipe_name":{"NULL":true}}},{"M":{"name":{"S":"Nueces"},"value":{"S":"25"}}},{"M":{"name":{"S":"Pan Elias"},"value":{"S":"1"},"recipe_name":{"S":"Pan Elias"}}},{"M":{"name":{"S":"Queso curado"},"value":{"S":"50"}}}]},"Desayuno":{"L":[{"M":{"name":{"S":"Baked oats con arandanos"},"value":{"S":"1"},"recipe_name":{"S":"Baked oats con arandanos"}}},{"M":{"name":{"S":"Uva"},"value":{"S":"250"}}}]}}},"username":{"S":"roma"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1808.48"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"75.62"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"238.15"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"125.46"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"87.86"},"unit":{"S":"g"}}}]}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"menu#roma"},"SK":{"S":"2024-10-23"},"recipes":{"L":[]},"date":{"S":"2024-10-23"},"products":{"M":{"Comida":{"L":[{"M":{"name":{"S":"Curry de espinaca"},"value":{"S":"1"},"recipe_name":{"S":"Curry de espinaca"}}}]},"Cena":{"L":[{"M":{"name":{"S":"Ensalada de remolacha"},"value":{"S":"1"},"recipe_name":{"S":"Ensalada de remolacha"}}}]},"Almuerzo":{"L":[{"M":{"name":{"S":"Pepino"},"value":{"S":"200"}}},{"M":{"name":{"S":"Ciruela"},"value":{"S":"200"},"recipe_name":{"NULL":true}}},{"M":{"name":{"S":"Nueces"},"value":{"S":"25"}}},{"M":{"name":{"S":"Chocolate con leche"},"value":{"S":"15"}}}]},"Desayuno":{"L":[{"M":{"name":{"S":"Baked oats con arandanos"},"value":{"S":"1"},"recipe_name":{"S":"Baked oats con arandanos"}}},{"M":{"name":{"S":"Uva"},"value":{"S":"250"}}}]}}},"username":{"S":"roma"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1899.47"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"63.99"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"258.42"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"152.92"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"165.88"},"unit":{"S":"g"}}}]}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"menu#roma"},"SK":{"S":"2024-10-24"},"recipes":{"L":[]},"date":{"S":"2024-10-24"},"products":{"M":{"Comida":{"L":[{"M":{"name":{"S":"Calabacin relleno de lenteja"},"value":{"S":"1"},"recipe_name":{"S":"Calabacin relleno de lenteja"}}}]},"Cena":{"L":[{"M":{"name":{"S":"Tofu con zanahoria y col"},"value":{"S":"1"},"recipe_name":{"S":"Tofu con zanahoria y col"}}}]},"Almuerzo":{"L":[{"M":{"name":{"S":"Pepino"},"value":{"S":"200"}}},{"M":{"name":{"S":"Ciruela"},"value":{"S":"200"},"recipe_name":{"NULL":true}}},{"M":{"name":{"S":"Nueces"},"value":{"S":"25"}}}]},"Desayuno":{"L":[{"M":{"name":{"S":"Uva"},"value":{"S":"250"}}},{"M":{"name":{"S":"Gofres"},"value":{"S":"1"},"recipe_name":{"S":"Gofres"}}}]}}},"username":{"S":"roma"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1925.81"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"76.16"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"213.39"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"106.09"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"84.76"},"unit":{"S":"g"}}}]}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"menu#roma"},"SK":{"S":"2024-10-25"},"recipes":{"L":[]},"date":{"S":"2024-10-25"},"products":{"M":{"Comida":{"L":[{"M":{"name":{"S":"Golubtsi"},"value":{"S":"1"},"recipe_name":{"S":"Golubtsi"}}}]},"Cena":{"L":[{"M":{"name":{"S":"Halloumi con lechga"},"value":{"S":"1"},"recipe_name":{"S":"Halloumi con lechga"}}}]},"Almuerzo":{"L":[{"M":{"name":{"S":"Pepino"},"value":{"S":"200"}}},{"M":{"name":{"S":"Ciruela"},"value":{"S":"200"},"recipe_name":{"NULL":true}}},{"M":{"name":{"S":"Nueces"},"value":{"S":"25"}}}]},"Desayuno":{"L":[{"M":{"name":{"S":"Gofres"},"value":{"S":"1"},"recipe_name":{"S":"Gofres"}}}]}}},"username":{"S":"roma"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1790.78"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"74.53"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"63.6"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"81.27"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"168.07"},"unit":{"S":"g"}}}]}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Albondigas de calabaza y queso"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"914.15"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"54.68"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"8.72"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"61.64"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"41.31"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Aceite de Oliva"},{"S":"gr"},{"S":"20"}]},{"L":[{"S":"Calabaza"},{"S":"gr"},{"S":"250"}]},{"L":[{"S":"Queso cascaval"},{"S":"gr"},{"S":"100"}]},{"L":[{"S":"Queso curado"},{"S":"gr"},{"S":"25"}]},{"L":[{"S":"Levadura nutricional"},{"S":"gr"},{"S":"15"}]},{"L":[{"S":"Huevo"},{"S":"gr"},{"S":"50"}]},{"L":[{"S":"Perejil"},{"S":"gr"},{"S":"20"}]},{"L":[{"S":"Barra pan"},{"S":"gr"},{"S":"30"}]}]},"name":{"S":"Albondigas de calabaza y queso"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Albondigas de espinaca"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1064.1"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"72.61"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"140.01"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"10.84"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"25.27"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Espinaca"},{"S":"gr"},{"S":"300"}]},{"L":[{"S":"Garbanzos"},{"S":"gr"},{"S":"160"}]},{"L":[{"S":"Menta"},{"S":"gr"},{"S":"20"}]},{"L":[{"S":"Ajo"},{"S":"gr"},{"S":"20"}]},{"L":[{"S":"Lino"},{"S":"gr"},{"S":"30"}]},{"L":[{"S":"Tomate"},{"S":"gr"},{"S":"100"}]},{"L":[{"S":"Pepino"},{"S":"gr"},{"S":"200"}]},{"L":[{"S":"Levadura nutricional"},{"S":"gr"},{"S":"50"}]}]},"name":{"S":"Albondigas de espinaca"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Alcachofa hervida"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"503.0"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"19.8"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"6.0"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"26.2"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"66.0"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Aceite de Oliva"},{"S":"gr"},{"S":"25"}]},{"L":[{"S":"Alcachofa"},{"S":"gr"},{"S":"600"}]}]},"name":{"S":"Alcachofa hervida"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Aloo Jeera"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"2030.2"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"41.12"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"0.8"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"42.32"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"187.94"},"unit":{"S":"g"}}}]},"description":{"S":"Patatas al comino"},"products":{"L":[{"L":[{"S":"Aceite de Oliva"},{"NULL":true},{"S":"40"}]},{"L":[{"S":"Jengibre"},{"NULL":true},{"S":"40"}]},{"L":[{"S":"Cilantro"},{"NULL":true},{"S":"20"}]},{"L":[{"S":"Patata "},{"NULL":true},{"S":"1000"}]}]},"name":{"S":"Aloo Jeera"}}}}
-]}
+{
+  "food-tracker": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Milanesa vegana con setas"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "560.01"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "19.2"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1.92"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "39.16"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "34.74"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": "Ingredientes\n- 3 cucharas de lino, mezclar con 9 cucharas de agua.\n- 4 cuchas de harina de garbanzos, mezclar con 4 cucharas de agua.\n- 250 - 300 gramos de setas laminada, cortadas en finas tiras.\n- Sal\n- Pimienta\n- Finas hierbas\n- Salsa de soja\n- 150 gramos de semillas de girasol\n- 75 gramos de sesamo\n- 1 cdita. pimienta negra \n- 1 cdita. ajo en polvo\n- 1 cdita. especies carne\n- Puede que un poco de agua.\n- Pan rallado\nPreparacion\n1. Hacer huevo de lino y garbanzo.\n2. Cortar las setas en finas tiras y hacerlas en la sarten con salsa de soja, finas hierbas y pimienta.\n3. En un batidora triturar semillas de girasol y sesamo.\n4. Mezclar las semillas, las setas con pimienta, ajo en polvo y especies de carne. \n5. Si la mezcla es muy seca, añadir agua poco a poco.\n6. Dividir la masa en 4 o 8 milanesas.\n7. Aplanarlas y empanarlas en pan rallado.\n8. Hacer en la sarten.\n"
+          },
+          "name": {
+            "S": "Milanesa vegana con setas"
+          },
+          "recipe_name": {
+            "S": "Milanesa vegana con setas"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Miso"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "208"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "5.6"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "11.7"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "11.7"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "10"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Miso"
+          },
+          "recipe_name": {
+            "NULL": true
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Mix Galletas"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "367"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "3.5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "77"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "33.9"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "6.5"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Mix Galletas"
+          },
+          "recipe_name": {
+            "NULL": true
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Mix burger Kaufland"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "361"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "7.4"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "33"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "2.9"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "34"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Mix burger Kaufland"
+          },
+          "recipe_name": {
+            "NULL": true
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Mozarella"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "245"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "13"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1.5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1.5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "18"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Mozarella"
+          },
+          "recipe_name": {
+            "NULL": true
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Mozzarella dura"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "279"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "19"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "11.4"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "7"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Mozzarella dura"
+          },
+          "recipe_name": {
+            "NULL": true
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Mungo"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "347"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "24"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "63"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "7"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1.2"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Mungo"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Naranja"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "47"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.9"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "12"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "9"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.1"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Naranja"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Naturli Schnitzel"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "230"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "13"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "13"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.9"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "13"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": "75 por pieza"
+          },
+          "name": {
+            "S": "Naturli Schnitzel"
+          },
+          "recipe_name": {
+            "NULL": true
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Nispero"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "53"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.4"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "12.1"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "10.4"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Nispero"
+          },
+          "recipe_name": {
+            "NULL": true
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    }
+  ]
+}

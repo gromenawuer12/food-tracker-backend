@@ -1,16 +1,924 @@
-{"food-tracker":[
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Gofre de falafel"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"808.65"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"33.52"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"8.53"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"32.25"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"90.24"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Aceite de Oliva"},{"S":"gr"},{"S":"20"}]},{"L":[{"S":"Ajo"},{"S":"gr"},{"S":"10"}]},{"L":[{"S":"Garbanzos"},{"S":"gr"},{"S":"100"}]},{"L":[{"S":"Harina de garbanzos"},{"S":"gr"},{"S":"20"}]},{"L":[{"S":"Cilantro"},{"S":"gr"},{"S":"20"}]},{"L":[{"S":"Perejil"},{"S":"gr"},{"S":"20"}]},{"L":[{"S":"Limon"},{"S":"gr"},{"S":"40"}]},{"L":[{"S":"Kefir"},{"S":"gr"},{"S":"125"}]},{"L":[{"S":"Lechuga"},{"S":"gr"},{"S":"200"}]},{"L":[{"S":"Tomate"},{"S":"gr"},{"S":"200"}]}]},"name":{"S":"Gofre de falafel"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Gofres"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1148.21"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"28.0"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"39.33"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"41.31"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"136.26"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Aceite de Oliva"},{"NULL":true},{"S":"10"}]},{"L":[{"S":"Levadura Royal"},{"NULL":true},{"S":"7"}]},{"L":[{"S":"Lino"},{"NULL":true},{"S":"15"}]},{"L":[{"S":"Harina de trigo"},{"NULL":true},{"S":"100"}]},{"L":[{"S":"Pure de Manzana"},{"NULL":true},{"S":"120"}]},{"L":[{"S":"Almendra"},{"NULL":true},{"S":"25"}]},{"L":[{"S":"Huevo"},{"NULL":true},{"S":"50"}]},{"L":[{"S":"Leche de nuez"},{"NULL":true},{"S":"200"}]}]},"name":{"S":"Gofres"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Golubtsi"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1037.55"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"68.75"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"35.45"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"32.67"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"128.43"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Aceite de Oliva"},{"S":"gr"},{"S":"20"}]},{"L":[{"S":"Caldo vegetal"},{"S":"gr"},{"S":"200"}]},{"L":[{"S":"Col"},{"S":"gr"},{"S":"400"}]},{"L":[{"S":"Soja Texturizada"},{"S":"gr"},{"S":"100"}]},{"L":[{"S":"Shitake"},{"S":"gr"},{"S":"300"}]},{"L":[{"S":"Sarraceno"},{"S":"gr"},{"S":"75"}]},{"L":[{"S":"Cilantro"},{"S":"gr"},{"S":"50"}]},{"L":[{"S":"Perejil"},{"S":"gr"},{"S":"50"}]}]},"name":{"S":"Golubtsi"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Granizado"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"115.0"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"0.55"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"30.0"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"25.25"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"0.75"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Uva"},{"S":"g"},{"S":"150"}]},{"L":[{"S":"Limon"},{"S":"g"},{"S":"50"}]}]},"name":{"S":"Granizado"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Halloumi con lechga"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"840.8"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"55.4"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"11.8"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"5.6"},"unit":{"S":"g"}}},{"M":{"name":{"S":"protein"},"value":{"S":"42.0"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Halloumi"},{"S":"gr"},{"S":"200"}]},{"L":[{"S":"Aceite de Oliva"},{"S":"gr"},{"S":"20"}]},{"L":[{"S":"Lechuga"},{"S":"gr"},{"S":"200"}]}]},"name":{"S":"Halloumi con lechga"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Hambuerguesa de garbanzos y queso"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"2663.1"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"110.39"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"264.55"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"1.04"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"121.24"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Garbanzos"},{"NULL":true},{"S":"400"}]},{"L":[{"S":"Ajo"},{"NULL":true},{"S":"15"}]},{"L":[{"S":"Avena"},{"NULL":true},{"S":"50"}]},{"L":[{"S":"Tahini"},{"NULL":true},{"S":"30"}]},{"L":[{"S":"Perejil"},{"NULL":true},{"S":"20"}]},{"L":[{"S":"Queso azul"},{"NULL":true},{"S":"100"}]},{"L":[{"S":"Sesamo"},{"NULL":true},{"S":"20"}]},{"L":[{"S":"Aceite de Oliva"},{"NULL":true},{"S":"40"}]}]},"name":{"S":"Hambuerguesa de garbanzos y queso"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Hamburguesa de garbanzos y espinaca"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1185.2"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"59.61"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"99.22"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"1.6"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"58.68"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Garbanzos"},{"S":"gr"},{"S":"150"}]},{"L":[{"S":"Queso azul"},{"S":"gr"},{"S":"50"}]},{"L":[{"S":"Queso cascaval"},{"S":"gr"},{"S":"50"}]},{"L":[{"S":"Espinaca"},{"S":"gr"},{"S":"150"}]},{"L":[{"S":"Harina de garbanzos"},{"S":"gr"},{"S":"20"}]},{"L":[{"S":"Aceite de Oliva"},{"S":"gr"},{"S":"20"}]}]},"name":{"S":"Hamburguesa de garbanzos y espinaca"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Hamburguesa de legumbres"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"2058.0"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"105.1"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"12.04"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"37.55"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"287.94"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Aceite de Oliva"},{"NULL":true},{"S":"20"}]},{"L":[{"S":"Alubias"},{"NULL":true},{"S":"120"}]},{"L":[{"S":"Garbanzos"},{"NULL":true},{"S":"120"}]},{"L":[{"S":"Lenteja"},{"NULL":true},{"S":"120"}]},{"L":[{"S":"Champiñones"},{"NULL":true},{"S":"150"}]},{"L":[{"S":"Avena"},{"NULL":true},{"S":"100"}]},{"L":[{"S":"Levadura nutricional"},{"NULL":true},{"S":"30"}]},{"L":[{"S":"Tapioca"},{"NULL":true},{"S":"30"}]}]},"name":{"S":"Hamburguesa de legumbres"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Hummus"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"752.2"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"26.45"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"0.8"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"42.18"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"67.63"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Aceite de Oliva"},{"S":"gr"},{"S":"15"}]},{"L":[{"S":"Ajo"},{"S":"gr"},{"S":"10"}]},{"L":[{"S":"Garbanzos"},{"S":"gr"},{"S":"100"}]},{"L":[{"S":"Tahini"},{"S":"gr"},{"S":"40"}]},{"L":[{"S":"Limon"},{"S":"gr"},{"S":"20"}]}]},"name":{"S":"Hummus"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Kefir con fruta y nueces"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1057.0"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"38.0"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"88.0"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"63.17"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"59.5"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Kefir"},{"NULL":true},{"S":"500"}]},{"L":[{"S":"Fresa"},{"NULL":true},{"S":"750"}]},{"L":[{"S":"Almendra"},{"NULL":true},{"S":"75"}]}]},"name":{"S":"Kefir con fruta y nueces"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Kofta de bulgur y lentejas"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1305.0"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"49.83"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"209.56"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"38.41"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"36.26"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Lenteja"},{"NULL":true},{"S":"100"}]},{"L":[{"S":"Bulgur"},{"NULL":true},{"S":"170"}]},{"L":[{"S":"Ajo"},{"NULL":true},{"S":"10"}]},{"L":[{"S":"Perejil"},{"NULL":true},{"S":"30"}]},{"L":[{"S":"Aceite de Oliva"},{"NULL":true},{"S":"30"}]},{"L":[{"S":"Pasta curry"},{"NULL":true},{"S":"40"}]},{"L":[{"S":"Tomate Frito"},{"NULL":true},{"S":"30"}]},{"L":[{"S":"Limon"},{"NULL":true},{"S":"20"}]},{"L":[{"S":"Lechuga"},{"NULL":true},{"S":"200"}]}]},"name":{"S":"Kofta de bulgur y lentejas"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Koftas de alubias y nueces"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"2417.77"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"82.19"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"15.97"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"138.35"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"175.44"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Aceite de Oliva"},{"S":"gr"},{"S":"30"}]},{"L":[{"S":"Nueces"},{"S":"gr"},{"S":"120"}]},{"L":[{"S":"Alubias"},{"S":"gr"},{"S":"200"}]},{"L":[{"S":"Avena"},{"S":"gr"},{"S":"81"}]},{"L":[{"S":"Perejil"},{"S":"gr"},{"S":"40"}]},{"L":[{"S":"Champiñones"},{"S":"gr"},{"S":"200"}]},{"L":[{"S":"Chia"},{"S":"gr"},{"S":"28"}]},{"L":[{"S":"Lino"},{"S":"gr"},{"S":"30"}]}]},"name":{"S":"Koftas de alubias y nueces"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Kulesha"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"1356.0"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"56.4"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"155.8"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"1.84"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"61.0"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Harina de Maiz"},{"NULL":true},{"S":"200"}]},{"L":[{"S":"Queso raclette"},{"NULL":true},{"S":"200"}]}]},"name":{"S":"Kulesha"}}}},
-  {"PutRequest":{"Item":{"PK":{"S":"recipe"},"SK":{"S":"Lasaña"},"nutritional_value":{"L":[{"M":{"name":{"S":"Kilocalorías"},"value":{"S":"3839.5"},"unit":{"S":"Kcal"}}},{"M":{"name":{"S":"protein"},"value":{"S":"214.7"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Hidratos de Carbono"},"value":{"S":"313.95"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Azucares"},"value":{"S":"43.4"},"unit":{"S":"g"}}},{"M":{"name":{"S":"Grasas"},"value":{"S":"166.84"},"unit":{"S":"g"}}}]},"description":{"NULL":true},"products":{"L":[{"L":[{"S":"Alubias"},{"NULL":true},{"S":"200"}]},{"L":[{"S":"Levadura nutricional"},{"NULL":true},{"S":"50"}]},{"L":[{"S":"Placas lasaña"},{"NULL":true},{"S":"160"}]},{"L":[{"S":"Queso raclette"},{"NULL":true},{"S":"500"}]},{"L":[{"S":"Tomate Frito"},{"NULL":true},{"S":"200"}]},{"L":[{"S":"Quinoa"},{"NULL":true},{"S":"100"}]},{"L":[{"S":"Champiñones"},{"S":"gr"},{"S":"300"}]}]},"name":{"S":"Lasaña"}}}}
-]}
+{
+  "food-tracker": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Pita con falafel"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "745.0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "30.5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "131.28"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "8.64"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "10.1"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Pita con falafel"
+          },
+          "recipe_name": {
+            "S": "Pita con falafel"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Pizza"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "694.86"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "27.1"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "2.79"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "26.11"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "83.44"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Pizza"
+          },
+          "recipe_name": {
+            "S": "Pizza"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Placas lasaña"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "360"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "12"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "73"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1.5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1.4"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Placas lasaña"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Preparado hamburguesas Kaufland"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "361"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "7.4"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "33"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "2.9"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "34"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Preparado hamburguesas Kaufland"
+          },
+          "recipe_name": {
+            "NULL": true
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Pure de Manzana"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "204"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "24.81"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "21.52"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.16"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": "Manzanas asadas con canela y nuez moscadaa"
+          },
+          "name": {
+            "S": "Pure de Manzana"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Quely"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "432"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "9.4"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "69"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "3.7"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "13"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": "Palitos finos, 50 gramos por paquete"
+          },
+          "name": {
+            "S": "Quely"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Queso azul"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "341"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "19"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "30"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": ""
+          },
+          "name": {
+            "S": "Queso azul"
+          },
+          "supermarket": {
+            "L": [
+              {
+                "S": "Francia"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Queso camembert"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "300"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "20"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "24"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Queso camembert"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Queso cascaval"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "360"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "27.5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "3.2"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.21"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "25.72"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "NULL": true
+          },
+          "name": {
+            "S": "Queso cascaval"
+          },
+          "recipe_name": {
+            "NULL": true
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Queso curado"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "420"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "32"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1.3"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "1"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "31.4"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": ""
+          },
+          "name": {
+            "S": "Queso curado"
+          },
+          "supermarket": {
+            "L": [
+              {
+                "S": "Mercado"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

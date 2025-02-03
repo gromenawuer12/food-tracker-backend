@@ -7,7 +7,7 @@
             "S": "product"
           },
           "SK": {
-            "S": "Garden gourmet merluza"
+            "S": "Vareniki"
           },
           "nutritional_value": {
             "L": [
@@ -20,7 +20,7 @@
                     "S": "Kcal"
                   },
                   {
-                    "S": "226"
+                    "S": "627.38"
                   }
                 ]
               },
@@ -33,7 +33,7 @@
                     "S": "g"
                   },
                   {
-                    "S": "13.2"
+                    "S": "21.5"
                   }
                 ]
               },
@@ -46,7 +46,7 @@
                     "S": "g"
                   },
                   {
-                    "S": "14.2"
+                    "S": "84.89"
                   }
                 ]
               },
@@ -59,7 +59,7 @@
                     "S": "g"
                   },
                   {
-                    "S": "1.3"
+                    "S": "0.38"
                   }
                 ]
               },
@@ -72,7 +72,7 @@
                     "S": "g"
                   },
                   {
-                    "S": "12.4"
+                    "S": "9.17"
                   }
                 ]
               }
@@ -82,10 +82,10 @@
             "NULL": true
           },
           "name": {
-            "S": "Garden gourmet merluza"
+            "S": "Vareniki"
           },
           "recipe_name": {
-            "NULL": true
+            "S": "Vareniki"
           },
           "supermarket": {
             "NULL": true
@@ -100,7 +100,7 @@
             "S": "product"
           },
           "SK": {
-            "S": "Gluten"
+            "S": "Verdino burger"
           },
           "nutritional_value": {
             "L": [
@@ -113,46 +113,7 @@
                     "S": "Kcal"
                   },
                   {
-                    "S": "358"
-                  }
-                ]
-              },
-              {
-                "L": [
-                  {
-                    "S": "protein"
-                  },
-                  {
-                    "S": "g"
-                  },
-                  {
-                    "S": "69"
-                  }
-                ]
-              },
-              {
-                "L": [
-                  {
-                    "S": "Hidratos de Carbono"
-                  },
-                  {
-                    "S": "g"
-                  },
-                  {
-                    "S": "13.8"
-                  }
-                ]
-              },
-              {
-                "L": [
-                  {
-                    "S": "Azucares"
-                  },
-                  {
-                    "S": "g"
-                  },
-                  {
-                    "S": "1.3"
+                    "S": "231"
                   }
                 ]
               },
@@ -165,88 +126,7 @@
                     "S": "g"
                   },
                   {
-                    "S": "1.9"
-                  }
-                ]
-              }
-            ]
-          },
-          "description": {
-            "S": ""
-          },
-          "name": {
-            "S": "Gluten"
-          },
-          "supermarket": {
-            "L": [
-              {
-                "S": "Herbolario"
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "PutRequest": {
-        "Item": {
-          "PK": {
-            "S": "product"
-          },
-          "SK": {
-            "S": "Gofre de falafel"
-          },
-          "nutritional_value": {
-            "L": [
-              {
-                "L": [
-                  {
-                    "S": "Kilocalorías"
-                  },
-                  {
-                    "S": "Kcal"
-                  },
-                  {
-                    "S": "404.32"
-                  }
-                ]
-              },
-              {
-                "L": [
-                  {
-                    "S": "protein"
-                  },
-                  {
-                    "S": "g"
-                  },
-                  {
-                    "S": "16.76"
-                  }
-                ]
-              },
-              {
-                "L": [
-                  {
-                    "S": "Azucares"
-                  },
-                  {
-                    "S": "g"
-                  },
-                  {
-                    "S": "4.26"
-                  }
-                ]
-              },
-              {
-                "L": [
-                  {
-                    "S": "Grasas"
-                  },
-                  {
-                    "S": "g"
-                  },
-                  {
-                    "S": "16.12"
+                    "S": "6.2"
                   }
                 ]
               },
@@ -259,61 +139,7 @@
                     "S": "g"
                   },
                   {
-                    "S": "45.12"
-                  }
-                ]
-              }
-            ]
-          },
-          "description": {
-            "NULL": true
-          },
-          "name": {
-            "S": "Gofre de falafel"
-          },
-          "recipe_name": {
-            "S": "Gofre de falafel"
-          },
-          "supermarket": {
-            "NULL": true
-          }
-        }
-      }
-    },
-    {
-      "PutRequest": {
-        "Item": {
-          "PK": {
-            "S": "product"
-          },
-          "SK": {
-            "S": "Gofres"
-          },
-          "nutritional_value": {
-            "L": [
-              {
-                "L": [
-                  {
-                    "S": "Kilocalorías"
-                  },
-                  {
-                    "S": "Kcal"
-                  },
-                  {
-                    "S": "574.11"
-                  }
-                ]
-              },
-              {
-                "L": [
-                  {
-                    "S": "protein"
-                  },
-                  {
-                    "S": "g"
-                  },
-                  {
-                    "S": "14.0"
+                    "S": "5.8"
                   }
                 ]
               },
@@ -321,205 +147,6 @@
                 "L": [
                   {
                     "S": "Azucares"
-                  },
-                  {
-                    "S": "g"
-                  },
-                  {
-                    "S": "19.66"
-                  }
-                ]
-              },
-              {
-                "L": [
-                  {
-                    "S": "Grasas"
-                  },
-                  {
-                    "S": "g"
-                  },
-                  {
-                    "S": "20.66"
-                  }
-                ]
-              },
-              {
-                "L": [
-                  {
-                    "S": "Hidratos de Carbono"
-                  },
-                  {
-                    "S": "g"
-                  },
-                  {
-                    "S": "68.13"
-                  }
-                ]
-              }
-            ]
-          },
-          "description": {
-            "NULL": true
-          },
-          "name": {
-            "S": "Gofres"
-          },
-          "recipe_name": {
-            "S": "Gofres"
-          },
-          "supermarket": {
-            "NULL": true
-          }
-        }
-      }
-    },
-    {
-      "PutRequest": {
-        "Item": {
-          "PK": {
-            "S": "product"
-          },
-          "SK": {
-            "S": "Golubtsi"
-          },
-          "nutritional_value": {
-            "L": [
-              {
-                "L": [
-                  {
-                    "S": "Kilocalorías"
-                  },
-                  {
-                    "S": "Kcal"
-                  },
-                  {
-                    "S": "518.77"
-                  }
-                ]
-              },
-              {
-                "L": [
-                  {
-                    "S": "protein"
-                  },
-                  {
-                    "S": "g"
-                  },
-                  {
-                    "S": "34.38"
-                  }
-                ]
-              },
-              {
-                "L": [
-                  {
-                    "S": "Azucares"
-                  },
-                  {
-                    "S": "g"
-                  },
-                  {
-                    "S": "17.73"
-                  }
-                ]
-              },
-              {
-                "L": [
-                  {
-                    "S": "Grasas"
-                  },
-                  {
-                    "S": "g"
-                  },
-                  {
-                    "S": "16.34"
-                  }
-                ]
-              },
-              {
-                "L": [
-                  {
-                    "S": "Hidratos de Carbono"
-                  },
-                  {
-                    "S": "g"
-                  },
-                  {
-                    "S": "64.22"
-                  }
-                ]
-              }
-            ]
-          },
-          "description": {
-            "NULL": true
-          },
-          "name": {
-            "S": "Golubtsi"
-          },
-          "recipe_name": {
-            "S": "Golubtsi"
-          },
-          "supermarket": {
-            "NULL": true
-          }
-        }
-      }
-    },
-    {
-      "PutRequest": {
-        "Item": {
-          "PK": {
-            "S": "product"
-          },
-          "SK": {
-            "S": "Granada"
-          },
-          "nutritional_value": {
-            "L": [
-              {
-                "L": [
-                  {
-                    "S": "Kilocalorías"
-                  },
-                  {
-                    "S": "Kcal"
-                  },
-                  {
-                    "S": "83"
-                  }
-                ]
-              },
-              {
-                "L": [
-                  {
-                    "S": "Hidratos de Carbono"
-                  },
-                  {
-                    "S": "g"
-                  },
-                  {
-                    "S": "19"
-                  }
-                ]
-              },
-              {
-                "L": [
-                  {
-                    "S": "Azucares"
-                  },
-                  {
-                    "S": "g"
-                  },
-                  {
-                    "S": "14"
-                  }
-                ]
-              },
-              {
-                "L": [
-                  {
-                    "S": "Grasas"
                   },
                   {
                     "S": "g"
@@ -538,7 +165,7 @@
                     "S": "g"
                   },
                   {
-                    "S": "1.7"
+                    "S": "16"
                   }
                 ]
               }
@@ -548,7 +175,7 @@
             "NULL": true
           },
           "name": {
-            "S": "Granada"
+            "S": "Verdino burger"
           },
           "recipe_name": {
             "NULL": true
@@ -566,7 +193,7 @@
             "S": "product"
           },
           "SK": {
-            "S": "Grissini"
+            "S": "Vuna"
           },
           "nutritional_value": {
             "L": [
@@ -579,7 +206,7 @@
                     "S": "Kcal"
                   },
                   {
-                    "S": "226"
+                    "S": "279"
                   }
                 ]
               },
@@ -592,7 +219,7 @@
                     "S": "g"
                   },
                   {
-                    "S": "8.5"
+                    "S": "23"
                   }
                 ]
               },
@@ -605,7 +232,7 @@
                     "S": "g"
                   },
                   {
-                    "S": "45"
+                    "S": "1.7"
                   }
                 ]
               },
@@ -618,7 +245,7 @@
                     "S": "g"
                   },
                   {
-                    "S": "0.8"
+                    "S": "0"
                   }
                 ]
               },
@@ -631,7 +258,97 @@
                     "S": "g"
                   },
                   {
-                    "S": "0.7"
+                    "S": "20"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": "90 gramos por persona"
+          },
+          "name": {
+            "S": "Vuna"
+          },
+          "supermarket": {
+            "NULL": true
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Yogur"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "4.5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "3.5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "4.5"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "63"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "3.4"
                   }
                 ]
               }
@@ -641,7 +358,7 @@
             "NULL": true
           },
           "name": {
-            "S": "Grissini"
+            "S": "Yogur"
           },
           "recipe_name": {
             "NULL": true
@@ -659,7 +376,7 @@
             "S": "product"
           },
           "SK": {
-            "S": "Guisante en lata"
+            "S": "Yuba nudos"
           },
           "nutritional_value": {
             "L": [
@@ -672,7 +389,7 @@
                     "S": "Kcal"
                   },
                   {
-                    "S": "80"
+                    "S": "81.3"
                   }
                 ]
               },
@@ -685,7 +402,101 @@
                     "S": "g"
                   },
                   {
-                    "S": "5.4"
+                    "S": "40"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Hidratos de Carbono"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "24"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Azucares"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "2.2"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "Grasas"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "12"
+                  }
+                ]
+              }
+            ]
+          },
+          "description": {
+            "S": "75 gramos per persona"
+          },
+          "name": {
+            "S": "Yuba nudos"
+          },
+          "supermarket": {
+            "L": [
+              {
+                "S": "Asiatico"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "product"
+          },
+          "SK": {
+            "S": "Zanahoria"
+          },
+          "nutritional_value": {
+            "L": [
+              {
+                "L": [
+                  {
+                    "S": "Kilocalorías"
+                  },
+                  {
+                    "S": "Kcal"
+                  },
+                  {
+                    "S": "41"
+                  }
+                ]
+              },
+              {
+                "L": [
+                  {
+                    "S": "protein"
+                  },
+                  {
+                    "S": "g"
+                  },
+                  {
+                    "S": "0.9"
                   }
                 ]
               },
@@ -711,7 +522,7 @@
                     "S": "g"
                   },
                   {
-                    "S": "1.7"
+                    "S": "4.7"
                   }
                 ]
               },
@@ -724,7 +535,7 @@
                     "S": "g"
                   },
                   {
-                    "S": "0.8"
+                    "S": "0.2"
                   }
                 ]
               }
@@ -734,10 +545,7 @@
             "NULL": true
           },
           "name": {
-            "S": "Guisante en lata"
-          },
-          "recipe_name": {
-            "NULL": true
+            "S": "Zanahoria"
           },
           "supermarket": {
             "NULL": true
@@ -749,91 +557,20 @@
       "PutRequest": {
         "Item": {
           "PK": {
-            "S": "product"
+            "S": "settings"
           },
           "SK": {
-            "S": "Guisante fresco"
+            "S": "settings_v1"
           },
-          "nutritional_value": {
-            "L": [
-              {
-                "L": [
-                  {
-                    "S": "Kilocalorías"
-                  },
-                  {
-                    "S": "Kcal"
-                  },
-                  {
-                    "S": "81"
-                  }
-                ]
+          "settings": {
+            "M": {
+              "shortname": {
+                "S": "settings_v1"
               },
-              {
-                "L": [
-                  {
-                    "S": "protein"
-                  },
-                  {
-                    "S": "g"
-                  },
-                  {
-                    "S": "5"
-                  }
-                ]
-              },
-              {
-                "L": [
-                  {
-                    "S": "Hidratos de Carbono"
-                  },
-                  {
-                    "S": "g"
-                  },
-                  {
-                    "S": "14"
-                  }
-                ]
-              },
-              {
-                "L": [
-                  {
-                    "S": "Azucares"
-                  },
-                  {
-                    "S": "g"
-                  },
-                  {
-                    "S": "6"
-                  }
-                ]
-              },
-              {
-                "L": [
-                  {
-                    "S": "Grasas"
-                  },
-                  {
-                    "S": "g"
-                  },
-                  {
-                    "S": "0.4"
-                  }
-                ]
+              "partsOfDay": {
+                "S": "Desayuno,Almuerzo,Comida,Cena"
               }
-            ]
-          },
-          "description": {
-            "NULL": true
-          },
-          "name": {
-            "S": "Guisante fresco"
-          },
-          "recipe_name": {
-            "NULL": true
-          },
-          "supermarket": {
-            "NULL": true
+            }
           }
         }
       }
@@ -842,91 +579,52 @@
       "PutRequest": {
         "Item": {
           "PK": {
-            "S": "product"
+            "S": "unit"
           },
           "SK": {
-            "S": "Guisante seco"
+            "S": "Kcal"
           },
-          "nutritional_value": {
-            "L": [
-              {
-                "L": [
-                  {
-                    "S": "Kilocalorías"
-                  },
-                  {
-                    "S": "Kcal"
-                  },
-                  {
-                    "S": "341"
-                  }
-                ]
-              },
-              {
-                "L": [
-                  {
-                    "S": "Grasas"
-                  },
-                  {
-                    "S": "g"
-                  },
-                  {
-                    "S": "1.2"
-                  }
-                ]
-              },
-              {
-                "L": [
-                  {
-                    "S": "Hidratos de Carbono"
-                  },
-                  {
-                    "S": "g"
-                  },
-                  {
-                    "S": "60"
-                  }
-                ]
-              },
-              {
-                "L": [
-                  {
-                    "S": "Azucares"
-                  },
-                  {
-                    "S": "g"
-                  },
-                  {
-                    "S": "8"
-                  }
-                ]
-              },
-              {
-                "L": [
-                  {
-                    "S": "protein"
-                  },
-                  {
-                    "S": "g"
-                  },
-                  {
-                    "S": "24.5"
-                  }
-                ]
-              }
-            ]
-          },
-          "description": {
-            "NULL": true
+          "shortname": {
+            "S": "Kcal"
           },
           "name": {
-            "S": "Guisante seco"
+            "S": "Kilocalorías"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "unit"
           },
-          "recipe_name": {
-            "NULL": true
+          "SK": {
+            "S": "g"
           },
-          "supermarket": {
-            "NULL": true
+          "shortname": {
+            "S": "g"
+          },
+          "name": {
+            "S": "gram"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": {
+            "S": "unit"
+          },
+          "SK": {
+            "S": "kg"
+          },
+          "shortname": {
+            "S": "kg"
+          },
+          "name": {
+            "S": "kilogram"
           }
         }
       }
